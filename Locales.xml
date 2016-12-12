@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<locales>
+  <locale id="en-us" LCID="1033">English</locale>
+  <locale id="ru-ru" LCID="1049">Russian</locale>
+  <locale id="zh-cn" LCID="2052">简体中文</locale>
+  <locale id="pt-pt" LCID="2070">Portuguese</locale>
+</locales>

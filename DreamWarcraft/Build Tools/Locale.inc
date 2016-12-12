@@ -1,0 +1,4 @@
+DEFINE_LOCALE(EN_US, 1033, "English")
+DEFINE_LOCALE(RU_RU, 1049, "Russian")
+DEFINE_LOCALE(ZH_CN, 2052, "¼òÌåÖÐÎÄ")
+DEFINE_LOCALE(PT_PT, 2070, "Portuguese")

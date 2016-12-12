@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <file name="DreamAuth.exe">../LastBuildOutput/!Release/DreamAuth2.exe</file>
+  <file name="DreamWarcraft.dll">../LastBuildOutput/!Release/DreamWarcraft.dll</file>
+  <file name="libzmq.dll">../LastBuildOutput/!Release/libzmq.dll</file>
+  <file name="libcurl.dll">../LastBuildOutput/!Release/libcurl.dll</file>
+  <file name="ZLibWrap.dll">../LastBuildOutput/!Release/ZLibWrap.dll</file>
+  <!-- Plugin Files -->
+  <file name="DreamDota/core/constants.lua">../LastBuildOutput/!Release/DreamDota/core/constants.lua</file>
+  <file name="DreamDota/core/dreamdota.lua">../LastBuildOutput/!Release/DreamDota/core/dreamdota.lua</file>
+  <file name="DreamDota/core/keycode.lua">../LastBuildOutput/!Release/DreamDota/core/keycode.lua</file>
+  <file name="DreamDota/core/player.lua">../LastBuildOutput/!Release/DreamDota/core/player.lua</file>
+  <file name="DreamDota/core/unitgroup.lua">../LastBuildOutput/!Release/DreamDota/core/unitgroup.lua</file>
+
+  <file name="DreamDota/plugins/attackrangedisplay.lua">../LastBuildOutput/!Release/DreamDota/plugins/attackrangedisplay.lua</file>
+</package>

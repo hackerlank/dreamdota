@@ -1,0 +1,48 @@
+#include "stdafx.h"
+#include "L_Unit.h"
+
+const char* L_Unit::ClassName = "Unit";
+LuaExport<L_Unit>::MethodInfoType L_Unit::Methods[] = {
+	LUAEXPORT_DECLARE_METHOD(Unit, handleId),
+	LUAEXPORT_DECLARE_METHOD(Unit, name),
+	LUAEXPORT_DECLARE_METHOD(Unit, debugName),
+	LUAEXPORT_DECLARE_METHOD(Unit, acquireRange),
+	LUAEXPORT_DECLARE_METHOD(Unit, acquireRangeDefault),
+	LUAEXPORT_DECLARE_METHOD(Unit, turnSpeed),
+	LUAEXPORT_DECLARE_METHOD(Unit, turnSpeedDefault),
+	LUAEXPORT_DECLARE_METHOD(Unit, propWindow),
+	LUAEXPORT_DECLARE_METHOD(Unit, propWindowDefault),
+	LUAEXPORT_DECLARE_METHOD(Unit, flyHeight),
+	LUAEXPORT_DECLARE_METHOD(Unit, flyHeightDefault),
+	LUAEXPORT_DECLARE_METHOD(Unit, x),
+	LUAEXPORT_DECLARE_METHOD(Unit, y),
+	LUAEXPORT_DECLARE_METHOD(Unit, facing),
+	LUAEXPORT_DECLARE_METHOD(Unit, moveSpeed),
+	LUAEXPORT_DECLARE_METHOD(Unit, moveSpeedDefault),
+	LUAEXPORT_DECLARE_METHOD(Unit, life),
+	LUAEXPORT_DECLARE_METHOD(Unit, lifeMax),
+	LUAEXPORT_DECLARE_METHOD(Unit, mana),
+	LUAEXPORT_DECLARE_METHOD(Unit, manaMax),
+	LUAEXPORT_DECLARE_METHOD(Unit, level),
+	LUAEXPORT_DECLARE_METHOD(Unit, isInvulnerable),
+	LUAEXPORT_DECLARE_METHOD(Unit, currentOrder),
+	LUAEXPORT_DECLARE_METHOD(Unit, owner),
+	LUAEXPORT_DECLARE_METHOD(Unit, typeId),
+	LUAEXPORT_DECLARE_METHOD(Unit, typeIdChar),
+	LUAEXPORT_DECLARE_METHOD(Unit, race),
+	LUAEXPORT_DECLARE_METHOD(Unit, foodUsed),
+	LUAEXPORT_DECLARE_METHOD(Unit, foodMade),
+	LUAEXPORT_DECLARE_METHOD(Unit, costGold),
+	LUAEXPORT_DECLARE_METHOD(Unit, costLumber),
+	LUAEXPORT_DECLARE_METHOD(Unit, timeBuild),
+	LUAEXPORT_DECLARE_METHOD(Unit, isEnemy),
+	LUAEXPORT_DECLARE_METHOD(Unit, isEnemyToLocalPlayer),
+	LUAEXPORT_DECLARE_METHOD(Unit, isAlly),
+	LUAEXPORT_DECLARE_METHOD(Unit, isAllyToLocalPlayer),
+	LUAEXPORT_DECLARE_METHOD(Unit, abilityLevel),
+	LUAEXPORT_DECLARE_METHOD(Unit, hasItemType),
+	LUAEXPORT_DECLARE_METHOD(Unit, isSelectedLocal),
+	//...
+	LUAEXPORT_DECLARE_METHOD(Unit, range),
+	{NULL, NULL}
+};

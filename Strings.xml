@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings>
+  <string id="SERVER_STRING_TEST">
+    <value lang="en-us">tcp://192.168.1.125:3539</value>
+    <!--ALPHA-->
+    <!--<value lang="en-us">tcp://106.187.37.80:56634</value>-->>
+
+    <!--DEBUG-->
+    <!--<value lang="en-us">tcp://106.187.37.80:56635</value>-->
+
+    <!--LOCAL DEBUG-->
+    <!--<value lang="en-us">tcp://192.168.56.101:56634</value>-->
+  </string>  
+
+  <string id="SERVER_STRING">
+    <value lang="en-us">tcp://106.187.37.80:3539</value>
+  </string>
+
+  <string id="HTTP_TUNNEL_URL">
+    <value lang="en-us">http://dreamdota.com/interface/http_tunnel/tunnel</value>
+  </string>
+
+  <string id="ROAMING_PROFILE_SERVICE_URL">
+    <value lang="en-us">http://www.dreamdota.com/interface/roaming_profile/</value>
+  </string>
+
+  <string id="PIPE_NAME">
+    <value lang="en-us">\\.\pipe\%s</value>
+  </string>
+
+  <string id="WIN_CLASS_NAME">
+    <value lang="en-us">DreamDotaServiceWindow</value>
+  </string> 
+
+  <string id="VERSION">
+    <value lang="en-us">%u.%02u.%u.%04u</value>
+    <value lang="pt-pt">%u.%02u.%u.%04u</value>
+    <value lang="zh-cn">%u.%02u.%u.%04u</value>
+    <value lang="ru-ru">%u.%02u.%u.%04u</value>
+  </string>
+
+  <string id="LOGIN_TITLE">
+    <value lang="en-us">DreamDota Login</value>
+    <value lang="pt-pt">DreamDota Logar</value>
+    <value lang="zh-cn">DreamDota 登录</value>
+    <value lang="ru-ru">DreamDota логин</value>
+  </string>
+
+  <string id="LOGIN_ACCOUNT">
+    <value lang="en-us">Account</value>
+    <value lang="pt-pt">Conta</value>
+    <value lang="zh-cn">账号</value>
+    <value lang="ru-ru">Аккаунт</value>
+  </string>
+
+  <string id="LOGIN_PASSWORD">
+    <value lang="en-us">Password</value>
+    <value lang="pt-pt">Senha</value>
+    <value lang="zh-cn">密码</value>
+    <value lang="ru-ru">Пароль</value>
+  </string>
+
+  <string id="LOGIN_LOGIN">
+    <value lang="en-us">Login</value>
+    <value lang="pt-pt">Logar</value>
+    <value lang="zh-cn">登录</value>
+    <value lang="ru-ru">Логин</value>
+  </string>
+
+  <string id="LOGIN_CLOSE">
+    <value lang="en-us">Close</value>
+    <value lang="pt-pt">Fechar</value>
+    <value lang="zh-cn">关闭</value>
+    <value lang="ru-ru">Закрыть</value>
+  </string>
+
+  <string id="LOGIN_OK">
+    <value lang="en-us">Login successfully.</value>
+    <value lang="pt-pt">Conectado com sucesso.</value>
+    <value lang="zh-cn">登录成功。</value>
+    <value lang="ru-ru">Вы успешно вошли</value>
+  </string>
+
+  <string id="LOGIN_LOGGED_IN">
+    <value lang="en-us">Logged in</value>
+    <value lang="pt-pt">Logado</value>
+    <value lang="zh-cn">已登录</value>
+    <value lang="ru-ru">Войти</value>
+  </string>
+
+  <string id="EXIT_CLEANING_UP">
+    <value lang="en-us">Exiting...</value>
+    <value lang="pt-pt">Saindo...</value>
+    <value lang="zh-cn">清理中...</value>
+    <value lang="ru-ru">Выход...</value>
+  </string>
+
+  <string id="LOGIN_FAILED">
+    <value lang="en-us">Sorry, login failed. Error code: 0x%08X</value>
+    <value lang="pt-pt">Desculpe, login falhou. Código de erro: 0x%08X</value>
+    <value lang="zh-cn">对不起，登录失败，错误码: 0x%08X</value>
+    <value lang="ru-ru">Извините, ошибка входа. Код ошибки: 0x%08X</value>
+  </string>
+
+  <string id="LOGIN_RESULT_MULTI">
+    <value lang="en-us">Login attempt failed. The same account can only be used in one computer at a time.</value>
+    <value lang="pt-pt">Tentativa de login falhou. A mesma conta só pode ser usada em um computador de cada vez.</value>
+    <value lang="zh-cn">登录失败，帐号已被使用，请不要多点登录。</value>
+    <value lang="ru-ru">Не получилось войти. Ваш аккаунт используется(возможно использовать только на 1 компе).</value>
+  </string>
+
+  <string id="LOGIN_RESULT_BANNED">
+    <value lang="en-us">Login attempt failed. This account was discontinued.</value>
+    <value lang="pt-pt">Tentativa de login falhou. Esta conta foi suspensa.</value>
+    <value lang="zh-cn">登录失败，帐号已被停用。</value>
+    <value lang="ru-ru">Не получилось войти. Этот аккаунт отключился.</value>
+  </string>
+
+  <string id="LOGIN_RESULT_EXPIRED">
+    <value lang="en-us">Login attempt failed. This account was expired.</value>
+    <value lang="pt-pt">Tentativa de login falhou. Esta conta expirou.</value>
+    <value lang="zh-cn">登录失败，帐号已经过期。</value>
+    <value lang="ru-ru">Не получилось войти. Этот аккаунт закончился.</value>
+  </string>
+
+  <string id="LOGIN_RESULT_AUTH_FAILED">
+    <value lang="en-us">Login attempt failed. Please check your account and password.</value>
+    <value lang="pt-pt">Tentativa de login falhou. Por favor, verifique sua conta e senha.</value>
+    <value lang="zh-cn">登录失败，用户名或密码不匹配。</value>
+    <value lang="ru-ru">Не получилось войти. Проверьте правильность ввода логина и пароля.</value>
+  </string>
+
+  <string id="CONNECTION_TIMEOUT">
+    <value lang="en-us">Sorry, connection timeout.</value>
+    <value lang="pt-pt">Desculpe, tempo limite de conexão.</value>
+    <value lang="zh-cn">对不起，连接超时，请重新登录。</value>
+    <value lang="ru-ru">Извините, вышло время связи</value>
+  </string>
+
+  <string id="CONNECTION_FAILED">
+    <value lang="en-us">Sorry, connection lost. Please login again.</value>
+    <value lang="pt-pt">Desculpe, conexão perdida. Faça o login novamente.</value>
+    <value lang="zh-cn">对不起，与服务器的连接断开，请重新登录。</value>
+    <value lang="ru-ru">Извините, связь завершена. Пожалуйста зайдите снова.</value>
+  </string>
+
+  <string id="HANDSHAKE_FAILED">
+    <value lang="en-us">Sorry, initialize connection failed. Update to latest version may solve this problem.</value>
+    <value lang="pt-pt">Desculpe, conexão inicial falhou. Atualizar para a versão mais recente pode resolver este problema.</value>
+    <value lang="zh-cn">对不起，初始化连接失败。请查看客户端是否为最新版本。</value>
+    <value lang="ru-ru">Извините, не получилось запустить. Обновитесь до последней версии что бы исправить эту проблему</value>
+  </string>
+
+  <string id="LOGIN_CLOSE_WARNING">
+    <value lang="en-us">If you close the window, all features will be disabled. Continue?</value>
+    <value lang="pt-pt">Se você fechar a janela, todos os recursos serão desativados. Continuar?</value>
+    <value lang="zh-cn">如果关闭窗口，所有的功能都将无法使用，确认要关闭吗？</value>
+    <value lang="ru-ru">Если вы закроете это окно, все функции деактивируются.</value>
+  </string>
+
+  <string id="LOGIN_WELCOME">
+    <value lang="en-us">Welcome! Your account will expire in %u days.</value>
+    <value lang="pt-pt">Bem-vindo! Sua conta irá expirar em %u dias.</value>
+    <value lang="zh-cn">欢迎使用，您的账户将在 %d 天后过期。</value>
+    <value lang="ru-ru">Добро пожаловать! Ваш аккаунт истечет через %u дней.</value>
+  </string>
+
+  <string id="LOGIN_WELCOME_UNLIMITED">
+    <value lang="en-us">Welcome! Currently your account is not limited by the expire date.</value>
+    <value lang="pt-pt">Bem-vindo! Atualmente sua conta não é limitada pela data de expiração.</value>
+    <value lang="zh-cn">欢迎使用！目前您的账户不被过期时间限制。</value>
+    <value lang="ru-ru">Добро пожаловать! Ваш аккаунт ещё работает(не истекло ограниченное время).</value>
+  </string>
+
+  <string id="FATAL_ERROR">
+    <value lang="en-us">Sorry, a fatal error occurred, please login again. Error code: 0x%08X</value>
+    <value lang="pt-pt">Desculpe, um erro fatal ocorreu, faça o login novamente. Código de erro: 0x%08X</value>
+    <value lang="zh-cn">对不起，发生了一个无法恢复的错误，请尝试重新登录。错误码: 0x%08X</value>
+    <value lang="ru-ru">Извините, произошла неисправимая ошибка, пожалуйста войдите снова. Код ошибки: 0x%08X</value>
+  </string>
+
+  <string id="MODULE_VERSION_MISMATCH">
+    <value lang="en-us">Sorry, module version mismatch. Please download the newest version of DreamDota and overwrite current files.</value>
+    <value lang="pt-pt">Desculpe, incompatibilidade de versão do módulo. Faça o download da versão mais recente do DreamDota e substitua os arquivos atuais.</value>
+    <value lang="zh-cn">对不起，模块版本不一致，请下载最新版本的DreamDota并覆盖文件。</value>
+    <value lang="ru-ru">Извините, несовподают версии модулей. Пожалуйста скачайте самую новую версию Дримдоты и замените текущие файлы.</value>
+  </string>
+
+  <string id="GAME_DISCONNECT">
+    <value lang="en-us">Sorry, game module disconnected unexpectedly.</value>
+    <value lang="pt-pt">Desculpe, módulo do jogo desconectado inesperadamente.</value>
+    <value lang="zh-cn">对不起，游戏模块意外断开。</value>
+    <value lang="ru-ru">Извините, игровой модуль отсоединяется</value>
+  </string>
+
+  <string id="MENU_BUTTON">
+    <value lang="en-us">Config (|cffffcc00F7|r)</value>
+    <value lang="pt-pt">Config (|cffffcc00F7|r)</value>
+    <value lang="zh-cn">配置(|cffffcc00F7|r)</value>
+    <value lang="ru-ru">Config (|cffffcc00F7|r)</value>
+  </string>
+
+  <string id="MAPHACK_CATEGORYNAME">
+    <value lang="en-us">Map Hack</value>
+    <value lang="pt-pt">Map Hack</value>
+    <value lang="zh-cn">地图显示</value>
+    <value lang="ru-ru">Мап  хак</value>
+  </string>
+
+  <string id="MAPHACK_REMOVEFOGMAIN">
+    <value lang="en-us">Remove fog main map</value>
+    <value lang="pt-pt">Remover fog mapa principal</value>
+    <value lang="zh-cn">移除大地图迷雾</value>
+    <value lang="ru-ru">Убрать туман войны</value>
+  </string>
+
+  <string id="MAPHACK_SHOWUNITMAINMAP">
+    <value lang="en-us">Show unit main map</value>
+    <value lang="pt-pt">Visualizar unidades mapa principal</value>
+    <value lang="zh-cn">大地图显示单位</value>
+    <value lang="ru-ru">Показ крипов на карте</value>
+  </string>
+
+  <string id="MAPHACK_SHOWUNITMINIMAP">
+    <value lang="en-us">Show unit mini map</value>
+    <value lang="pt-pt">Visualizar unidades Mini mapa</value>
+    <value lang="zh-cn">小地图显示单位</value>
+    <value lang="ru-ru">Показ крипов на миникарте</value>
+  </string>
+
+  <string id="MAPHACK_BYPASSAH">
+    <value lang="en-us">Bypass -ah</value>
+    <value lang="pt-pt">Burlar -ah</value>
+    <value lang="zh-cn">过-ah检测</value>
+    <value lang="ru-ru">Обход -ah</value>
+  </string>
+
+  <string id="PINGHERO_ENABLE">
+    <value lang="en-us">Enable Minimap Ping Hero</value>
+    <value lang="pt-pt">Ativar sinal do herói Mini mapa</value>
+    <value lang="zh-cn">英雄小地图信号</value>
+    <value lang="ru-ru">Показ геров на миникарте</value>
+  </string>
+
+  <string id="PINGHERO_ALTICON">
+    <value lang="en-us">Use Icon</value>
+    <value lang="pt-pt">Use Icon</value>
+    <value lang="zh-cn">使用图标</value>
+    <value lang="ru-ru">Use Icon</value>
+  </string>
+
+  <string id="PINGHERO_ENEMY">
+    <value lang="en-us">Enable Ping Enemy</value>
+    <value lang="pt-pt">Ativar sinal inimigo</value>
+    <value lang="zh-cn">敌对英雄信号</value>
+    <value lang="ru-ru">Включить сигналы врагов</value>
+  </string>
+
+  <string id="PINGHERO_FRIEND">
+    <value lang="en-us">Enable Ping Friend</value>
+    <value lang="pt-pt">Ativar sinal aliado</value>
+    <value lang="zh-cn">友好英雄信号</value>
+    <value lang="ru-ru">Включить сигналы союзников</value>
+  </string>
+
+  <string id="POWERUP_NOTIFY_ENABLE">
+    <value lang="en-us">Rune Spawn Notification</value>
+    <value lang="pt-pt">Notificar Runas</value>
+    <value lang="zh-cn">符文刷新提醒</value>
+    <value lang="ru-ru">Уведомлять о появлении рун</value>
+  </string>
+
+  <string id="POWERUPSPAWN">
+    <value lang="en-us">Powerup %s spawned at %s</value>
+    <value lang="pt-pt">Powerup %s spawned at %s</value>
+    <value lang="zh-cn">符文 %s 出现在 %s</value>
+    <value lang="ru-ru">Руна %s появилась %s</value>
+  </string>
+
+  <string id="MICRO_CATEGORYNAME">
+    <value lang="en-us">Micro</value>
+    <value lang="pt-pt">Micro</value>
+    <value lang="zh-cn">微操</value>
+    <value lang="ru-ru">Микро</value>
+  </string>
+
+  <string id="MULTIPICKITEM_ENABLE">
+    <value lang="en-us">Hold Alt to Pick Multiple Inventory Items</value>
+    <value lang="pt-pt">Segurar Alt para Pegar Multiplos itens do Inventário.</value>
+    <value lang="zh-cn">按住Alt拿起物品栏多个物品</value>
+    <value lang="ru-ru">Удерживайте ALT что бы выбрать несколько предметов</value>
+  </string>
+
+  <string id="FASTDROPITEM_ENABLE">
+    <value lang="en-us">Ctrl + Right Click to drop item</value>
+    <value lang="pt-pt">Ctrl + Right Click para dropar item</value>
+    <value lang="zh-cn">Ctrl + 右键扔下物品</value>
+    <value lang="ru-ru">Ctrl + Правый клик - выбросить предмет</value>
+  </string>
+
+  <string id="DIRECTIONMOVE_ENABLE">
+    <value lang="en-us">Arrow Keys Move Hero</value>
+    <value lang="pt-pt">Setas movem o herói</value>
+    <value lang="zh-cn">方向键移动英雄</value>
+    <value lang="ru-ru">Ходить на стрелках</value>
+  </string>
+
+  <string id="PINGHERO_IGNORE_SPECIAL">
+    <value lang="en-us">Ignore Special Hero</value>
+    <value lang="pt-pt">Ignore Special Hero</value>
+    <value lang="zh-cn">忽略特殊的英雄</value>
+    <value lang="ru-ru">Ignore Special Hero</value>
+  </string>
+
+  <string id="COMMAND_THROUGH_ENABLE">
+    <value lang="en-us">Smart Subgroup Command</value>
+    <value lang="pt-pt">Smart Subgroup Command</value>
+    <value lang="zh-cn">智能子组命令</value>
+    <value lang="ru-ru">Smart Subgroup Command</value>
+  </string>
+
+  <string id="INVOKER_ENABLE">
+    <value lang="en-us">Invoker fast spell</value>
+    <value lang="pt-pt">Invoker fast spell</value>
+    <value lang="zh-cn">召唤师快速技能</value>
+    <value lang="ru-ru">Invoker fast spell</value>
+  </string>
+
+  <string id="INVOKER_USE">
+    <value lang="en-us">Directly Use</value>
+    <value lang="pt-pt">Directly Use</value>
+    <value lang="zh-cn">直接使用</value>
+    <value lang="ru-ru">Directly Use</value>
+  </string>
+
+  <string id="INVOKER_USEKEY">
+    <value lang="en-us">Base on Hotkey</value>
+    <value lang="pt-pt">Base on Hotkey</value>
+    <value lang="zh-cn">基于热键</value>
+    <value lang="ru-ru">Base on Hotkey</value>
+  </string>
+
+  <string id="HOTKEY_CATEGORYNAME">
+    <value lang="en-us">Custom Hotkey</value>
+    <value lang="pt-pt">Hotkey Customizada</value>
+    <value lang="zh-cn">自定义热键</value>
+    <value lang="ru-ru">Конфиг. Hotkey</value>
+  </string>
+
+  <string id="HOTKEY_ENABLE_GRID">
+    <value lang="en-us">Enable Grid Hotkey</value>
+    <value lang="pt-pt">Ativar Hotkey Grade</value>
+    <value lang="zh-cn">允许按位置改键</value>
+    <value lang="ru-ru">Включить Hotkey("горячие клавиши")?</value>
+  </string>
+
+  <string id="HOTKEY_ENABLE_DYNAMIC">
+    <value lang="en-us">Enable Dynamic Hotkey</value>
+    <value lang="pt-pt">Ativar Hotkey Dinâmica</value>
+    <value lang="zh-cn">允许动态改键</value>
+    <value lang="ru-ru">Включить динамический Hotkey</value>
+  </string>
+
+  <string id="HOTKEY_SHOW_DYNAMIC">
+    <value lang="en-us">Show Current Dynamic Hotkey on Button</value>
+    <value lang="pt-pt">Mostrar Hotkey Dinâmica Atual no Botão</value>
+    <value lang="zh-cn">在按钮上显示当前动态热键</value>
+    <value lang="ru-ru">Показывать динамический Hotkey(кнопку)</value>
+  </string>
+
+  <string id="LASTHIT_CATEGORYNAME">
+    <value lang="en-us">Last Hit</value>
+    <value lang="pt-pt">Último golpe</value>
+    <value lang="zh-cn">补刀</value>
+    <value lang="ru-ru">Последний удар</value>
+  </string>
+
+  <string id="LASTHIT_TOOLTIP">
+    <value lang="en-us">Auto last hit and deny</value>
+    <value lang="pt-pt">Último golpe e denar automático</value>
+    <value lang="zh-cn">自动补刀反补</value>
+    <value lang="ru-ru">Авто добивание вражеских и союзных</value>
+  </string>
+
+  <string id="LASTHIT_ENABLE">
+    <value lang="en-us">Enable</value>
+    <value lang="pt-pt">Ativar</value>
+    <value lang="zh-cn">开启</value>
+    <value lang="ru-ru">Включить</value>
+  </string>
+
+  <string id="LASTHIT_ENABLEHIT">
+    <value lang="en-us">Last hit enemy</value>
+    <value lang="pt-pt">Último golpe (Inimigo)</value>
+    <value lang="zh-cn">正补</value>
+    <value lang="ru-ru">Последний удар по врагам</value>
+  </string>
+
+  <string id="LASTHIT_ENABLEDENY">
+    <value lang="en-us">Deny</value>
+    <value lang="pt-pt">Último golpe (Aliado)</value>
+    <value lang="zh-cn">反补</value>
+    <value lang="ru-ru">Добивать союзных крипов</value>
+  </string>
+
+  <string id="LASTHIT_BTNSETHOTKEY">
+    <value lang="en-us">Hotkey</value>
+    <value lang="pt-pt">Hotkey</value>
+    <value lang="zh-cn">热键</value>
+    <value lang="ru-ru">Hotkey</value>
+  </string>
+
+  <string id="LASTHIT_ENABLERIGHTCLICKDENY">
+    <value lang="en-us">Right Click Deny</value>
+    <value lang="pt-pt">Right Click Deny</value>
+    <value lang="zh-cn">右键反补</value>
+    <value lang="ru-ru">Right Click Deny</value>
+  </string>
+
+  <string id="LASTHIT_BTNSETHOTKEY_NOTE">
+    <value lang="en-us">|cffff0000Press key to reset|r</value>
+    <value lang="pt-pt">|cffff0000Pressione uma tecla|r</value>
+    <value lang="zh-cn">|cffff0000按下重设热键|r</value>
+    <value lang="ru-ru">|cffff0000Нажмите клавишу для сброса|r</value>
+  </string>
+
+  <string id="UIENHANCEMENT_CATEGORYNAME">
+    <value lang="en-us">UI Enhance</value>
+    <value lang="pt-pt">Aprimorar UI</value>
+    <value lang="zh-cn">界面增强</value>
+    <value lang="ru-ru">Настроить UI</value>
+  </string>
+
+  <string id="DAMAGEDISPLAY_ENABLE">
+    <value lang="en-us">Hero damage display</value>
+    <value lang="pt-pt">Mostrar os danos nos heróis</value>
+    <value lang="zh-cn">英雄伤害显示</value>
+    <value lang="ru-ru">Показывать урон геров</value>
+  </string>
+
+  <string id="MANABAR_ENABLE">
+    <value lang="en-us">Mana bar</value>
+    <value lang="pt-pt">Barra de Mana</value>
+    <value lang="zh-cn">魔法条</value>
+    <value lang="ru-ru">Показывать ману</value>
+  </string>
+
+  <string id="COOLDOWN_ENABLE">
+    <value lang="en-us">Cooldown Counter</value>
+    <value lang="pt-pt">Cooldown Counter</value>
+    <value lang="zh-cn">冷却时间计时(CD)</value>
+    <value lang="ru-ru">Cooldown Counter</value>
+  </string>
+
+  <string id="STATETAG_ENABLE">
+    <value lang="en-us">HP/Mana value</value>
+    <value lang="pt-pt">Valor HP/Mana</value>
+    <value lang="zh-cn">生命/魔法数值</value>
+    <value lang="ru-ru">HP/Mana(значение)</value>
+  </string>
+
+  <string id="STATETAG_HERO">
+    <value lang="en-us">Show for hero</value>
+    <value lang="pt-pt">Ativar para herói</value>
+    <value lang="zh-cn">对英雄显示</value>
+    <value lang="ru-ru">Показать у геров</value>
+  </string>
+
+  <string id="STATETAG_NONHERO">
+    <value lang="en-us">Show for units</value>
+    <value lang="pt-pt">Ativar para unidade</value>
+    <value lang="zh-cn">对单位显示</value>
+    <value lang="ru-ru">  и у крипов</value>
+  </string>
+
+  <string id="CAMERA_ENABLE">
+    <value lang="en-us">Allow mouse scroll camera</value>
+    <value lang="pt-pt">Permitir rolagem do mouse para câmera</value>
+    <value lang="zh-cn">允许滚轮拉伸镜头</value>
+    <value lang="ru-ru">Изменять дальность камеры с помощью мыши</value>
+  </string>
+
+  <string id="CAMERA_HOTKEYZOOMOUT">
+    <value lang="en-us">Zoom-out Hotkey:</value>
+    <value lang="pt-pt">Zoom-afastar Hotkey:</value>
+    <value lang="zh-cn">镜头拉远热键:</value>
+    <value lang="ru-ru">Hotkey [Отдалить]:</value>
+  </string>
+
+  <string id="CAMERA_HOTKEYZOOMIN">
+    <value lang="en-us">Zoom-in Hotkey:</value>
+    <value lang="pt-pt">Zoom-ampliar Hotkey:</value>
+    <value lang="zh-cn">镜头拉近热键:</value>
+    <value lang="ru-ru">Hotkey [Приблизить]:</value>
+  </string>
+
+  <string id="CAMERA_HOTKEYRESETCAMERA">
+    <value lang="en-us">Reset Camera Hotkey:</value>
+    <value lang="pt-pt">Resetar câmera Hotkey:</value>
+    <value lang="zh-cn">重置镜头热键:</value>
+    <value lang="ru-ru">Hotkey для сброса камеры:</value>
+  </string>
+
+  <string id="MISC_CATEGORYNAME">
+    <value lang="en-us">Misc</value>
+    <value lang="pt-pt">Misc</value>
+    <value lang="zh-cn">杂项</value>
+    <value lang="ru-ru">Разное</value>
+  </string>
+
+  <string id="MISC_MENUSHOWBUTTON">
+    <value lang="en-us">Show Menu Button</value>
+    <value lang="pt-pt">Show Menu Button</value>
+    <value lang="zh-cn">显示菜单按钮</value>
+    <value lang="ru-ru">Show Menu Button</value>
+  </string>
+
+  <string id="MISC_MENUHOTKEYBUTTON">
+    <value lang="en-us">Menu Hotkey:</value>
+    <value lang="pt-pt">Menu Hotkey:</value>
+    <value lang="zh-cn">菜单热键:</value>
+    <value lang="ru-ru">Меню Hotkey:</value>
+  </string>
+
+  <string id="MISC_LOCKMOUSEHOTKEYBUTTON">
+    <value lang="en-us">Lock Mouse Hotkey:</value>
+    <value lang="pt-pt">Travar Mouse Hotkey:</value>
+    <value lang="zh-cn">窗口锁定鼠标热键:</value>
+    <value lang="ru-ru">Захват hotkey мыши:</value>
+  </string>
+
+  <string id="ENABLESWITCHWINDOWED">
+    <value lang="en-us">Alt + Enter Switch Fullscreen / Window</value>
+    <value lang="pt-pt">Alt + Enter Trocar Tela Cheia / Janela</value>
+    <value lang="zh-cn">Alt + Enter切换全屏/窗口模式</value>
+    <value lang="ru-ru">Alt + Enter - Полный экран/оконный режим</value>
+  </string>
+
+  <string id="ENABLEFORCERATIO">
+    <value lang="en-us">Force Window 4:3 Ratio</value>
+    <value lang="pt-pt">Forçar Proporção da Janela 4:3</value>
+    <value lang="zh-cn">强制窗口4:3纵横比</value>
+    <value lang="ru-ru">Принудительно экран 4:3</value>
+  </string>
+
+  <string id="KEYREPEAT_ENABLE">
+    <value lang="en-us">Hotkey Auto Repeat</value>
+    <value lang="pt-pt">Hotkey Auto Repetir</value>
+    <value lang="zh-cn">热键自动连发</value>
+    <value lang="ru-ru">Hotkey повторять</value>
+  </string>
+
+  <string id="INVISIBLEDISPLAY">
+    <value lang="en-us">Maphack(2)</value>
+    <value lang="pt-pt">Maphack(2)</value>
+    <value lang="zh-cn">地图显示(2)</value>
+    <value lang="ru-ru">Maphack(2)</value>
+  </string>
+
+  <string id="INVISIBLEDISPLAY_SHOWHERO">
+    <value lang="en-us">Show Hero</value>
+    <value lang="pt-pt">Show Hero</value>
+    <value lang="zh-cn">显示英雄</value>
+    <value lang="ru-ru">Show Hero</value>
+  </string>
+
+  <string id="INVISIBLEDISPLAY_SHOWBOSS">
+    <value lang="en-us">Show Boss</value>
+    <value lang="pt-pt">Show Boss</value>
+    <value lang="zh-cn">显示BOSS</value>
+    <value lang="ru-ru">Show Boss</value>
+  </string>
+
+  <string id="INVISIBLEDISPLAY_SHOWUNIT">
+    <value lang="en-us">Show Unit</value>
+    <value lang="pt-pt">Show Unit</value>
+    <value lang="zh-cn">显示单位</value>
+    <value lang="ru-ru">Show Unit</value>
+  </string>
+
+  <string id="INVISIBLEDISPLAY_SHOWITEM">
+    <value lang="en-us">Show Item</value>
+    <value lang="pt-pt">Show Item</value>
+    <value lang="zh-cn">显示宝物</value>
+    <value lang="ru-ru">Show v</value>
+  </string>
+
+  <string id="INFOPANEL">
+    <value lang="en-us">Info Panel</value>
+    <value lang="pt-pt">Info Panel</value>
+    <value lang="zh-cn">信息面板</value>
+    <value lang="ru-ru">Info Panel</value>
+  </string>
+
+  <string id="INFOPANEL_ENABLE">
+    <value lang="en-us">Enable</value>
+    <value lang="pt-pt">Enable</value>
+    <value lang="zh-cn">开启</value>
+    <value lang="ru-ru">Enable</value>
+  </string>
+
+  <string id="PANEL_NONE">
+    <value lang="en-us">None</value>
+    <value lang="pt-pt">None</value>
+    <value lang="zh-cn">无</value>
+    <value lang="ru-ru">None</value>
+  </string>
+
+  <string id="PANEL_RESOURCE">
+    <value lang="en-us">Resources</value>
+    <value lang="pt-pt">Resources</value>
+    <value lang="zh-cn">资源</value>
+    <value lang="ru-ru">Resources</value>
+  </string>
+
+  <string id="PANEL_UNIT">
+    <value lang="en-us">Units</value>
+    <value lang="pt-pt">Units</value>
+    <value lang="zh-cn">单位</value>
+    <value lang="ru-ru">Units</value>
+  </string>
+
+  <string id="PANEL_HERO">
+    <value lang="en-us">Hero</value>
+    <value lang="pt-pt">Hero</value>
+    <value lang="zh-cn">英雄</value>
+    <value lang="ru-ru">Hero</value>
+  </string>
+
+  <string id="PANEL_APM">
+    <value lang="en-us">APM</value>
+    <value lang="pt-pt">APM</value>
+    <value lang="zh-cn">APM</value>
+    <value lang="ru-ru">APM</value>
+  </string>
+
+  <string id="PANEL_PRODUCTION">
+    <value lang="en-us">Production</value>
+    <value lang="pt-pt">Production</value>
+    <value lang="zh-cn">生产队列</value>
+    <value lang="ru-ru">Production</value>
+  </string>
+
+  <string id="PANEL_ARMY">
+    <value lang="en-us">Army</value>
+    <value lang="pt-pt">Army</value>
+    <value lang="zh-cn">军队</value>
+    <value lang="ru-ru">Army</value>
+  </string>
+
+  <string id="PANEL_APM_CURRENT">
+    <value lang="en-us">Current</value>
+    <value lang="pt-pt">Current</value>
+    <value lang="zh-cn">当前</value>
+    <value lang="ru-ru">Current</value>
+  </string>
+
+  <string id="PANEL_APM_AVERAGE">
+    <value lang="en-us">Average</value>
+    <value lang="pt-pt">Average</value>
+    <value lang="zh-cn">平均</value>
+    <value lang="ru-ru">Average</value>
+  </string>
+
+  <string id="PANEL_DOTA">
+    <value lang="en-us">Dota</value>
+    <value lang="pt-pt">Dota</value>
+    <value lang="zh-cn">Dota</value>
+    <value lang="ru-ru">Dota</value>
+  </string>
+
+  <string id="PANEL_DOTA_CREEP">
+    <value lang="en-us">Creep</value>
+    <value lang="pt-pt">Creep</value>
+    <value lang="zh-cn">补刀</value>
+    <value lang="ru-ru">Creep</value>
+  </string>
+
+  <string id="PANEL_TEAM">
+    <value lang="en-us">Team</value>
+    <value lang="pt-pt">Team</value>
+    <value lang="zh-cn">队伍</value>
+    <value lang="ru-ru">Team</value>
+  </string>
+
+  <string id="PANEL_RADAR">
+    <value lang="en-us">Radar</value>
+    <value lang="pt-pt">Radar</value>
+    <value lang="zh-cn">雷达</value>
+    <value lang="ru-ru">Radar</value>
+  </string>
+
+  <string id="OBSERVER">
+    <value lang="en-us">Observer</value>
+    <value lang="pt-pt">Observer</value>
+    <value lang="zh-cn">观察者</value>
+    <value lang="ru-ru">Observer</value>
+  </string>
+
+  <string id="OBSERVER_SHOWRESOURCE">
+    <value lang="en-us">Show Player Resources</value>
+    <value lang="pt-pt">Show Player Resources</value>
+    <value lang="zh-cn">显示玩家资源</value>
+    <value lang="ru-ru">Show Player Resources</value>
+  </string>
+
+  <string id="KEYCODE_MOUSELEFT">
+    <value lang="en-us">LButton</value>
+    <value lang="pt-pt">LButton</value>
+    <value lang="zh-cn">左键</value>
+    <value lang="ru-ru">LButton</value>
+  </string>
+
+  <string id="KEYCODE_MOUSERIGHT">
+    <value lang="en-us">RButton</value>
+    <value lang="pt-pt">RButton</value>
+    <value lang="zh-cn">右键</value>
+    <value lang="ru-ru">RButton</value>
+  </string>
+
+  <string id="KEYCODE_MOUSEMIDDLE">
+    <value lang="en-us">MidButton</value>
+    <value lang="pt-pt">MidButton</value>
+    <value lang="zh-cn">中键</value>
+    <value lang="ru-ru">MidButton</value>
+  </string>
+
+  <string id="KEYCODE_MOUSEX1">
+    <value lang="en-us">Mouse X1</value>
+    <value lang="pt-pt">Mouse X1</value>
+    <value lang="zh-cn">特殊1</value>
+    <value lang="ru-ru">Mouse X1</value>
+  </string>
+
+  <string id="KEYCODE_MOUSEX2">
+    <value lang="en-us">Mouse X2</value>
+    <value lang="pt-pt">Mouse X2</value>
+    <value lang="zh-cn">特殊2</value>
+    <value lang="ru-ru">Mouse X2</value>
+  </string>
+
+  <string id="KEYCODE_WHEELDOWN">
+    <value lang="en-us">Wheel Down</value>
+    <value lang="pt-pt">Wheel Down</value>
+    <value lang="zh-cn">滚轮向下</value>
+    <value lang="ru-ru">Wheel Down</value>
+  </string>
+
+  <string id="KEYCODE_WHEELUP">
+    <value lang="en-us">Wheel Up</value>
+    <value lang="pt-pt">Wheel Up</value>
+    <value lang="zh-cn">滚轮向上</value>
+    <value lang="ru-ru">Wheel Up</value>
+  </string>
+
+  <string id="LOGIN_LOGGING">
+    <value lang="en-us">Logging in...</value>
+    <value lang="pt-pt">Efetuando login...</value>
+    <value lang="zh-cn">登录中...</value>
+    <value lang="ru-ru">Вход...</value>
+  </string>
+
+  <string id="UPDATE_TITLE">
+    <value lang="en-us">DreamDota Update Download</value>
+    <value lang="pt-pt">DreamDota Baixar Atualização</value>
+    <value lang="zh-cn">DreamDota新版本下载</value>
+    <value lang="ru-ru">Скачать DreamDota обновление</value>
+  </string>
+
+  <string id="LOGIN_REMEMBER_PASSWORD">
+    <value lang="en-us">Remember Password</value>
+    <value lang="pt-pt">Lembrar Senha</value>
+    <value lang="zh-cn">记住密码</value>
+    <value lang="ru-ru">Запомнить пароль</value>
+  </string>
+
+  <string id="LOGIN_AUTO_LOGIN">
+    <value lang="en-us">Auto Login</value>
+    <value lang="pt-pt">Auto Logar</value>
+    <value lang="zh-cn">自动登录</value>
+    <value lang="ru-ru">Авто вход</value>
+  </string>
+
+  <string id="PURCHASE_AND_TOP_UP">
+    <value lang="en-us">Purchase and Top up</value>
+    <value lang="pt-pt">Comprar e Ativar</value>
+    <value lang="zh-cn">购买和充值</value>
+    <value lang="ru-ru">Купить и пополнить</value>
+  </string>
+
+  <string id="HELP">
+    <value lang="en-us">Help</value>
+    <value lang="pt-pt">Ajuda</value>
+    <value lang="zh-cn">帮助</value>
+    <value lang="ru-ru">Помощь</value>
+  </string>
+  
+  <!-- translate -->
+  <string id="AUTO_INJECT">
+    <value lang="en-us">Auto Inject</value>
+    <value lang="pt-pt">Auto Inject</value>
+    <value lang="zh-cn">自动注入</value>
+    <value lang="ru-ru">Auto Inject</value>
+  </string>
+
+  <string id="REQUIRE_ADMIN">
+    <value lang="en-us">Auto inject has been disabled because you don't have administrator privilege. If you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="pt-pt">Auto inject has been disabled because you don't have administrator privilege. If you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="zh-cn">因为无法获取管理员权限，自动注入已经被禁用。如果你在使用Windows Vista或者7，请用右键点击DreamAuth.exe然后选择用管理员权限运行。</value>
+    <value lang="ru-ru">Auto inject has been disabled because you don't have administrator privilege. If you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+  </string>
+  
+  <string id="SUCCESS">
+    <value lang="en-us">Success.</value>
+    <value lang="pt-pt">Success.</value>
+    <value lang="zh-cn">成功。</value>
+    <value lang="ru-ru">Success</value>
+  </string>
+
+  <string id="FAILURE">
+    <value lang="en-us">Failure.</value>
+    <value lang="pt-pt">Failure.</value>
+    <value lang="zh-cn">失败。</value>
+    <value lang="ru-ru">Failure.</value>
+  </string>
+
+  <string id="COMPLETED">
+    <value lang="en-us">Completed.</value>
+    <value lang="pt-pt">Completed.</value>
+    <value lang="zh-cn">完成。</value>
+    <value lang="ru-ru">Completed.</value>
+  </string>
+
+  <string id="PREPARING_INJECTION">
+    <value lang="en-us">Preparing injection...</value>
+    <value lang="pt-pt">Preparing injection...</value>
+    <value lang="zh-cn">正在准备注入...</value>
+    <value lang="ru-ru">Preparing injection...</value>
+  </string>
+
+  <string id="TRANSMITTING_DATA">
+    <value lang="en-us">Transmitting data...</value>
+    <value lang="pt-pt">Transmitting data...</value>
+    <value lang="zh-cn">正在传输数据...</value>
+    <value lang="ru-ru">Transmitting data...</value>
+  </string>
+
+  <string id="MULTI_INSTANCE">
+    <value lang="en-us">There is already a DreamAuth instance running.</value>
+    <value lang="pt-pt">There is already a DreamAuth instance running.</value>
+    <value lang="zh-cn">已经有一个DreamAuth的实例在运行了。</value>
+    <value lang="ru-ru">There is already a DreamAuth instance running.</value>
+  </string>
+
+  <string id="SAFE_MODE">
+    <value lang="en-us">Safe Mode</value>
+    <value lang="pt-pt">Safe Mode</value>
+    <value lang="zh-cn">安全模式</value>
+    <value lang="ru-ru">Safe Mode</value>
+  </string>
+</strings>

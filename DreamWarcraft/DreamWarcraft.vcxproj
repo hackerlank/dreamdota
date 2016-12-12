@@ -1,0 +1,1013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DreamDota|Win32">
+      <Configuration>Debug DreamDota</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DreamWar3|Win32">
+      <Configuration>Debug DreamWar3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug GLeague|Win32">
+      <Configuration>Debug GLeague</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DreamDota Beta|Win32">
+      <Configuration>DreamDota Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public Release DreamDota|Win32">
+      <Configuration>Public Release DreamDota</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public Release DreamWar3|Win32">
+      <Configuration>Public Release DreamWar3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public Release FreePlugin|Win32">
+      <Configuration>Public Release FreePlugin</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public Release GLeague|Win32">
+      <Configuration>Public Release GLeague</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public ReleaseD DreamDota|Win32">
+      <Configuration>Public ReleaseD DreamDota</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DreamDota|Win32">
+      <Configuration>Release DreamDota</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DreamWar3|Win32">
+      <Configuration>Release DreamWar3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public Release|Win32">
+      <Configuration>Public Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB06ACA6-0D5F-4F6C-B832-A9FE58B3E65A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DreamWarcraft</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamWar3|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamDota|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GLeague|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamWar3|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamWar3|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamDota|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamDota|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DreamDota Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release GLeague|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release FreePlugin|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public ReleaseD DreamDota|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamWar3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamDota|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug GLeague|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamWar3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamWar3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamDota|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamDota|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DreamDota Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public Release GLeague|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public Release FreePlugin|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public ReleaseD DreamDota|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release Public|Win32'">
+    <Import Project="..\DreamWarcraft - General.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamWar3|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamDota|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GLeague|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamWar3|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamWar3|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamDota|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamDota|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DreamDota Beta|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release GLeague|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public Release FreePlugin|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public ReleaseD DreamDota|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <CustomBuildStep>
+      <Inputs>$(SolutionDir)Strings.xml;$(ProjectDir)Offsets.def;%(Inputs)</Inputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamWar3|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMWAR3;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DreamDota|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMDOTA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug GLeague|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_GLEAGUE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_VMP;_SERVERSTRING;WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamWar3|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMWAR3;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamWar3|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_VMP;_SERVERSTRING;WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMWAR3;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DreamDota|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMDOTA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public Release DreamDota|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_VMP;_SERVERSTRING;WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMDOTA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DreamDota Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_BETA;_VMP;_SERVERSTRING;WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMDOTA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public Release GLeague|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_VMP;_SERVERSTRING;WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_GLEAGUE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public Release FreePlugin|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_VMP;WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_FREEPLUGIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public ReleaseD DreamDota|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_VMP;_SERVERSTRING;WIN32;NDEBUG;_WINDOWS;_USRDLL;DREAMWARCRAFT_EXPORTS;_DREAMDOTA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;version.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>$(ProjectDir)module.def</ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Blizzard.j.def" />
+    <None Include="Common.ai.def" />
+    <None Include="Common.j.def" />
+    <None Include="JassLuaNatives.h.inc" />
+    <None Include="JassLuaNatives.impl.inc" />
+    <None Include="JassLuaNatives.reg.inc" />
+    <None Include="JassLuaNativesData.h.inc" />
+    <None Include="JassNatives.prototype.inc" />
+    <None Include="JassNativesBridge.inc" />
+    <None Include="JassNativesImpl.inc" />
+    <None Include="JassNativesWrapper.h.inc" />
+    <None Include="JassNativesWrapper.impl.inc" />
+    <None Include="native_offsets_6374.inc" />
+    <None Include="native_offsets_6378.inc" />
+    <None Include="native_offsets_6384.inc" />
+    <None Include="native_offsets_6387.inc" />
+    <None Include="native_offsets_6397.inc" />
+    <None Include="native_offsets_6401.inc" />
+    <None Include="Offsets.def" />
+    <None Include="post_build.cmd" />
+    <None Include="pre_build.cmd" />
+    <None Include="ReadMe.txt" />
+    <None Include="RSA_public_key.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DreamAuth2\Message.h" />
+    <ClInclude Include="..\DreamAuth2\SharedMemory.h" />
+    <ClInclude Include="..\DreamAuth2\StringManager.h" />
+    <ClInclude Include="Ability.h" />
+    <ClInclude Include="AbilityTest.h" />
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="APM.h" />
+    <ClInclude Include="AttackRangeDisplay.h" />
+    <ClInclude Include="AuthConnection.h" />
+    <ClInclude Include="Bar.h" />
+    <ClInclude Include="Benchmark.h" />
+    <ClInclude Include="BinaryDumper.h" />
+    <ClInclude Include="Blocking.h" />
+    <ClInclude Include="CameraToEnemyHero.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="CheckBox.h" />
+    <ClInclude Include="GameLog.h" />
+    <ClInclude Include="InvisibleDisplay.h" />
+    <ClInclude Include="JassNativeHook.h" />
+    <ClInclude Include="LuaExport.h" />
+    <ClInclude Include="LuaHelper.h" />
+    <ClInclude Include="L_Unit.h" />
+    <ClInclude Include="CommandButtonTest.h" />
+    <ClInclude Include="CommandThrough.h" />
+    <ClInclude Include="DebugPanel.h" />
+    <ClInclude Include="DropDownList.h" />
+    <ClInclude Include="FastDropUnitFromTransport.h" />
+    <ClInclude Include="FastPullToBase.h" />
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="GLeagueDota.h" />
+    <ClInclude Include="HideModule.h" />
+    <ClInclude Include="HotkeyButton.h" />
+    <ClInclude Include="InfoPanelPullDown.h" />
+    <ClInclude Include="InfoPanelPanel.h" />
+    <ClInclude Include="InfoPanelRow.h" />
+    <ClInclude Include="InformationPanel.h" />
+    <ClInclude Include="Invoker.h" />
+    <ClInclude Include="IUIObject.h" />
+    <ClInclude Include="JassStructs.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="Language.h" />
+    <ClInclude Include="Latency.h" />
+    <ClInclude Include="MinimapPingEnemyHero.h" />
+    <ClInclude Include="MinimapRadar.h" />
+    <ClInclude Include="Missile.h" />
+    <ClInclude Include="MissileManager.h" />
+    <ClInclude Include="MultiIcon.h" />
+    <ClInclude Include="OptAttack.h" />
+    <ClInclude Include="OptionMenu.h" />
+    <ClInclude Include="overdate.h" />
+    <ClInclude Include="RaceIcon.h" />
+    <ClInclude Include="ReplayMode.h" />
+    <ClInclude Include="RTTIHelper.h" />
+    <ClInclude Include="RuneNotify.h" />
+    <ClInclude Include="ScorePanel.h" />
+    <ClInclude Include="ShowCooldown.h" />
+    <ClInclude Include="ShowLatency.h" />
+    <ClInclude Include="SlotHotkey.h" />
+    <ClInclude Include="SlotHotkeyButton.h" />
+    <ClInclude Include="SmartDeny.h" />
+    <ClInclude Include="StatePanel.h" />
+    <ClInclude Include="SVN_info.h" />
+    <ClInclude Include="SystemTools.h" />
+    <ClInclude Include="Table.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="ToolTip.h" />
+    <ClInclude Include="UISimpleCheckBox.h" />
+    <ClInclude Include="DirectionMove.h" />
+    <ClInclude Include="Formation.h" />
+    <ClInclude Include="FunctionTemplate.h" />
+    <ClInclude Include="ControlGroup.h" />
+    <ClInclude Include="GameEventObserver.h" />
+    <ClInclude Include="HeroBar.h" />
+    <ClInclude Include="KeyRepeat.h" />
+    <ClInclude Include="LastHit.h" />
+    <ClInclude Include="PreselectUIBind.h" />
+    <ClInclude Include="MapHack.h" />
+    <ClInclude Include="LayoutFrame.h" />
+    <ClInclude Include="BaseStructs.h" />
+    <ClInclude Include="ObjectHookManager.h" />
+    <ClInclude Include="ObjectPool.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="QuickDropItem.h" />
+    <ClInclude Include="RCString.h" />
+    <ClInclude Include="RefreshManager.h" />
+    <ClInclude Include="SimpleButton.h" />
+    <ClInclude Include="SimpleException.h" />
+    <ClInclude Include="SimpleFontString.h" />
+    <ClInclude Include="SimpleFrame.h" />
+    <ClInclude Include="SimpleRegion.h" />
+    <ClInclude Include="SimpleStatusBar.h" />
+    <ClInclude Include="SimpleTexture.h" />
+    <ClInclude Include="Skin.h" />
+    <ClInclude Include="StatBar.h" />
+    <ClInclude Include="StringRep.h" />
+    <ClInclude Include="StringStructs.h" />
+    <ClInclude Include="StructHelper.h" />
+    <ClInclude Include="TextFrame.h" />
+    <ClInclude Include="TextTagManagerStructs.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="UILayoutFrame.h" />
+    <ClInclude Include="UIObject.h" />
+    <ClInclude Include="UISimpleButton.h" />
+    <ClInclude Include="UISimpleFrame.h" />
+    <ClInclude Include="UISimpleFontString.h" />
+    <ClInclude Include="UISimpleRegion.h" />
+    <ClInclude Include="UISimpleStatusBar.h" />
+    <ClInclude Include="UISimpleTexture.h" />
+    <ClInclude Include="UIStatBar.h" />
+    <ClInclude Include="UIStructs.h" />
+    <ClInclude Include="UITest.h" />
+    <ClInclude Include="UnitStateIcon.h" />
+    <ClInclude Include="UnitStateTag.h" />
+    <ClInclude Include="UnitTip.h" />
+    <ClInclude Include="UnitWalker.h" />
+    <ClInclude Include="Version.h" />
+    <ClInclude Include="SVN_info_raw.h" />
+    <ClInclude Include="War3ClassWrapper.h" />
+    <ClInclude Include="War3Window.h" />
+    <ClInclude Include="CustomCamera.h" />
+    <ClInclude Include="CustomDataObject.h" />
+    <ClInclude Include="DamageDisplay.h" />
+    <ClInclude Include="DreamDotaMain.h" />
+    <ClInclude Include="DreamScript.h" />
+    <ClInclude Include="DreamWar3Main.h" />
+    <ClInclude Include="DynamicHotkey.h" />
+    <ClInclude Include="EnemyAlert.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventData.h" />
+    <ClInclude Include="EventDispatcher.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameEvent.h" />
+    <ClInclude Include="GameStructs.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="Hook.h" />
+    <ClInclude Include="ImprovedAutoCast.h" />
+    <ClInclude Include="Foundation.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="JassTrigger.h" />
+    <ClInclude Include="jass_constants.h" />
+    <ClInclude Include="jass_natives.h" />
+    <ClInclude Include="Jass.h" />
+    <ClInclude Include="jass_types.h" />
+    <ClInclude Include="KeyCode.h" />
+    <ClInclude Include="ModuleTest.h" />
+    <ClInclude Include="MPQ.h" />
+    <ClInclude Include="native_offsets_6374.h" />
+    <ClInclude Include="native_offsets_6378.h" />
+    <ClInclude Include="native_offsets_6384.h" />
+    <ClInclude Include="native_offsets_6387.h" />
+    <ClInclude Include="native_offsets_6397.h" />
+    <ClInclude Include="native_offsets_6401.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="PortedJassNatives.h" />
+    <ClInclude Include="Profile.h" />
+    <ClInclude Include="ScriptNatives.h" />
+    <ClInclude Include="ScriptProcess.h" />
+    <ClInclude Include="ScriptTimer.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Stochastic.h" />
+    <ClInclude Include="Storm.h" />
+    <ClInclude Include="Surrounding.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextTagManager.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="TriggerEventFilter.h" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitEvent.h" />
+    <ClInclude Include="UnitGroup.h" />
+    <ClInclude Include="WindowResizer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DreamAuth2\Message.cpp" />
+    <ClCompile Include="..\DreamAuth2\OutputDebug.cpp" />
+    <ClCompile Include="..\DreamAuth2\SharedMemory.cpp" />
+    <ClCompile Include="..\DreamAuth2\StringManager.cpp" />
+    <ClCompile Include="Ability.cpp" />
+    <ClCompile Include="AbilityTest.cpp" />
+    <ClCompile Include="APM.cpp" />
+    <ClCompile Include="AttackRangeDisplay.cpp" />
+    <ClCompile Include="AuthConnection.cpp" />
+    <ClCompile Include="Bar.cpp" />
+    <ClCompile Include="Blocking.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CameraToEnemyHero.cpp" />
+    <ClCompile Include="CheckBox.cpp" />
+    <ClCompile Include="CommandButtonTest.cpp" />
+    <ClCompile Include="CommandThrough.cpp" />
+    <ClCompile Include="DebugPanel.cpp" />
+    <ClCompile Include="DropDownList.cpp" />
+    <ClCompile Include="FastDropUnitFromTransport.cpp" />
+    <ClCompile Include="FastPullToBase.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="GameLog.cpp" />
+    <ClCompile Include="GLeagueDota.cpp" />
+    <ClCompile Include="HotkeyButton.cpp" />
+    <ClCompile Include="InfoPanelPullDown.cpp" />
+    <ClCompile Include="InfoPanelPanel.cpp" />
+    <ClCompile Include="InfoPanelRow.cpp" />
+    <ClCompile Include="InformationPanel.cpp" />
+    <ClCompile Include="InvisibleDisplay.cpp" />
+    <ClCompile Include="Invoker.cpp" />
+    <ClCompile Include="IUIObject.cpp" />
+    <ClCompile Include="KeyCode.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="Language.cpp" />
+    <ClCompile Include="Latency.cpp" />
+    <ClCompile Include="L_Unit.cpp" />
+    <ClCompile Include="MinimapPingEnemyHero.cpp" />
+    <ClCompile Include="Missile.cpp" />
+    <ClCompile Include="MissileManager.cpp" />
+    <ClCompile Include="MultiIcon.cpp" />
+    <ClCompile Include="OptAttack.cpp" />
+    <ClCompile Include="OptionMenu.cpp" />
+    <ClCompile Include="RaceIcon.cpp" />
+    <ClCompile Include="ReplayMode.cpp" />
+    <ClCompile Include="RuneNotify.cpp" />
+    <ClCompile Include="ScorePanel.cpp" />
+    <ClCompile Include="ShowCooldown.cpp" />
+    <ClCompile Include="ShowLatency.cpp" />
+    <ClCompile Include="SlotHotkey.cpp" />
+    <ClCompile Include="SlotHotkeyButton.cpp" />
+    <ClCompile Include="SmartDeny.cpp" />
+    <ClCompile Include="StatePanel.cpp" />
+    <ClCompile Include="SystemTools.cpp" />
+    <ClCompile Include="Table.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="ToolTip.cpp" />
+    <ClCompile Include="UISimpleCheckBox.cpp" />
+    <ClCompile Include="ControlGroup.cpp" />
+    <ClCompile Include="DirectionMove.cpp" />
+    <ClCompile Include="Formation.cpp" />
+    <ClCompile Include="GameEventObserver.cpp" />
+    <ClCompile Include="HeroBar.cpp" />
+    <ClCompile Include="KeyRepeat.cpp" />
+    <ClCompile Include="LastHit.cpp" />
+    <ClCompile Include="PreselectUIBind.cpp" />
+    <ClCompile Include="MapHack.cpp" />
+    <ClCompile Include="ObjectHookManager.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="QuickDropItem.cpp" />
+    <ClCompile Include="RCString.cpp" />
+    <ClCompile Include="RefreshManager.cpp" />
+    <ClCompile Include="SimpleButton.cpp" />
+    <ClCompile Include="SimpleFontString.cpp" />
+    <ClCompile Include="SimpleFrame.cpp" />
+    <ClCompile Include="SimpleStatusBar.cpp" />
+    <ClCompile Include="SimpleTexture.cpp" />
+    <ClCompile Include="Skin.cpp" />
+    <ClCompile Include="StatBar.cpp" />
+    <ClCompile Include="StringRep.cpp" />
+    <ClCompile Include="TextFrame.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="UILayoutFrame.cpp" />
+    <ClCompile Include="UIObject.cpp" />
+    <ClCompile Include="UISimpleButton.cpp" />
+    <ClCompile Include="UISimpleFrame.cpp" />
+    <ClCompile Include="UISimpleFontString.cpp" />
+    <ClCompile Include="UISimpleRegion.cpp" />
+    <ClCompile Include="UISimpleStatusBar.cpp" />
+    <ClCompile Include="UISimpleTexture.cpp" />
+    <ClCompile Include="UIStatBar.cpp" />
+    <ClCompile Include="UITest.cpp" />
+    <ClCompile Include="UnitStateIcon.cpp" />
+    <ClCompile Include="UnitStateTag.cpp" />
+    <ClCompile Include="UnitTip.cpp" />
+    <ClCompile Include="UnitWalker.cpp" />
+    <ClCompile Include="War3ClassWrapper.cpp" />
+    <ClCompile Include="War3Window.cpp" />
+    <ClCompile Include="CustomCamera.cpp" />
+    <ClCompile Include="DamageDisplay.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug DreamWar3|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug DreamDota|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug GLeague|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DreamWar3|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DreamDota|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug GLeague|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Public Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release DreamWar3|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Public Release DreamWar3|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release DreamDota|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Public Release DreamDota|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='DreamDota Beta|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Public Release GLeague|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Public Release FreePlugin|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Public ReleaseD DreamDota|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DreamWar3|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release DreamWar3|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DreamDota|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release DreamDota|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DreamDota Beta|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release GLeague|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release FreePlugin|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public ReleaseD DreamDota|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DreamDotaMain.cpp" />
+    <ClCompile Include="DreamScript.cpp" />
+    <ClCompile Include="DreamWar3Main.cpp" />
+    <ClCompile Include="DreamWarcraft.cpp" />
+    <ClCompile Include="DynamicHotkey.cpp" />
+    <ClCompile Include="EnemyAlert.cpp" />
+    <ClCompile Include="EventDispatcher.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameEvent.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="Hook.cpp" />
+    <ClCompile Include="ImprovedAutoCast.cpp" />
+    <ClCompile Include="Foundation.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Jass.cpp" />
+    <ClCompile Include="JassTrigger.cpp" />
+    <ClCompile Include="ModuleTest.cpp" />
+    <ClCompile Include="MPQ.cpp" />
+    <ClCompile Include="Offsets.cpp" />
+    <ClCompile Include="Packet.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="PortedJassNatives.cpp" />
+    <ClCompile Include="Profile.cpp" />
+    <ClCompile Include="ScriptNatives.cpp" />
+    <ClCompile Include="ScriptProcess.cpp" />
+    <ClCompile Include="ScriptTimer.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DreamWar3|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DreamDota|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug GLeague|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DreamWar3|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release DreamWar3|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DreamDota|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release DreamDota|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DreamDota Beta|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release GLeague|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public Release FreePlugin|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public ReleaseD DreamDota|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Stochastic.cpp" />
+    <ClCompile Include="Storm.cpp" />
+    <ClCompile Include="Surrounding.cpp" />
+    <ClCompile Include="TextTagManager.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="TriggerEventFilter.cpp" />
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="UnitEvent.cpp" />
+    <ClCompile Include="UnitGroup.cpp" />
+    <ClCompile Include="WindowResizer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

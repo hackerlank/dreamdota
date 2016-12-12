@@ -1,0 +1,106 @@
+#ifndef API_JASS_TYPES_
+#define API_JASS_TYPES_
+
+#include <Windows.h>
+#include "StringStructs.h"
+
+typedef int integer;
+typedef DWORD real;
+typedef DWORD string; //参数时是RCString* 返回值时是DWORD
+typedef DWORD code;
+//typedef bool boolean;
+
+typedef DWORD handle;
+typedef handle agent;
+typedef agent event;
+typedef agent player;
+typedef agent widget;
+typedef widget unit;
+typedef widget destructable;
+typedef widget item;
+typedef agent ability;
+typedef ability buff;
+typedef agent force;
+typedef agent group;
+typedef agent trigger;
+typedef agent triggercondition;
+typedef handle triggeraction;
+typedef agent timer;
+typedef agent location;
+typedef agent region;
+typedef agent rect;
+typedef agent boolexpr;
+typedef agent sound;
+typedef boolexpr conditionfunc;
+typedef boolexpr filterfunc;
+typedef handle unitpool;
+typedef handle itempool;
+typedef handle race;
+typedef handle alliancetype;
+typedef handle racepreference;
+typedef handle gamestate;
+typedef gamestate igamestate;
+typedef gamestate fgamestate;
+typedef handle playerstate;
+typedef handle playerscore;
+typedef handle playergameresult;
+typedef handle unitstate;
+typedef handle aidifficulty;
+typedef handle eventid;
+typedef eventid gameevent;
+typedef eventid playerevent;
+typedef eventid playerunitevent;
+typedef eventid unitevent;
+typedef eventid limitop;
+typedef eventid widgetevent;
+typedef eventid dialogevent;
+typedef handle unittype;
+typedef handle gamespeed;
+typedef handle gamedifficulty;
+typedef handle gametype;
+typedef handle mapflag;
+typedef handle mapvisibility;
+typedef handle mapsetting;
+typedef handle mapdensity;
+typedef handle mapcontrol;
+typedef handle playerslotstate;
+typedef handle volumegroup;
+typedef handle camerafield;
+typedef handle camerasetup;
+typedef handle playercolor;
+typedef handle placement;
+typedef handle startlocprio;
+typedef handle raritycontrol;
+typedef handle blendmode;
+typedef handle texmapflags;
+typedef agent effect;
+typedef handle effecttype;
+typedef handle weathereffect;
+typedef handle terraindeformation;
+typedef handle fogstate;
+typedef agent fogmodifier;
+typedef agent dialog;
+typedef agent button;
+typedef agent quest;
+typedef agent questitem;
+typedef agent defeatcondition;
+typedef agent timerdialog;
+typedef agent leaderboard;
+typedef agent multiboard;
+typedef agent multiboarditem;
+typedef agent trackable;
+typedef agent gamecache;
+typedef handle version;
+typedef handle itemtype;
+typedef handle texttag;
+typedef handle attacktype;
+typedef handle damagetype;
+typedef handle weapontype;
+typedef handle soundtype;
+typedef handle lightning;
+typedef handle pathingtype;
+typedef handle image;
+typedef handle ubersplat;
+typedef agent hashtable;
+
+#endif // API_JASS_TYPES_

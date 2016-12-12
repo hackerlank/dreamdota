@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 此文件中的字符串不被加密 -->
+<strings>
+  <string id="ACCOUNT">
+    <value lang="en-us">Account</value>
+    <value lang="pt-pt">Conta</value>
+    <value lang="zh-cn">账号</value>
+    <value lang="ru-ru">Аккаунт</value>
+  </string>
+
+  <string id="PASSWORD">
+    <value lang="en-us">Password</value>
+    <value lang="pt-pt">Senha</value>
+    <value lang="zh-cn">密码</value>
+    <value lang="ru-ru">Пароль</value>
+  </string>
+
+  <string id="LOGIN">
+    <value lang="en-us">Login</value>
+    <value lang="pt-pt">Logar</value>
+    <value lang="zh-cn">登录</value>
+    <value lang="ru-ru">Логин</value>
+  </string>
+
+  <string id="CLOSE">
+    <value lang="en-us">Close</value>
+    <value lang="pt-pt">Fechar</value>
+    <value lang="zh-cn">关闭</value>
+    <value lang="ru-ru">Закрыть</value>
+  </string>
+
+  <string id="LOGIN_SUCCESS">
+    <value lang="en-us">Login successfully.</value>
+    <value lang="pt-pt">Conectado com sucesso.</value>
+    <value lang="zh-cn">登录成功。</value>
+    <value lang="ru-ru">Вы успешно вошли</value>
+  </string>
+
+  <string id="LOGGED_IN">
+    <value lang="en-us">Logged in</value>
+    <value lang="pt-pt">Logado</value>
+    <value lang="zh-cn">已登录</value>
+    <value lang="ru-ru">Войти</value>
+  </string>
+
+  <string id="CLEANING_UP">
+    <value lang="en-us">Exiting...</value>
+    <value lang="pt-pt">Saindo...</value>
+    <value lang="zh-cn">清理中...</value>
+    <value lang="ru-ru">Выход...</value>
+  </string>
+
+  <string id="LOGIN_FAILED_CODE">
+    <value lang="en-us">Sorry, login failed. Error code: 0x%08X</value>
+    <value lang="pt-pt">Desculpe, login falhou. Código de erro: 0x%08X</value>
+    <value lang="zh-cn">对不起，登录失败，错误码: 0x%08X</value>
+    <value lang="ru-ru">Извините, ошибка входа. Код ошибки: 0x%08X</value>
+  </string>
+
+  <string id="LOGIN_RESULT_CLIENT_VERSION_EXPIRED">
+    <value lang="en-us">There is a new version of DreamDota availiable, please update.</value>
+    <value lang="pt-pt">Há uma nova versão do DreamDota disponível, por favor atualize.</value>
+    <value lang="zh-cn">更新版本的DreamDota已经发布，请先升级后再登录。</value>
+    <value lang="ru-ru">Вышла новая версия Дримдоты, пожалуйста обновитесь.</value>
+  </string>
+
+  <string id="LOGIN_RESULT_MULTI">
+    <value lang="en-us">Login attempt failed. The same account can only be used in one computer at a time.</value>
+    <value lang="pt-pt">Tentativa de login falhou. A mesma conta só pode ser usada em um computador de cada vez.</value>
+    <value lang="zh-cn">登录失败，帐号已被使用，请不要多点登录。</value>
+    <value lang="ru-ru">Не получилось войти. Ваш аккаунт используется(возможно использовать только на 1 компе).</value>
+  </string>
+
+  <string id="LOGIN_RESULT_BANNED">
+    <value lang="en-us">Login attempt failed. This account was discontinued.</value>
+    <value lang="pt-pt">Tentativa de login falhou. Esta conta foi suspensa.</value>
+    <value lang="zh-cn">登录失败，帐号已被停用。</value>
+    <value lang="ru-ru">Не получилось войти. Этот аккаунт отключился.</value>
+  </string>
+
+  <string id="LOGIN_RESULT_EXPIRED">
+    <value lang="en-us">Login attempt failed. This account was expired.</value>
+    <value lang="pt-pt">Tentativa de login falhou. Esta conta expirou.</value>
+    <value lang="zh-cn">登录失败，帐号已经过期。</value>
+    <value lang="ru-ru">Не получилось войти. Этот аккаунт закончился.</value>
+  </string>
+
+  <string id="LOGIN_RESULT_AUTH_FAILED">
+    <value lang="en-us">Login attempt failed. Please check your account and password.</value>
+    <value lang="pt-pt">Tentativa de login falhou. Por favor, verifique sua conta e senha.</value>
+    <value lang="zh-cn">登录失败，用户名或密码不匹配。</value>
+    <value lang="ru-ru">Не получилось войти. Проверьте правильность ввода логина и пароля.</value>
+  </string>
+
+  <string id="CONNECTION_TIMEOUT">
+    <value lang="en-us">Sorry, connection timeout.</value>
+    <value lang="pt-pt">Desculpe, tempo limite de conexão.</value>
+    <value lang="zh-cn">对不起，连接超时，请重新登录。</value>
+    <value lang="ru-ru">Извините, вышло время связи</value>
+  </string>
+
+  <string id="CONNECTION_FAILED">
+    <value lang="en-us">Sorry, connection lost. Please login again.</value>
+    <value lang="pt-pt">Desculpe, conexão perdida. Faça o login novamente.</value>
+    <value lang="zh-cn">对不起，与服务器的连接断开，请重新登录。</value>
+    <value lang="ru-ru">Извините, связь завершена. Пожалуйста зайдите снова.</value>
+  </string>
+
+  <string id="HANDSHAKE_FAILED">
+    <value lang="en-us">Sorry, initialize connection failed. Update to latest version may solve this problem.</value>
+    <value lang="pt-pt">Desculpe, conexão inicial falhou. Atualizar para a versão mais recente pode resolver este problema.</value>
+    <value lang="zh-cn">对不起，初始化连接失败。请查看客户端是否为最新版本。</value>
+    <value lang="ru-ru">Извините, не получилось запустить. Обновитесь до последней версии что бы исправить эту проблему</value>
+  </string>
+
+  <string id="CLOSE_WARNING">
+    <value lang="en-us">If you close the window, all features will be disabled. Continue?</value>
+    <value lang="pt-pt">Se você fechar a janela, todos os recursos serão desativados. Continuar?</value>
+    <value lang="zh-cn">如果关闭窗口，所有的功能都将无法使用，确认要关闭吗？</value>
+    <value lang="ru-ru">Если вы закроете это окно, все функции деактивируются.</value>
+  </string>
+
+  <string id="LOGIN_WELCOME">
+    <value lang="en-us">Welcome! Your account will expire in %u days.</value>
+    <value lang="pt-pt">Bem-vindo! Sua conta irá expirar em %u dias.</value>
+    <value lang="zh-cn">欢迎使用，您的账户将在 %u 天后过期。</value>
+    <value lang="ru-ru">Добро пожаловать! Ваш аккаунт истечет через %u дней.</value>
+  </string>
+
+  <string id="WELCOME_UNLIMITED">
+    <value lang="en-us">Welcome! Currently your account is not limited by the expire date.</value>
+    <value lang="pt-pt">Bem-vindo! Atualmente sua conta não é limitada pela data de expiração.</value>
+    <value lang="zh-cn">欢迎使用！目前您的账户不被过期时间限制。</value>
+    <value lang="ru-ru">Добро пожаловать! Ваш аккаунт ещё работает(не истекло ограниченное время).</value>
+  </string>
+
+  <string id="FATAL_ERROR_CODE">
+    <value lang="en-us">Sorry, a fatal error occurred, please login again. Error code: 0x%08X</value>
+    <value lang="pt-pt">Desculpe, um erro fatal ocorreu, faça o login novamente. Código de erro: 0x%08X</value>
+    <value lang="zh-cn">对不起，发生了一个无法恢复的错误，请尝试重新登录。错误码: 0x%08X</value>
+    <value lang="ru-ru">Извините, произошла неисправимая ошибка, пожалуйста войдите снова. Код ошибки: 0x%08X</value>
+  </string>
+
+  <string id="MODULE_VERSION_MISMATCH">
+    <value lang="en-us">Sorry, module version mismatch. Please download the newest version of DreamDota and overwrite current files.</value>
+    <value lang="pt-pt">Desculpe, incompatibilidade de versão do módulo. Faça o download da versão mais recente do DreamDota e substitua os arquivos atuais.</value>
+    <value lang="zh-cn">对不起，模块版本不一致，请下载最新版本的DreamDota并覆盖文件。</value>
+    <value lang="ru-ru">Извините, несовподают версии модулей. Пожалуйста скачайте самую новую версию Дримдоты и замените текущие файлы.</value>
+  </string>
+
+  <string id="GAME_DISCONNECT">
+    <value lang="en-us">Sorry, game module disconnected unexpectedly.</value>
+    <value lang="pt-pt">Desculpe, módulo do jogo desconectado inesperadamente.</value>
+    <value lang="zh-cn">对不起，游戏模块意外断开。</value>
+    <value lang="ru-ru">Извините, игровой модуль отсоединяется</value>
+  </string>
+
+  <string id="UPDATE_LOADING">
+    <value lang="en-us">Receiving Update Information...</value>
+    <value lang="pt-pt">Recebendo Informações de Atualização...</value>
+    <value lang="zh-cn">升级信息获取中...</value>
+    <value lang="ru-ru">Получение инфы об обновлении...</value>
+  </string>
+
+  <string id="LOGGING_IN">
+    <value lang="en-us">Logging in...</value>
+    <value lang="pt-pt">Efetuando login...</value>
+    <value lang="zh-cn">登录中...</value>
+    <value lang="ru-ru">Вход...</value>
+  </string>
+
+  <string id="UPDATE_TITLE">
+    <value lang="en-us">DreamDota Update Download</value>
+    <value lang="pt-pt">DreamDota Baixar Atualização</value>
+    <value lang="zh-cn">DreamDota新版本下载</value>
+    <value lang="ru-ru">Скачать DreamDota обновление</value>
+  </string>
+
+  <string id="REMEMBER_PASSWORD">
+    <value lang="en-us">Remember Password</value>
+    <value lang="pt-pt">Lembrar Senha</value>
+    <value lang="zh-cn">记住密码</value>
+    <value lang="ru-ru">Запомнить пароль</value>
+  </string>
+
+  <string id="AUTO_LOGIN">
+    <value lang="en-us">Auto Login</value>
+    <value lang="pt-pt">Auto Logar</value>
+    <value lang="zh-cn">自动登录</value>
+    <value lang="ru-ru">Авто вход</value>
+  </string>
+
+  <string id="PURCHASE_AND_TOP_UP">
+    <value lang="en-us">Purchase and Top up</value>
+    <value lang="pt-pt">Comprar e Ativar</value>
+    <value lang="zh-cn">购买和充值</value>
+    <value lang="ru-ru">Купить и пополнить</value>
+  </string>
+
+  <string id="HELP">
+    <value lang="en-us">Help</value>
+    <value lang="pt-pt">Ajuda</value>
+    <value lang="zh-cn">帮助</value>
+    <value lang="ru-ru">Помощь</value>
+  </string>
+  
+  <!-- translate -->
+  <string id="AUTO_INJECT">
+    <value lang="en-us">Auto Inject</value>
+    <value lang="pt-pt">Auto Inject</value>
+    <value lang="zh-cn">自动注入</value>
+    <value lang="ru-ru">Auto Inject</value>
+  </string>
+
+  <string id="REQUIRE_ADMIN">
+    <value lang="en-us">Auto inject has been disabled because you don't have administrator privilege. \nIf you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="pt-pt">Auto inject has been disabled because you don't have administrator privilege. \nIf you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="zh-cn">因为无法获取管理员权限，自动注入已经被禁用。\n如果你在使用Windows Vista或者7，请用右键点击DreamAuth.exe然后选择用管理员权限运行。</value>
+    <value lang="ru-ru">Auto inject has been disabled because you don't have administrator privilege. \nIf you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+  </string>
+
+  <string id="SETTINGS">
+    <value lang="en-us">Settings...</value>
+    <value lang="pt-pt">Settings...</value>
+    <value lang="zh-cn">设置...</value>
+    <value lang="ru-ru">Settings...</value>
+  </string>
+
+  <string id="INITIALIZING">
+    <value lang="en-us">Initializing...</value>
+    <value lang="pt-pt">Initializing...</value>
+    <value lang="zh-cn">初始化中...</value>
+    <value lang="ru-ru">Initializing...</value>
+  </string>
+
+  <string id="VERSION">
+    <value lang="en-us">Version</value>
+    <value lang="pt-pt">Version</value>
+    <value lang="zh-cn">版本</value>
+    <value lang="ru-ru">Version</value>
+  </string>
+
+  <string id="INJECT">
+    <value lang="en-us">Inject</value>
+    <value lang="pt-pt">Inject</value>
+    <value lang="zh-cn">注入</value>
+    <value lang="ru-ru">Inject</value>
+  </string>
+
+  <string id="REMOTE_INJECT_AUTO">
+    <value lang="en-us">Remote Inject(Automatic)</value>
+    <value lang="pt-pt">Remote Inject(Automatic)</value>
+    <value lang="zh-cn">远程注入(自动)</value>
+    <value lang="ru-ru">Remote Inject(Automatic)</value>
+  </string>
+
+  <string id="REMOTE_INJECT_MANUAL">
+    <value lang="en-us">Remote Inject(Manual)</value>
+    <value lang="pt-pt">Remote Inject(Manual)</value>
+    <value lang="zh-cn">远程注入(手动)</value>
+    <value lang="ru-ru">Remote Inject(Manual)</value>
+  </string>
+
+  <string id="PASSIVE_INJECT">
+    <value lang="en-us">Passive Inject</value>
+    <value lang="pt-pt">Passive Inject</value>
+    <value lang="zh-cn">被动注入</value>
+    <value lang="ru-ru">Passive Inject</value>
+  </string>
+
+  <string id="LOGOUT">
+    <value lang="en-us">Logout</value>
+    <value lang="pt-pt">Logout</value>
+    <value lang="zh-cn">注销</value>
+    <value lang="ru-ru">Logout</value>
+  </string>
+
+  <string id="LOGGING_OUT">
+    <value lang="en-us">Logging out...</value>
+    <value lang="pt-pt">Logging out...</value>
+    <value lang="zh-cn">注销中...</value>
+    <value lang="ru-ru">Logging out...</value>
+  </string>
+
+  <string id="GAME_DETECTED">
+    <value lang="en-us">Game detected(%u), injecting...</value>
+    <value lang="pt-pt">Game detected(%u), injecting...</value>
+    <value lang="zh-cn">检测到游戏(%u), 注入中...</value>
+    <value lang="ru-ru">Game detected(%u), injecting...</value>
+  </string>
+
+  <string id="GAME_EXITED">
+    <value lang="en-us">Game exited.</value>
+    <value lang="pt-pt">Game exited.</value>
+    <value lang="zh-cn">游戏已经退出。</value>
+    <value lang="ru-ru">Game exited.</value>
+  </string>
+
+  <string id="AUTO_UPDATE">
+    <value lang="en-us">Automatic Update</value>
+    <value lang="pt-pt">Automatic Update</value>
+    <value lang="zh-cn">自动更新</value>
+    <value lang="ru-ru">Automatic Update</value>
+  </string>
+
+  <string id="UPDATE_LOADING">
+    <value lang="en-us">Receiving Update Information...</value>
+    <value lang="pt-pt">Recebendo Informações de Atualização...</value>
+    <value lang="zh-cn">升级信息获取中...</value>
+    <value lang="ru-ru">Получение инфы об обновлении...</value>
+  </string>
+
+  <string id="COPY_LINK">
+    <value lang="en-us">Copy Download Link</value>
+    <value lang="pt-pt">Copiar Link de Download</value>
+    <value lang="zh-cn">复制下载链接</value>
+    <value lang="ru-ru">Скопировать ссылку</value>
+  </string>
+
+  <string id="OPEN_LINK">
+    <value lang="en-us">Open Download Link</value>
+    <value lang="pt-pt">Abrir Link de Download</value>
+    <value lang="zh-cn">打开下载链接</value>
+    <value lang="ru-ru">Открыть ссылку</value>
+  </string> 
+
+  <string id="UPDATE_TITLE">
+    <value lang="en-us">There is a new version of DreamDota availiable, please update.</value>
+    <value lang="pt-pt">Há uma nova versão do DreamDota disponível, por favor atualize.</value>
+    <value lang="zh-cn">更新版本的DreamDota已经发布，请先升级后再登录。</value>
+    <value lang="ru-ru">Вышла новая версия Дримдоты, пожалуйста обновитесь.</value>
+  </string>
+
+  <string id="DOWNLOAD_UPDATE_DATA_FAILED">
+    <value lang="en-us">Sorry, failed to download update data.</value>
+    <value lang="pt-pt">Sorry, failed to download update data.</value>
+    <value lang="zh-cn">对不起，下载更新数据失败。</value>
+    <value lang="ru-ru">Sorry, failed to download update data.</value>
+  </string>
+
+  <string id="CONNECTING">
+    <value lang="en-us">Connecting...</value>
+    <value lang="pt-pt">Connecting...</value>
+    <value lang="zh-cn">连接中...</value>
+    <value lang="ru-ru">Connecting...</value>
+  </string>
+
+  <string id="UPDATE_VERSION">
+    <value lang="en-us">Local version %u, newest version %u. (Release: %s).</value>
+    <value lang="pt-pt">Local version %u, newest version %u. (Release: %s).</value>
+    <value lang="zh-cn">本地版本 %04u, 最新版本 %04u。 (发布日期: %s)</value>
+    <value lang="ru-ru">Local version %u, newest version %u. (Release: %s).</value>
+  </string>
+
+  <string id="DOWNLOAD_PROGRESS">
+    <value lang="en-us">Downloading...(%.2f%% completed, average speed is %.2f KB/s)</value>
+    <value lang="pt-pt">Downloading...(%.2f%% completed, average speed is %.2f KB/s)</value>
+    <value lang="zh-cn">下载中...(%.2f%% 已完成, 平均速度 %.2f KB/s)</value>
+    <value lang="ru-ru">Downloading...(%.2f%% completed, average speed is %.2f KB/s)</value>
+  </string>
+
+  <string id="DREAMDOTA_UPDATE">
+    <value lang="en-us">DreamDota Update</value>
+    <value lang="pt-pt">DreamDota Update</value>
+    <value lang="zh-cn">DreamDota 升级</value>
+    <value lang="ru-ru">DreamDota Update</value>
+  </string>
+
+  <string id="EXTRACTING">
+    <value lang="en-us">Extracting...</value>
+    <value lang="pt-pt">Extracting...</value>
+    <value lang="zh-cn">解压缩中...</value>
+    <value lang="ru-ru">Extracting...</value>
+  </string>
+
+  <string id="DOWNLOAD_FAILED">
+    <value lang="en-us">Sorry, download update package failed.</value>
+    <value lang="pt-pt">Sorry, download update package failed.</value>
+    <value lang="zh-cn">对不起，下载更新包失败。</value>
+    <value lang="ru-ru">Sorry, download update package failed.</value>
+  </string>
+
+  <string id="EXTRACT_PACKAGE_FAILED">
+    <value lang="en-us">Sorry, extract update package failed.</value>
+    <value lang="pt-pt">Sorry, extract update package failed.</value>
+    <value lang="zh-cn">对不起，解压缩更新包失败。</value>
+    <value lang="ru-ru">Sorry, extract update package failed.</value>
+  </string>
+
+  <string id="CANCEL_UPDATE_WARNING">
+    <value lang="en-us">Are you sure to stop update process?</value>
+    <value lang="pt-pt">Are you sure to stop update process?</value>
+    <value lang="zh-cn">确定要取消更新操作吗?。</value>
+    <value lang="ru-ru">Are you sure to stop update process?</value>
+  </string>
+
+  <string id="SERVICES">
+    <value lang="en-us">Services</value>
+    <value lang="pt-pt">Services</value>
+    <value lang="zh-cn">服务</value>
+    <value lang="ru-ru">Services</value>
+  </string>
+
+  <string id="ROAMING_PROFILE">
+    <value lang="en-us">Roaming Profile</value>
+    <value lang="pt-pt">Roaming Profile</value>
+    <value lang="zh-cn">配置文件漫游</value>
+    <value lang="ru-ru">Roaming Profile</value>
+  </string>
+
+  <string id="LOADING">
+    <value lang="en-us">Loading...</value>
+    <value lang="pt-pt">Loading...</value>
+    <value lang="zh-cn">装载中...</value>
+    <value lang="ru-ru">Loading...</value>    
+  </string>
+
+  <string id="N_RP_FOUND">
+    <value lang="en-us">%d roaming profiles found。(%d KB used, %d KB space available)</value>
+    <value lang="pt-pt">%d roaming profiles found。(%d KB used, %d KB space available)</value>
+    <value lang="zh-cn">找到%d个漫游的配置文件。(已用空间 %d KB，可用空间 %d KB)</value>
+    <value lang="ru-ru">%d roaming profiles found。(%d KB used, %d KB space available)</value>
+  </string>
+
+  <string id="NO_RP_FOUND">
+    <value lang="en-us">No roaming profiles found.(%d KB space available)</value>
+    <value lang="pt-pt">No roaming profiles found.(%d KB space available)</value>
+    <value lang="zh-cn">没找到漫游的配置文件。(可用空间 %d KB)</value>
+    <value lang="ru-ru">No roaming profiles found.(%d KB space available)</value>
+  </string>
+
+  <string id="SERVICE_UNAVAILABLE">
+    <value lang="en-us">Sorry, sevice is unavailable now.</value>
+    <value lang="pt-pt">Sorry, sevice is unavailable now.</value>
+    <value lang="zh-cn">对不起，服务不可用。</value>
+    <value lang="ru-ru">Sorry, sevice is unavailable now.</value>
+  </string>
+
+  <string id="UPLOAD_LOCAL_PROFILE">
+    <value lang="en-us">Upload Local Profile</value>
+    <value lang="pt-pt">Upload Local Profile</value>
+    <value lang="zh-cn">上传本地配置文件</value>
+    <value lang="ru-ru">Upload Local Profile</value>
+  </string>
+
+  <string id="APPLY_SELECTED_PROFILE">
+    <value lang="en-us">Apply Selected Profile</value>
+    <value lang="pt-pt">Apply Selected Profile</value>
+    <value lang="zh-cn">使用选中的配置文件</value>
+    <value lang="ru-ru">Apply Selected Profile</value>
+  </string>
+
+  <string id="DELETE_SELECTED_PROFILE">
+    <value lang="en-us">Delete Selected Profile</value>
+    <value lang="pt-pt">Delete Selected Profile</value>
+    <value lang="zh-cn">删除选中的配置文件</value>
+    <value lang="ru-ru">Delete Selected Profile</value>
+  </string>
+
+  <string id="ARE_YOU_SURE">
+    <value lang="en-us">Are you sure?</value>
+    <value lang="pt-pt">Are you sure?</value>
+    <value lang="zh-cn">你确定要执行该操作吗？</value>
+    <value lang="ru-ru">Are you sure?</value>
+  </string>
+
+  <string id="OVERWRITE_PROFILE">
+    <value lang="en-us">Overwrite the profile with same name?</value>
+    <value lang="pt-pt">Overwrite the profile with same name?</value>
+    <value lang="zh-cn">覆盖同名配置文件吗？</value>
+    <value lang="ru-ru">Overwrite the profile with same name?</value>
+  </string>
+
+  <string id="UPLOADING_PROFILE">
+    <value lang="en-us">Uploading profile...</value>
+    <value lang="pt-pt">Uploading profile...</value>
+    <value lang="zh-cn">上传配置文件中...</value>
+    <value lang="ru-ru">Uploading profile...</value>
+  </string>
+
+  <string id="PROFILE_NAME">
+    <value lang="en-us">Profile Name:</value>
+    <value lang="pt-pt">Profile Name:</value>
+    <value lang="zh-cn">配置名:</value>
+    <value lang="ru-ru">Profile Name:</value>
+  </string>
+
+  <string id="UPLOAD">
+    <value lang="en-us">Upload</value>
+    <value lang="pt-pt">Upload</value>
+    <value lang="zh-cn">上传</value>
+    <value lang="ru-ru">Upload</value>
+  </string>
+
+  <string id="RESULT_NO_QUOTA">
+    <value lang="en-us">Sorry, not enough quota available to process your request.</value>
+    <value lang="pt-pt">Sorry, not enough quota available to process your request.</value>
+    <value lang="zh-cn">对不起，没有足够的剩余空间来完成您的请求。</value>
+    <value lang="ru-ru">Sorry, not enough quota available to process your request.</value>
+  </string>
+
+  <string id="RESULT_UPLOAD_FAILED">
+    <value lang="en-us">Sorry, failed to upload file.</value>
+    <value lang="pt-pt">Sorry, failed to upload file.</value>
+    <value lang="zh-cn">对不起，上传文件失败。</value>
+    <value lang="ru-ru">Sorry, failed to upload file.</value>
+  </string>
+
+  <string id="RESULT_FILE_NOT_FOUND">
+    <value lang="en-us">Sorry, the file you want to delete does not exist.</value>
+    <value lang="pt-pt">Sorry, the file you want to delete does not exist.</value>
+    <value lang="zh-cn">对不起，要删除的文件不存在。</value>
+    <value lang="ru-ru">Sorry, the file you want to delete does not exist.</value>
+  </string>
+
+  <string id="WAR3_NOTE">
+    <value lang="en-us">Please note that currently DreamDota 3 supports DirectX mode only. If you have -opengl in your war3 startup argument, please remove it.</value>
+    <value lang="pt-pt">Please note that currently DreamDota 3 supports DirectX mode only. If you have -opengl in your war3 startup argument, please remove it.</value>
+    <value lang="zh-cn">请注意目前DreamDota 3只支持DirectX模式， 如果你的War3启动参数中有-opengl, 请删除。</value>
+    <value lang="ru-ru">Please note that currently DreamDota 3 supports DirectX mode only. If you have -opengl in your war3 startup argument, please remove it.</value>
+  </string>
+
+</strings>

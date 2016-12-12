@@ -1,0 +1,3 @@
+LIBRARY	DreamWarcraft
+EXPORTS
+	GetRevision				@1	NONAME

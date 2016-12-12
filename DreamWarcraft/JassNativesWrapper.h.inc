@@ -1,0 +1,1291 @@
+#define JASS_WRAPPER_SetDefendPlayer JASS_NATIVE_SetDefendPlayer
+#define JASS_WRAPPER_SetHeroesTakeItems JASS_NATIVE_SetHeroesTakeItems
+#define JASS_WRAPPER_SetUnitsFlee JASS_NATIVE_SetUnitsFlee
+#define JASS_WRAPPER_SetGroupsFlee JASS_NATIVE_SetGroupsFlee
+#define JASS_WRAPPER_SetSlowChopping JASS_NATIVE_SetSlowChopping
+#define JASS_WRAPPER_SetSmartArtillery JASS_NATIVE_SetSmartArtillery
+#define JASS_WRAPPER_SetWatchMegaTargets JASS_NATIVE_SetWatchMegaTargets
+#define JASS_WRAPPER_SetReplacementCount JASS_NATIVE_SetReplacementCount
+#define JASS_WRAPPER_PurchaseZeppelin JASS_NATIVE_PurchaseZeppelin
+#define JASS_WRAPPER_MeleeDifficulty JASS_NATIVE_MeleeDifficulty
+#define JASS_WRAPPER_DebugBreak JASS_NATIVE_DebugBreak
+#define JASS_WRAPPER_SetCineFilterTexMapFlags JASS_NATIVE_SetCineFilterTexMapFlags
+void JASS_WRAPPER_SetCineFilterStartUV(float, float, float, float);
+void JASS_WRAPPER_SetCineFilterEndUV(float, float, float, float);
+#define JASS_WRAPPER_SetCineFilterStartColor JASS_NATIVE_SetCineFilterStartColor
+#define JASS_WRAPPER_SetCineFilterEndColor JASS_NATIVE_SetCineFilterEndColor
+void JASS_WRAPPER_SetCineFilterDuration(float);
+#define JASS_WRAPPER_DisplayCineFilter JASS_NATIVE_DisplayCineFilter
+#define JASS_WRAPPER_IsCineFilterDisplayed JASS_NATIVE_IsCineFilterDisplayed
+void JASS_WRAPPER_SetCinematicScene(int, DWORD, const char*, const char*, float, float);
+#define JASS_WRAPPER_EndCinematicScene JASS_NATIVE_EndCinematicScene
+#define JASS_WRAPPER_ForceCinematicSubtitles JASS_NATIVE_ForceCinematicSubtitles
+void JASS_WRAPPER_NewSoundEnvironment(const char*);
+DWORD JASS_WRAPPER_CreateSound(const char*, bool, bool, bool, int, int, const char*);
+DWORD JASS_WRAPPER_CreateSoundFilenameWithLabel(const char*, bool, bool, bool, int, int, const char*);
+DWORD JASS_WRAPPER_CreateSoundFromLabel(const char*, bool, bool, bool, int, int);
+DWORD JASS_WRAPPER_CreateMIDISound(const char*, int, int);
+void JASS_WRAPPER_SetStackedSound(const char*, float, float);
+void JASS_WRAPPER_ClearStackedSound(const char*, float, float);
+void JASS_WRAPPER_SetStackedSoundRect(const char*, DWORD);
+void JASS_WRAPPER_ClearStackedSoundRect(const char*, DWORD);
+void JASS_WRAPPER_SetSoundParamsFromLabel(DWORD, const char*);
+#define JASS_WRAPPER_SetSoundChannel JASS_NATIVE_SetSoundChannel
+#define JASS_WRAPPER_SetSoundVolume JASS_NATIVE_SetSoundVolume
+void JASS_WRAPPER_SetSoundPitch(DWORD, float);
+#define JASS_WRAPPER_SetSoundPlayPosition JASS_NATIVE_SetSoundPlayPosition
+void JASS_WRAPPER_SetSoundDistances(DWORD, float, float);
+void JASS_WRAPPER_SetSoundDistanceCutoff(DWORD, float);
+void JASS_WRAPPER_SetSoundConeAngles(DWORD, float, float, int);
+void JASS_WRAPPER_SetSoundConeOrientation(DWORD, float, float, float);
+void JASS_WRAPPER_SetSoundPosition(DWORD, float, float, float);
+void JASS_WRAPPER_SetSoundVelocity(DWORD, float, float, float);
+#define JASS_WRAPPER_AttachSoundToUnit JASS_NATIVE_AttachSoundToUnit
+#define JASS_WRAPPER_StartSound JASS_NATIVE_StartSound
+#define JASS_WRAPPER_StopSound JASS_NATIVE_StopSound
+#define JASS_WRAPPER_KillSoundWhenDone JASS_NATIVE_KillSoundWhenDone
+void JASS_WRAPPER_SetMapMusic(const char*, bool, int);
+#define JASS_WRAPPER_ClearMapMusic JASS_NATIVE_ClearMapMusic
+void JASS_WRAPPER_PlayMusic(const char*);
+void JASS_WRAPPER_PlayMusicEx(const char*, int, int);
+#define JASS_WRAPPER_StopMusic JASS_NATIVE_StopMusic
+#define JASS_WRAPPER_ResumeMusic JASS_NATIVE_ResumeMusic
+void JASS_WRAPPER_PlayThematicMusic(const char*);
+void JASS_WRAPPER_PlayThematicMusicEx(const char*, int);
+#define JASS_WRAPPER_EndThematicMusic JASS_NATIVE_EndThematicMusic
+#define JASS_WRAPPER_SetMusicVolume JASS_NATIVE_SetMusicVolume
+#define JASS_WRAPPER_SetMusicPlayPosition JASS_NATIVE_SetMusicPlayPosition
+#define JASS_WRAPPER_SetThematicMusicPlayPosition JASS_NATIVE_SetThematicMusicPlayPosition
+#define JASS_WRAPPER_SetSoundDuration JASS_NATIVE_SetSoundDuration
+#define JASS_WRAPPER_GetSoundDuration JASS_NATIVE_GetSoundDuration
+int JASS_WRAPPER_GetSoundFileDuration(const char*);
+void JASS_WRAPPER_VolumeGroupSetVolume(DWORD, float);
+#define JASS_WRAPPER_VolumeGroupReset JASS_NATIVE_VolumeGroupReset
+#define JASS_WRAPPER_GetSoundIsPlaying JASS_NATIVE_GetSoundIsPlaying
+#define JASS_WRAPPER_GetSoundIsLoading JASS_NATIVE_GetSoundIsLoading
+void JASS_WRAPPER_RegisterStackedSound(DWORD, bool, float, float);
+void JASS_WRAPPER_UnregisterStackedSound(DWORD, bool, float, float);
+#define JASS_WRAPPER_AddWeatherEffect JASS_NATIVE_AddWeatherEffect
+#define JASS_WRAPPER_RemoveWeatherEffect JASS_NATIVE_RemoveWeatherEffect
+#define JASS_WRAPPER_EnableWeatherEffect JASS_NATIVE_EnableWeatherEffect
+DWORD JASS_WRAPPER_TerrainDeformCrater(float, float, float, float, int, bool);
+DWORD JASS_WRAPPER_TerrainDeformRipple(float, float, float, float, int, int, float, float, float, bool);
+DWORD JASS_WRAPPER_TerrainDeformWave(float, float, float, float, float, float, float, float, int, int);
+DWORD JASS_WRAPPER_TerrainDeformRandom(float, float, float, float, float, int, int);
+#define JASS_WRAPPER_TerrainDeformStop JASS_NATIVE_TerrainDeformStop
+#define JASS_WRAPPER_TerrainDeformStopAll JASS_NATIVE_TerrainDeformStopAll
+#define JASS_WRAPPER_DestroyEffect JASS_NATIVE_DestroyEffect
+DWORD JASS_WRAPPER_AddSpecialEffect(const char*, float, float);
+DWORD JASS_WRAPPER_AddSpecialEffectLoc(const char*, DWORD);
+DWORD JASS_WRAPPER_AddSpecialEffectTarget(const char*, DWORD, const char*);
+DWORD JASS_WRAPPER_AddSpellEffect(const char*, DWORD, float, float);
+DWORD JASS_WRAPPER_AddSpellEffectLoc(const char*, DWORD, DWORD);
+DWORD JASS_WRAPPER_AddSpellEffectById(int, DWORD, float, float);
+#define JASS_WRAPPER_AddSpellEffectByIdLoc JASS_NATIVE_AddSpellEffectByIdLoc
+DWORD JASS_WRAPPER_AddSpellEffectTarget(const char*, DWORD, DWORD, const char*);
+DWORD JASS_WRAPPER_AddSpellEffectTargetById(int, DWORD, DWORD, const char*);
+DWORD JASS_WRAPPER_AddLightning(const char*, bool, float, float, float, float);
+DWORD JASS_WRAPPER_AddLightningEx(const char*, bool, float, float, float, float, float, float);
+#define JASS_WRAPPER_DestroyLightning JASS_NATIVE_DestroyLightning
+float JASS_WRAPPER_GetLightningColorA(DWORD);
+float JASS_WRAPPER_GetLightningColorR(DWORD);
+float JASS_WRAPPER_GetLightningColorG(DWORD);
+float JASS_WRAPPER_GetLightningColorB(DWORD);
+bool JASS_WRAPPER_MoveLightning(DWORD, bool, float, float, float, float);
+bool JASS_WRAPPER_MoveLightningEx(DWORD, bool, float, float, float, float, float, float);
+bool JASS_WRAPPER_SetLightningColor(DWORD, float, float, float, float);
+const char* JASS_WRAPPER_GetAbilityEffect(const char*, DWORD, int);
+const char* JASS_WRAPPER_GetAbilityEffectById(int, DWORD, int);
+const char* JASS_WRAPPER_GetAbilitySound(const char*, DWORD);
+const char* JASS_WRAPPER_GetAbilitySoundById(int, DWORD);
+int JASS_WRAPPER_GetTerrainCliffLevel(float, float);
+#define JASS_WRAPPER_SetWaterBaseColor JASS_NATIVE_SetWaterBaseColor
+#define JASS_WRAPPER_SetWaterDeforms JASS_NATIVE_SetWaterDeforms
+int JASS_WRAPPER_GetTerrainType(float, float);
+int JASS_WRAPPER_GetTerrainVariance(float, float);
+void JASS_WRAPPER_SetTerrainType(float, float, int, int, int, int);
+bool JASS_WRAPPER_IsTerrainPathable(float, float, DWORD);
+void JASS_WRAPPER_SetTerrainPathable(float, float, DWORD, bool);
+DWORD JASS_WRAPPER_CreateImage(const char*, float, float, float, float, float, float, float, float, float, int);
+#define JASS_WRAPPER_DestroyImage JASS_NATIVE_DestroyImage
+#define JASS_WRAPPER_ShowImage JASS_NATIVE_ShowImage
+void JASS_WRAPPER_SetImageConstantHeight(DWORD, bool, float);
+void JASS_WRAPPER_SetImagePosition(DWORD, float, float, float);
+#define JASS_WRAPPER_SetImageColor JASS_NATIVE_SetImageColor
+#define JASS_WRAPPER_SetImageRender JASS_NATIVE_SetImageRender
+#define JASS_WRAPPER_SetImageRenderAlways JASS_NATIVE_SetImageRenderAlways
+#define JASS_WRAPPER_SetImageAboveWater JASS_NATIVE_SetImageAboveWater
+#define JASS_WRAPPER_SetImageType JASS_NATIVE_SetImageType
+DWORD JASS_WRAPPER_CreateUbersplat(float, float, const char*, int, int, int, int, bool, bool);
+#define JASS_WRAPPER_DestroyUbersplat JASS_NATIVE_DestroyUbersplat
+#define JASS_WRAPPER_ResetUbersplat JASS_NATIVE_ResetUbersplat
+#define JASS_WRAPPER_FinishUbersplat JASS_NATIVE_FinishUbersplat
+#define JASS_WRAPPER_ShowUbersplat JASS_NATIVE_ShowUbersplat
+#define JASS_WRAPPER_SetUbersplatRender JASS_NATIVE_SetUbersplatRender
+#define JASS_WRAPPER_SetUbersplatRenderAlways JASS_NATIVE_SetUbersplatRenderAlways
+void JASS_WRAPPER_SetBlight(DWORD, float, float, float, bool);
+void JASS_WRAPPER_SetBlightLoc(DWORD, DWORD, float, bool);
+#define JASS_WRAPPER_SetBlightRect JASS_NATIVE_SetBlightRect
+void JASS_WRAPPER_SetBlightPoint(DWORD, float, float, bool);
+DWORD JASS_WRAPPER_CreateBlightedGoldmine(DWORD, float, float, float);
+bool JASS_WRAPPER_IsPointBlighted(float, float);
+void JASS_WRAPPER_SetDoodadAnimation(float, float, float, int, bool, const char*, bool);
+void JASS_WRAPPER_SetDoodadAnimationRect(DWORD, int, const char*, bool);
+void JASS_WRAPPER_StartMeleeAI(DWORD, const char*);
+void JASS_WRAPPER_StartCampaignAI(DWORD, const char*);
+#define JASS_WRAPPER_CommandAI JASS_NATIVE_CommandAI
+#define JASS_WRAPPER_PauseCompAI JASS_NATIVE_PauseCompAI
+#define JASS_WRAPPER_GetAIDifficulty JASS_NATIVE_GetAIDifficulty
+#define JASS_WRAPPER_RemoveGuardPosition JASS_NATIVE_RemoveGuardPosition
+#define JASS_WRAPPER_RecycleGuardPosition JASS_NATIVE_RecycleGuardPosition
+#define JASS_WRAPPER_RemoveAllGuardPositions JASS_NATIVE_RemoveAllGuardPositions
+void JASS_WRAPPER_ExecuteFunc(const char*);
+void JASS_WRAPPER_Cheat(const char*);
+#define JASS_WRAPPER_IsNoVictoryCheat JASS_NATIVE_IsNoVictoryCheat
+#define JASS_WRAPPER_IsNoDefeatCheat JASS_NATIVE_IsNoDefeatCheat
+void JASS_WRAPPER_Preload(const char*);
+void JASS_WRAPPER_PreloadEnd(float);
+#define JASS_WRAPPER_PreloadStart JASS_NATIVE_PreloadStart
+#define JASS_WRAPPER_PreloadRefresh JASS_NATIVE_PreloadRefresh
+#define JASS_WRAPPER_PreloadEndEx JASS_NATIVE_PreloadEndEx
+#define JASS_WRAPPER_PreloadGenStart JASS_NATIVE_PreloadGenStart
+#define JASS_WRAPPER_PreloadGenClear JASS_NATIVE_PreloadGenClear
+void JASS_WRAPPER_PreloadGenEnd(const char*);
+void JASS_WRAPPER_Preloader(const char*);
+void JASS_WRAPPER_DebugS(const char*);
+void JASS_WRAPPER_DebugFI(const char*, int);
+void JASS_WRAPPER_DebugUnitID(const char*, int);
+void JASS_WRAPPER_DisplayText(int, const char*);
+void JASS_WRAPPER_DisplayTextI(int, const char*, int);
+void JASS_WRAPPER_DisplayTextII(int, const char*, int, int);
+void JASS_WRAPPER_DisplayTextIII(int, const char*, int, int, int);
+#define JASS_WRAPPER_SuicideUnit JASS_NATIVE_SuicideUnit
+#define JASS_WRAPPER_SuicideUnitEx JASS_NATIVE_SuicideUnitEx
+void JASS_WRAPPER_Sleep(float);
+#define JASS_WRAPPER_StartThread JASS_NATIVE_StartThread
+#define JASS_WRAPPER_GetAiPlayer JASS_NATIVE_GetAiPlayer
+#define JASS_WRAPPER_DoAiScriptDebug JASS_NATIVE_DoAiScriptDebug
+#define JASS_WRAPPER_GetHeroId JASS_NATIVE_GetHeroId
+#define JASS_WRAPPER_GetHeroLevelAI JASS_NATIVE_GetHeroLevelAI
+#define JASS_WRAPPER_SetHeroLevels JASS_NATIVE_SetHeroLevels
+#define JASS_WRAPPER_SetNewHeroes JASS_NATIVE_SetNewHeroes
+#define JASS_WRAPPER_GetUnitCount JASS_NATIVE_GetUnitCount
+#define JASS_WRAPPER_GetPlayerUnitTypeCount JASS_NATIVE_GetPlayerUnitTypeCount
+#define JASS_WRAPPER_GetTownUnitCount JASS_NATIVE_GetTownUnitCount
+#define JASS_WRAPPER_GetUnitCountDone JASS_NATIVE_GetUnitCountDone
+#define JASS_WRAPPER_GetUpgradeLevel JASS_NATIVE_GetUpgradeLevel
+#define JASS_WRAPPER_GetUnitGoldCost JASS_NATIVE_GetUnitGoldCost
+#define JASS_WRAPPER_GetUnitWoodCost JASS_NATIVE_GetUnitWoodCost
+#define JASS_WRAPPER_GetUnitBuildTime JASS_NATIVE_GetUnitBuildTime
+#define JASS_WRAPPER_GetUpgradeGoldCost JASS_NATIVE_GetUpgradeGoldCost
+#define JASS_WRAPPER_GetUpgradeWoodCost JASS_NATIVE_GetUpgradeWoodCost
+#define JASS_WRAPPER_GetEnemyPower JASS_NATIVE_GetEnemyPower
+#define JASS_WRAPPER_GetMinesOwned JASS_NATIVE_GetMinesOwned
+#define JASS_WRAPPER_GetGoldOwned JASS_NATIVE_GetGoldOwned
+#define JASS_WRAPPER_TownWithMine JASS_NATIVE_TownWithMine
+#define JASS_WRAPPER_TownHasMine JASS_NATIVE_TownHasMine
+#define JASS_WRAPPER_TownHasHall JASS_NATIVE_TownHasHall
+#define JASS_WRAPPER_GetNextExpansion JASS_NATIVE_GetNextExpansion
+#define JASS_WRAPPER_GetExpansionPeon JASS_NATIVE_GetExpansionPeon
+#define JASS_WRAPPER_GetEnemyExpansion JASS_NATIVE_GetEnemyExpansion
+#define JASS_WRAPPER_SetExpansion JASS_NATIVE_SetExpansion
+#define JASS_WRAPPER_GetBuilding JASS_NATIVE_GetBuilding
+#define JASS_WRAPPER_SetAllianceTarget JASS_NATIVE_SetAllianceTarget
+#define JASS_WRAPPER_GetAllianceTarget JASS_NATIVE_GetAllianceTarget
+#define JASS_WRAPPER_SetProduce JASS_NATIVE_SetProduce
+#define JASS_WRAPPER_MergeUnits JASS_NATIVE_MergeUnits
+#define JASS_WRAPPER_ConvertUnits JASS_NATIVE_ConvertUnits
+#define JASS_WRAPPER_SetUpgrade JASS_NATIVE_SetUpgrade
+#define JASS_WRAPPER_Unsummon JASS_NATIVE_Unsummon
+#define JASS_WRAPPER_ClearHarvestAI JASS_NATIVE_ClearHarvestAI
+#define JASS_WRAPPER_HarvestGold JASS_NATIVE_HarvestGold
+#define JASS_WRAPPER_HarvestWood JASS_NATIVE_HarvestWood
+#define JASS_WRAPPER_StopGathering JASS_NATIVE_StopGathering
+void JASS_WRAPPER_AddGuardPost(int, float, float);
+#define JASS_WRAPPER_FillGuardPosts JASS_NATIVE_FillGuardPosts
+#define JASS_WRAPPER_ReturnGuardPosts JASS_NATIVE_ReturnGuardPosts
+#define JASS_WRAPPER_CreateCaptains JASS_NATIVE_CreateCaptains
+void JASS_WRAPPER_SetCaptainHome(int, float, float);
+#define JASS_WRAPPER_ResetCaptainLocs JASS_NATIVE_ResetCaptainLocs
+void JASS_WRAPPER_ShiftTownSpot(float, float);
+#define JASS_WRAPPER_SetCaptainChanges JASS_NATIVE_SetCaptainChanges
+void JASS_WRAPPER_TeleportCaptain(float, float);
+#define JASS_WRAPPER_ClearCaptainTargets JASS_NATIVE_ClearCaptainTargets
+#define JASS_WRAPPER_CaptainVsUnits JASS_NATIVE_CaptainVsUnits
+#define JASS_WRAPPER_CaptainVsPlayer JASS_NATIVE_CaptainVsPlayer
+void JASS_WRAPPER_CaptainAttack(float, float);
+#define JASS_WRAPPER_GroupTimedLife JASS_NATIVE_GroupTimedLife
+#define JASS_WRAPPER_CaptainGoHome JASS_NATIVE_CaptainGoHome
+#define JASS_WRAPPER_CaptainIsHome JASS_NATIVE_CaptainIsHome
+#define JASS_WRAPPER_CaptainRetreating JASS_NATIVE_CaptainRetreating
+#define JASS_WRAPPER_CaptainIsFull JASS_NATIVE_CaptainIsFull
+#define JASS_WRAPPER_CaptainIsEmpty JASS_NATIVE_CaptainIsEmpty
+#define JASS_WRAPPER_CaptainGroupSize JASS_NATIVE_CaptainGroupSize
+#define JASS_WRAPPER_CaptainReadiness JASS_NATIVE_CaptainReadiness
+#define JASS_WRAPPER_CaptainReadinessHP JASS_NATIVE_CaptainReadinessHP
+#define JASS_WRAPPER_CaptainReadinessMa JASS_NATIVE_CaptainReadinessMa
+#define JASS_WRAPPER_CaptainInCombat JASS_NATIVE_CaptainInCombat
+#define JASS_WRAPPER_TownThreatened JASS_NATIVE_TownThreatened
+#define JASS_WRAPPER_CaptainAtGoal JASS_NATIVE_CaptainAtGoal
+#define JASS_WRAPPER_CreepsOnMap JASS_NATIVE_CreepsOnMap
+#define JASS_WRAPPER_RemoveInjuries JASS_NATIVE_RemoveInjuries
+#define JASS_WRAPPER_RemoveSiege JASS_NATIVE_RemoveSiege
+#define JASS_WRAPPER_IsTowered JASS_NATIVE_IsTowered
+#define JASS_WRAPPER_DisablePathing JASS_NATIVE_DisablePathing
+#define JASS_WRAPPER_SetAmphibious JASS_NATIVE_SetAmphibious
+#define JASS_WRAPPER_InitAssault JASS_NATIVE_InitAssault
+#define JASS_WRAPPER_AddAssault JASS_NATIVE_AddAssault
+#define JASS_WRAPPER_AddDefenders JASS_NATIVE_AddDefenders
+#define JASS_WRAPPER_GetCreepCamp JASS_NATIVE_GetCreepCamp
+#define JASS_WRAPPER_StartGetEnemyBase JASS_NATIVE_StartGetEnemyBase
+#define JASS_WRAPPER_WaitGetEnemyBase JASS_NATIVE_WaitGetEnemyBase
+#define JASS_WRAPPER_GetMegaTarget JASS_NATIVE_GetMegaTarget
+#define JASS_WRAPPER_GetEnemyBase JASS_NATIVE_GetEnemyBase
+#define JASS_WRAPPER_GetExpansionFoe JASS_NATIVE_GetExpansionFoe
+#define JASS_WRAPPER_GetExpansionX JASS_NATIVE_GetExpansionX
+#define JASS_WRAPPER_GetExpansionY JASS_NATIVE_GetExpansionY
+void JASS_WRAPPER_SetStagePoint(float, float);
+#define JASS_WRAPPER_AttackMoveKill JASS_NATIVE_AttackMoveKill
+#define JASS_WRAPPER_AttackMoveXY JASS_NATIVE_AttackMoveXY
+#define JASS_WRAPPER_LoadZepWave JASS_NATIVE_LoadZepWave
+#define JASS_WRAPPER_SuicidePlayer JASS_NATIVE_SuicidePlayer
+#define JASS_WRAPPER_SuicidePlayerUnits JASS_NATIVE_SuicidePlayerUnits
+#define JASS_WRAPPER_UnitAlive JASS_NATIVE_UnitAlive
+#define JASS_WRAPPER_UnitInvis JASS_NATIVE_UnitInvis
+#define JASS_WRAPPER_IgnoredUnits JASS_NATIVE_IgnoredUnits
+#define JASS_WRAPPER_CommandsWaiting JASS_NATIVE_CommandsWaiting
+#define JASS_WRAPPER_GetLastCommand JASS_NATIVE_GetLastCommand
+#define JASS_WRAPPER_GetLastData JASS_NATIVE_GetLastData
+#define JASS_WRAPPER_PopLastCommand JASS_NATIVE_PopLastCommand
+#define JASS_WRAPPER_SetCampaignAI JASS_NATIVE_SetCampaignAI
+#define JASS_WRAPPER_SetMeleeAI JASS_NATIVE_SetMeleeAI
+#define JASS_WRAPPER_SetTargetHeroes JASS_NATIVE_SetTargetHeroes
+#define JASS_WRAPPER_SetHeroesFlee JASS_NATIVE_SetHeroesFlee
+#define JASS_WRAPPER_SetHeroesBuyItems JASS_NATIVE_SetHeroesBuyItems
+#define JASS_WRAPPER_SetIgnoreInjured JASS_NATIVE_SetIgnoreInjured
+#define JASS_WRAPPER_SetPeonsRepair JASS_NATIVE_SetPeonsRepair
+#define JASS_WRAPPER_SetRandomPaths JASS_NATIVE_SetRandomPaths
+#define JASS_WRAPPER_LoadWidgetHandle JASS_NATIVE_LoadWidgetHandle
+#define JASS_WRAPPER_LoadDestructableHandle JASS_NATIVE_LoadDestructableHandle
+#define JASS_WRAPPER_LoadItemHandle JASS_NATIVE_LoadItemHandle
+#define JASS_WRAPPER_LoadUnitHandle JASS_NATIVE_LoadUnitHandle
+#define JASS_WRAPPER_LoadAbilityHandle JASS_NATIVE_LoadAbilityHandle
+#define JASS_WRAPPER_LoadTimerHandle JASS_NATIVE_LoadTimerHandle
+#define JASS_WRAPPER_LoadRegionHandle JASS_NATIVE_LoadRegionHandle
+#define JASS_WRAPPER_LoadTriggerHandle JASS_NATIVE_LoadTriggerHandle
+#define JASS_WRAPPER_LoadTriggerConditionHandle JASS_NATIVE_LoadTriggerConditionHandle
+#define JASS_WRAPPER_LoadTriggerActionHandle JASS_NATIVE_LoadTriggerActionHandle
+#define JASS_WRAPPER_LoadTriggerEventHandle JASS_NATIVE_LoadTriggerEventHandle
+#define JASS_WRAPPER_LoadForceHandle JASS_NATIVE_LoadForceHandle
+#define JASS_WRAPPER_LoadGroupHandle JASS_NATIVE_LoadGroupHandle
+#define JASS_WRAPPER_LoadLocationHandle JASS_NATIVE_LoadLocationHandle
+#define JASS_WRAPPER_LoadRectHandle JASS_NATIVE_LoadRectHandle
+#define JASS_WRAPPER_LoadBooleanExprHandle JASS_NATIVE_LoadBooleanExprHandle
+#define JASS_WRAPPER_LoadSoundHandle JASS_NATIVE_LoadSoundHandle
+#define JASS_WRAPPER_LoadEffectHandle JASS_NATIVE_LoadEffectHandle
+#define JASS_WRAPPER_LoadUnitPoolHandle JASS_NATIVE_LoadUnitPoolHandle
+#define JASS_WRAPPER_LoadItemPoolHandle JASS_NATIVE_LoadItemPoolHandle
+#define JASS_WRAPPER_LoadQuestHandle JASS_NATIVE_LoadQuestHandle
+#define JASS_WRAPPER_LoadQuestItemHandle JASS_NATIVE_LoadQuestItemHandle
+#define JASS_WRAPPER_LoadDefeatConditionHandle JASS_NATIVE_LoadDefeatConditionHandle
+#define JASS_WRAPPER_LoadTimerDialogHandle JASS_NATIVE_LoadTimerDialogHandle
+#define JASS_WRAPPER_LoadLeaderboardHandle JASS_NATIVE_LoadLeaderboardHandle
+#define JASS_WRAPPER_LoadMultiboardHandle JASS_NATIVE_LoadMultiboardHandle
+#define JASS_WRAPPER_LoadMultiboardItemHandle JASS_NATIVE_LoadMultiboardItemHandle
+#define JASS_WRAPPER_LoadTrackableHandle JASS_NATIVE_LoadTrackableHandle
+#define JASS_WRAPPER_LoadDialogHandle JASS_NATIVE_LoadDialogHandle
+#define JASS_WRAPPER_LoadButtonHandle JASS_NATIVE_LoadButtonHandle
+#define JASS_WRAPPER_LoadTextTagHandle JASS_NATIVE_LoadTextTagHandle
+#define JASS_WRAPPER_LoadLightningHandle JASS_NATIVE_LoadLightningHandle
+#define JASS_WRAPPER_LoadImageHandle JASS_NATIVE_LoadImageHandle
+#define JASS_WRAPPER_LoadUbersplatHandle JASS_NATIVE_LoadUbersplatHandle
+#define JASS_WRAPPER_LoadFogStateHandle JASS_NATIVE_LoadFogStateHandle
+#define JASS_WRAPPER_LoadFogModifierHandle JASS_NATIVE_LoadFogModifierHandle
+#define JASS_WRAPPER_LoadHashtableHandle JASS_NATIVE_LoadHashtableHandle
+#define JASS_WRAPPER_HaveSavedInteger JASS_NATIVE_HaveSavedInteger
+#define JASS_WRAPPER_HaveSavedReal JASS_NATIVE_HaveSavedReal
+#define JASS_WRAPPER_HaveSavedBoolean JASS_NATIVE_HaveSavedBoolean
+#define JASS_WRAPPER_HaveSavedString JASS_NATIVE_HaveSavedString
+#define JASS_WRAPPER_HaveSavedHandle JASS_NATIVE_HaveSavedHandle
+#define JASS_WRAPPER_RemoveSavedInteger JASS_NATIVE_RemoveSavedInteger
+#define JASS_WRAPPER_RemoveSavedReal JASS_NATIVE_RemoveSavedReal
+#define JASS_WRAPPER_RemoveSavedBoolean JASS_NATIVE_RemoveSavedBoolean
+#define JASS_WRAPPER_RemoveSavedString JASS_NATIVE_RemoveSavedString
+#define JASS_WRAPPER_RemoveSavedHandle JASS_NATIVE_RemoveSavedHandle
+#define JASS_WRAPPER_FlushParentHashtable JASS_NATIVE_FlushParentHashtable
+#define JASS_WRAPPER_FlushChildHashtable JASS_NATIVE_FlushChildHashtable
+#define JASS_WRAPPER_GetRandomInt JASS_NATIVE_GetRandomInt
+float JASS_WRAPPER_GetRandomReal(float, float);
+#define JASS_WRAPPER_CreateUnitPool JASS_NATIVE_CreateUnitPool
+#define JASS_WRAPPER_DestroyUnitPool JASS_NATIVE_DestroyUnitPool
+void JASS_WRAPPER_UnitPoolAddUnitType(DWORD, int, float);
+#define JASS_WRAPPER_UnitPoolRemoveUnitType JASS_NATIVE_UnitPoolRemoveUnitType
+DWORD JASS_WRAPPER_PlaceRandomUnit(DWORD, DWORD, float, float, float);
+#define JASS_WRAPPER_CreateItemPool JASS_NATIVE_CreateItemPool
+#define JASS_WRAPPER_DestroyItemPool JASS_NATIVE_DestroyItemPool
+void JASS_WRAPPER_ItemPoolAddItemType(DWORD, int, float);
+#define JASS_WRAPPER_ItemPoolRemoveItemType JASS_NATIVE_ItemPoolRemoveItemType
+DWORD JASS_WRAPPER_PlaceRandomItem(DWORD, float, float);
+#define JASS_WRAPPER_ChooseRandomCreep JASS_NATIVE_ChooseRandomCreep
+#define JASS_WRAPPER_ChooseRandomNPBuilding JASS_NATIVE_ChooseRandomNPBuilding
+#define JASS_WRAPPER_ChooseRandomItem JASS_NATIVE_ChooseRandomItem
+#define JASS_WRAPPER_ChooseRandomItemEx JASS_NATIVE_ChooseRandomItemEx
+#define JASS_WRAPPER_SetRandomSeed JASS_NATIVE_SetRandomSeed
+void JASS_WRAPPER_DisplayTextToPlayer(DWORD, float, float, const char*);
+void JASS_WRAPPER_DisplayTimedTextToPlayer(DWORD, float, float, float, const char*);
+void JASS_WRAPPER_DisplayTimedTextFromPlayer(DWORD, float, float, float, const char*);
+#define JASS_WRAPPER_ClearTextMessages JASS_NATIVE_ClearTextMessages
+#define JASS_WRAPPER_EnableUserControl JASS_NATIVE_EnableUserControl
+#define JASS_WRAPPER_EnableUserUI JASS_NATIVE_EnableUserUI
+#define JASS_WRAPPER_DisableRestartMission JASS_NATIVE_DisableRestartMission
+void JASS_WRAPPER_ForceUIKey(const char*);
+#define JASS_WRAPPER_ForceUICancel JASS_NATIVE_ForceUICancel
+#define JASS_WRAPPER_DisplayLoadDialog JASS_NATIVE_DisplayLoadDialog
+void JASS_WRAPPER_SetTerrainFog(float, float, float, float, float);
+void JASS_WRAPPER_SetUnitFog(float, float, float, float, float);
+void JASS_WRAPPER_SetTerrainFogEx(int, float, float, float, float, float, float);
+#define JASS_WRAPPER_ResetTerrainFog JASS_NATIVE_ResetTerrainFog
+void JASS_WRAPPER_SetDayNightModels(const char*, const char*);
+void JASS_WRAPPER_SetSkyModel(const char*);
+#define JASS_WRAPPER_SuspendTimeOfDay JASS_NATIVE_SuspendTimeOfDay
+void JASS_WRAPPER_SetTimeOfDayScale(float);
+float JASS_WRAPPER_GetTimeOfDayScale(void);
+void JASS_WRAPPER_ShowInterface(bool, float);
+#define JASS_WRAPPER_PauseGame JASS_NATIVE_PauseGame
+void JASS_WRAPPER_PingMinimap(float, float, float);
+void JASS_WRAPPER_PingMinimapEx(float, float, float, int, int, int, bool);
+void JASS_WRAPPER_SetIntroShotText(const char*);
+void JASS_WRAPPER_SetIntroShotModel(const char*);
+#define JASS_WRAPPER_EnableOcclusion JASS_NATIVE_EnableOcclusion
+#define JASS_WRAPPER_EnableWorldFogBoundary JASS_NATIVE_EnableWorldFogBoundary
+void JASS_WRAPPER_PlayModelCinematic(const char*);
+void JASS_WRAPPER_PlayCinematic(const char*);
+void JASS_WRAPPER_SetAltMinimapIcon(const char*);
+#define JASS_WRAPPER_CreateTextTag JASS_NATIVE_CreateTextTag
+#define JASS_WRAPPER_DestroyTextTag JASS_NATIVE_DestroyTextTag
+void JASS_WRAPPER_SetTextTagText(DWORD, const char*, float);
+void JASS_WRAPPER_SetTextTagPos(DWORD, float, float, float);
+void JASS_WRAPPER_SetTextTagPosUnit(DWORD, DWORD, float);
+#define JASS_WRAPPER_SetTextTagColor JASS_NATIVE_SetTextTagColor
+void JASS_WRAPPER_SetTextTagVelocity(DWORD, float, float);
+#define JASS_WRAPPER_SetTextTagVisibility JASS_NATIVE_SetTextTagVisibility
+#define JASS_WRAPPER_SetTextTagSuspended JASS_NATIVE_SetTextTagSuspended
+#define JASS_WRAPPER_SetTextTagPermanent JASS_NATIVE_SetTextTagPermanent
+void JASS_WRAPPER_SetTextTagAge(DWORD, float);
+void JASS_WRAPPER_SetTextTagLifespan(DWORD, float);
+void JASS_WRAPPER_SetTextTagFadepoint(DWORD, float);
+#define JASS_WRAPPER_SetReservedLocalHeroButtons JASS_NATIVE_SetReservedLocalHeroButtons
+#define JASS_WRAPPER_GetAllyColorFilterState JASS_NATIVE_GetAllyColorFilterState
+#define JASS_WRAPPER_SetAllyColorFilterState JASS_NATIVE_SetAllyColorFilterState
+#define JASS_WRAPPER_GetCreepCampFilterState JASS_NATIVE_GetCreepCampFilterState
+#define JASS_WRAPPER_SetCreepCampFilterState JASS_NATIVE_SetCreepCampFilterState
+#define JASS_WRAPPER_EnableMinimapFilterButtons JASS_NATIVE_EnableMinimapFilterButtons
+#define JASS_WRAPPER_EnableDragSelect JASS_NATIVE_EnableDragSelect
+#define JASS_WRAPPER_EnablePreSelect JASS_NATIVE_EnablePreSelect
+#define JASS_WRAPPER_EnableSelect JASS_NATIVE_EnableSelect
+DWORD JASS_WRAPPER_CreateTrackable(const char*, float, float, float);
+#define JASS_WRAPPER_TriggerRegisterTrackableHitEvent JASS_NATIVE_TriggerRegisterTrackableHitEvent
+#define JASS_WRAPPER_TriggerRegisterTrackableTrackEvent JASS_NATIVE_TriggerRegisterTrackableTrackEvent
+#define JASS_WRAPPER_GetTriggeringTrackable JASS_NATIVE_GetTriggeringTrackable
+#define JASS_WRAPPER_CreateQuest JASS_NATIVE_CreateQuest
+#define JASS_WRAPPER_DestroyQuest JASS_NATIVE_DestroyQuest
+void JASS_WRAPPER_QuestSetTitle(DWORD, const char*);
+void JASS_WRAPPER_QuestSetDescription(DWORD, const char*);
+void JASS_WRAPPER_QuestSetIconPath(DWORD, const char*);
+#define JASS_WRAPPER_QuestSetRequired JASS_NATIVE_QuestSetRequired
+#define JASS_WRAPPER_QuestSetCompleted JASS_NATIVE_QuestSetCompleted
+#define JASS_WRAPPER_QuestSetDiscovered JASS_NATIVE_QuestSetDiscovered
+#define JASS_WRAPPER_QuestSetFailed JASS_NATIVE_QuestSetFailed
+#define JASS_WRAPPER_QuestSetEnabled JASS_NATIVE_QuestSetEnabled
+#define JASS_WRAPPER_IsQuestRequired JASS_NATIVE_IsQuestRequired
+#define JASS_WRAPPER_IsQuestCompleted JASS_NATIVE_IsQuestCompleted
+#define JASS_WRAPPER_IsQuestDiscovered JASS_NATIVE_IsQuestDiscovered
+#define JASS_WRAPPER_IsQuestFailed JASS_NATIVE_IsQuestFailed
+#define JASS_WRAPPER_IsQuestEnabled JASS_NATIVE_IsQuestEnabled
+#define JASS_WRAPPER_QuestCreateItem JASS_NATIVE_QuestCreateItem
+void JASS_WRAPPER_QuestItemSetDescription(DWORD, const char*);
+#define JASS_WRAPPER_QuestItemSetCompleted JASS_NATIVE_QuestItemSetCompleted
+#define JASS_WRAPPER_IsQuestItemCompleted JASS_NATIVE_IsQuestItemCompleted
+#define JASS_WRAPPER_CreateDefeatCondition JASS_NATIVE_CreateDefeatCondition
+#define JASS_WRAPPER_DestroyDefeatCondition JASS_NATIVE_DestroyDefeatCondition
+void JASS_WRAPPER_DefeatConditionSetDescription(DWORD, const char*);
+#define JASS_WRAPPER_FlashQuestDialogButton JASS_NATIVE_FlashQuestDialogButton
+#define JASS_WRAPPER_ForceQuestDialogUpdate JASS_NATIVE_ForceQuestDialogUpdate
+#define JASS_WRAPPER_CreateTimerDialog JASS_NATIVE_CreateTimerDialog
+#define JASS_WRAPPER_DestroyTimerDialog JASS_NATIVE_DestroyTimerDialog
+void JASS_WRAPPER_TimerDialogSetTitle(DWORD, const char*);
+#define JASS_WRAPPER_TimerDialogSetTitleColor JASS_NATIVE_TimerDialogSetTitleColor
+#define JASS_WRAPPER_TimerDialogSetTimeColor JASS_NATIVE_TimerDialogSetTimeColor
+void JASS_WRAPPER_TimerDialogSetSpeed(DWORD, float);
+#define JASS_WRAPPER_TimerDialogDisplay JASS_NATIVE_TimerDialogDisplay
+#define JASS_WRAPPER_IsTimerDialogDisplayed JASS_NATIVE_IsTimerDialogDisplayed
+void JASS_WRAPPER_TimerDialogSetRealTimeRemaining(DWORD, float);
+#define JASS_WRAPPER_CreateLeaderboard JASS_NATIVE_CreateLeaderboard
+#define JASS_WRAPPER_DestroyLeaderboard JASS_NATIVE_DestroyLeaderboard
+#define JASS_WRAPPER_LeaderboardGetItemCount JASS_NATIVE_LeaderboardGetItemCount
+#define JASS_WRAPPER_LeaderboardSetSizeByItemCount JASS_NATIVE_LeaderboardSetSizeByItemCount
+void JASS_WRAPPER_LeaderboardAddItem(DWORD, const char*, int, DWORD);
+#define JASS_WRAPPER_LeaderboardRemoveItem JASS_NATIVE_LeaderboardRemoveItem
+#define JASS_WRAPPER_LeaderboardRemovePlayerItem JASS_NATIVE_LeaderboardRemovePlayerItem
+#define JASS_WRAPPER_LeaderboardSortItemsByValue JASS_NATIVE_LeaderboardSortItemsByValue
+#define JASS_WRAPPER_LeaderboardSortItemsByPlayer JASS_NATIVE_LeaderboardSortItemsByPlayer
+#define JASS_WRAPPER_LeaderboardSortItemsByLabel JASS_NATIVE_LeaderboardSortItemsByLabel
+#define JASS_WRAPPER_LeaderboardClear JASS_NATIVE_LeaderboardClear
+#define JASS_WRAPPER_LeaderboardDisplay JASS_NATIVE_LeaderboardDisplay
+#define JASS_WRAPPER_IsLeaderboardDisplayed JASS_NATIVE_IsLeaderboardDisplayed
+const char* JASS_WRAPPER_LeaderboardGetLabelText(DWORD);
+#define JASS_WRAPPER_PlayerSetLeaderboard JASS_NATIVE_PlayerSetLeaderboard
+#define JASS_WRAPPER_PlayerGetLeaderboard JASS_NATIVE_PlayerGetLeaderboard
+#define JASS_WRAPPER_LeaderboardHasPlayerItem JASS_NATIVE_LeaderboardHasPlayerItem
+#define JASS_WRAPPER_LeaderboardGetPlayerIndex JASS_NATIVE_LeaderboardGetPlayerIndex
+void JASS_WRAPPER_LeaderboardSetLabel(DWORD, const char*);
+#define JASS_WRAPPER_LeaderboardSetLabelColor JASS_NATIVE_LeaderboardSetLabelColor
+#define JASS_WRAPPER_LeaderboardSetValueColor JASS_NATIVE_LeaderboardSetValueColor
+#define JASS_WRAPPER_LeaderboardSetStyle JASS_NATIVE_LeaderboardSetStyle
+#define JASS_WRAPPER_LeaderboardSetItemValue JASS_NATIVE_LeaderboardSetItemValue
+void JASS_WRAPPER_LeaderboardSetItemLabel(DWORD, int, const char*);
+#define JASS_WRAPPER_LeaderboardSetItemStyle JASS_NATIVE_LeaderboardSetItemStyle
+#define JASS_WRAPPER_LeaderboardSetItemLabelColor JASS_NATIVE_LeaderboardSetItemLabelColor
+#define JASS_WRAPPER_LeaderboardSetItemValueColor JASS_NATIVE_LeaderboardSetItemValueColor
+#define JASS_WRAPPER_CreateMultiboard JASS_NATIVE_CreateMultiboard
+#define JASS_WRAPPER_DestroyMultiboard JASS_NATIVE_DestroyMultiboard
+#define JASS_WRAPPER_MultiboardDisplay JASS_NATIVE_MultiboardDisplay
+#define JASS_WRAPPER_MultiboardMinimize JASS_NATIVE_MultiboardMinimize
+#define JASS_WRAPPER_IsMultiboardDisplayed JASS_NATIVE_IsMultiboardDisplayed
+#define JASS_WRAPPER_IsMultiboardMinimized JASS_NATIVE_IsMultiboardMinimized
+#define JASS_WRAPPER_MultiboardClear JASS_NATIVE_MultiboardClear
+void JASS_WRAPPER_MultiboardSetTitleText(DWORD, const char*);
+const char* JASS_WRAPPER_MultiboardGetTitleText(DWORD);
+#define JASS_WRAPPER_MultiboardSetTitleTextColor JASS_NATIVE_MultiboardSetTitleTextColor
+#define JASS_WRAPPER_MultiboardGetRowCount JASS_NATIVE_MultiboardGetRowCount
+#define JASS_WRAPPER_MultiboardGetColumnCount JASS_NATIVE_MultiboardGetColumnCount
+#define JASS_WRAPPER_MultiboardSetColumnCount JASS_NATIVE_MultiboardSetColumnCount
+#define JASS_WRAPPER_MultiboardSetRowCount JASS_NATIVE_MultiboardSetRowCount
+#define JASS_WRAPPER_MultiboardSetItemsStyle JASS_NATIVE_MultiboardSetItemsStyle
+#define JASS_WRAPPER_MultiboardSetItemsValueColor JASS_NATIVE_MultiboardSetItemsValueColor
+void JASS_WRAPPER_MultiboardSetItemsValue(DWORD, const char*);
+void JASS_WRAPPER_MultiboardSetItemsWidth(DWORD, float);
+void JASS_WRAPPER_MultiboardSetItemsIcon(DWORD, const char*);
+#define JASS_WRAPPER_MultiboardGetItem JASS_NATIVE_MultiboardGetItem
+#define JASS_WRAPPER_MultiboardReleaseItem JASS_NATIVE_MultiboardReleaseItem
+#define JASS_WRAPPER_MultiboardSetItemStyle JASS_NATIVE_MultiboardSetItemStyle
+void JASS_WRAPPER_MultiboardSetItemValue(DWORD, const char*);
+#define JASS_WRAPPER_MultiboardSetItemValueColor JASS_NATIVE_MultiboardSetItemValueColor
+void JASS_WRAPPER_MultiboardSetItemWidth(DWORD, float);
+void JASS_WRAPPER_MultiboardSetItemIcon(DWORD, const char*);
+#define JASS_WRAPPER_MultiboardSuppressDisplay JASS_NATIVE_MultiboardSuppressDisplay
+void JASS_WRAPPER_SetCameraBounds(float, float, float, float, float, float, float, float);
+void JASS_WRAPPER_SetCameraPosition(float, float);
+void JASS_WRAPPER_SetCameraQuickPosition(float, float);
+void JASS_WRAPPER_ResetToGameCamera(float);
+#define JASS_WRAPPER_StopCamera JASS_NATIVE_StopCamera
+void JASS_WRAPPER_PanCameraTo(float, float);
+void JASS_WRAPPER_PanCameraToTimed(float, float, float);
+void JASS_WRAPPER_PanCameraToWithZ(float, float, float);
+void JASS_WRAPPER_PanCameraToTimedWithZ(float, float, float, float);
+void JASS_WRAPPER_SetCinematicCamera(const char*);
+void JASS_WRAPPER_SetCameraField(DWORD, float, float);
+void JASS_WRAPPER_AdjustCameraField(DWORD, float, float);
+void JASS_WRAPPER_SetCameraTargetController(DWORD, float, float, bool);
+void JASS_WRAPPER_SetCameraOrientController(DWORD, float, float);
+void JASS_WRAPPER_SetCameraRotateMode(float, float, float, float);
+#define JASS_WRAPPER_CreateCameraSetup JASS_NATIVE_CreateCameraSetup
+void JASS_WRAPPER_CameraSetupSetField(DWORD, DWORD, float, float);
+float JASS_WRAPPER_CameraSetupGetField(DWORD, DWORD);
+void JASS_WRAPPER_CameraSetupSetDestPosition(DWORD, float, float, float);
+#define JASS_WRAPPER_CameraSetupGetDestPositionLoc JASS_NATIVE_CameraSetupGetDestPositionLoc
+float JASS_WRAPPER_CameraSetupGetDestPositionX(DWORD);
+float JASS_WRAPPER_CameraSetupGetDestPositionY(DWORD);
+#define JASS_WRAPPER_CameraSetupApply JASS_NATIVE_CameraSetupApply
+void JASS_WRAPPER_CameraSetupApplyWithZ(DWORD, float);
+void JASS_WRAPPER_CameraSetupApplyForceDuration(DWORD, bool, float);
+void JASS_WRAPPER_CameraSetupApplyForceDurationWithZ(DWORD, float, float);
+void JASS_WRAPPER_CameraSetTargetNoise(float, float);
+void JASS_WRAPPER_CameraSetSourceNoise(float, float);
+void JASS_WRAPPER_CameraSetTargetNoiseEx(float, float, bool);
+void JASS_WRAPPER_CameraSetSourceNoiseEx(float, float, bool);
+void JASS_WRAPPER_CameraSetSmoothingFactor(float);
+float JASS_WRAPPER_GetCameraMargin(int);
+float JASS_WRAPPER_GetCameraBoundMinX(void);
+float JASS_WRAPPER_GetCameraBoundMinY(void);
+float JASS_WRAPPER_GetCameraBoundMaxX(void);
+float JASS_WRAPPER_GetCameraBoundMaxY(void);
+float JASS_WRAPPER_GetCameraField(DWORD);
+float JASS_WRAPPER_GetCameraTargetPositionX(void);
+float JASS_WRAPPER_GetCameraTargetPositionY(void);
+float JASS_WRAPPER_GetCameraTargetPositionZ(void);
+#define JASS_WRAPPER_GetCameraTargetPositionLoc JASS_NATIVE_GetCameraTargetPositionLoc
+float JASS_WRAPPER_GetCameraEyePositionX(void);
+float JASS_WRAPPER_GetCameraEyePositionY(void);
+float JASS_WRAPPER_GetCameraEyePositionZ(void);
+#define JASS_WRAPPER_GetCameraEyePositionLoc JASS_NATIVE_GetCameraEyePositionLoc
+void JASS_WRAPPER_SetCineFilterTexture(const char*);
+#define JASS_WRAPPER_SetCineFilterBlendMode JASS_NATIVE_SetCineFilterBlendMode
+#define JASS_WRAPPER_IsUnitIdType JASS_NATIVE_IsUnitIdType
+#define JASS_WRAPPER_GetOwningPlayer JASS_NATIVE_GetOwningPlayer
+#define JASS_WRAPPER_UnitShareVision JASS_NATIVE_UnitShareVision
+#define JASS_WRAPPER_UnitSuspendDecay JASS_NATIVE_UnitSuspendDecay
+#define JASS_WRAPPER_UnitAddType JASS_NATIVE_UnitAddType
+#define JASS_WRAPPER_UnitRemoveType JASS_NATIVE_UnitRemoveType
+#define JASS_WRAPPER_UnitAddAbility JASS_NATIVE_UnitAddAbility
+#define JASS_WRAPPER_UnitRemoveAbility JASS_NATIVE_UnitRemoveAbility
+#define JASS_WRAPPER_UnitMakeAbilityPermanent JASS_NATIVE_UnitMakeAbilityPermanent
+#define JASS_WRAPPER_UnitHasBuffsEx JASS_NATIVE_UnitHasBuffsEx
+#define JASS_WRAPPER_UnitCountBuffsEx JASS_NATIVE_UnitCountBuffsEx
+#define JASS_WRAPPER_UnitRemoveBuffs JASS_NATIVE_UnitRemoveBuffs
+#define JASS_WRAPPER_UnitRemoveBuffsEx JASS_NATIVE_UnitRemoveBuffsEx
+#define JASS_WRAPPER_UnitAddSleep JASS_NATIVE_UnitAddSleep
+#define JASS_WRAPPER_UnitCanSleep JASS_NATIVE_UnitCanSleep
+#define JASS_WRAPPER_UnitAddSleepPerm JASS_NATIVE_UnitAddSleepPerm
+#define JASS_WRAPPER_UnitCanSleepPerm JASS_NATIVE_UnitCanSleepPerm
+#define JASS_WRAPPER_UnitIsSleeping JASS_NATIVE_UnitIsSleeping
+#define JASS_WRAPPER_UnitWakeUp JASS_NATIVE_UnitWakeUp
+void JASS_WRAPPER_UnitApplyTimedLife(DWORD, int, float);
+#define JASS_WRAPPER_UnitIgnoreAlarm JASS_NATIVE_UnitIgnoreAlarm
+#define JASS_WRAPPER_UnitIgnoreAlarmToggled JASS_NATIVE_UnitIgnoreAlarmToggled
+bool JASS_WRAPPER_UnitDamagePoint(DWORD, float, float, float, float, float, bool, bool, DWORD, DWORD, DWORD);
+bool JASS_WRAPPER_UnitDamageTarget(DWORD, DWORD, float, bool, bool, DWORD, DWORD, DWORD);
+#define JASS_WRAPPER_DecUnitAbilityLevel JASS_NATIVE_DecUnitAbilityLevel
+#define JASS_WRAPPER_IncUnitAbilityLevel JASS_NATIVE_IncUnitAbilityLevel
+#define JASS_WRAPPER_SetUnitAbilityLevel JASS_NATIVE_SetUnitAbilityLevel
+#define JASS_WRAPPER_UnitResetCooldown JASS_NATIVE_UnitResetCooldown
+#define JASS_WRAPPER_UnitSetConstructionProgress JASS_NATIVE_UnitSetConstructionProgress
+#define JASS_WRAPPER_UnitSetUpgradeProgress JASS_NATIVE_UnitSetUpgradeProgress
+#define JASS_WRAPPER_UnitPauseTimedLife JASS_NATIVE_UnitPauseTimedLife
+#define JASS_WRAPPER_UnitSetUsesAltIcon JASS_NATIVE_UnitSetUsesAltIcon
+#define JASS_WRAPPER_IssueImmediateOrderById JASS_NATIVE_IssueImmediateOrderById
+bool JASS_WRAPPER_IssuePointOrderById(DWORD, int, float, float);
+#define JASS_WRAPPER_IssuePointOrderByIdLoc JASS_NATIVE_IssuePointOrderByIdLoc
+#define JASS_WRAPPER_IssueTargetOrderById JASS_NATIVE_IssueTargetOrderById
+bool JASS_WRAPPER_IssueInstantPointOrderById(DWORD, int, float, float, DWORD);
+#define JASS_WRAPPER_IssueInstantTargetOrderById JASS_NATIVE_IssueInstantTargetOrderById
+bool JASS_WRAPPER_IssueBuildOrderById(DWORD, int, float, float);
+#define JASS_WRAPPER_IssueNeutralImmediateOrderById JASS_NATIVE_IssueNeutralImmediateOrderById
+bool JASS_WRAPPER_IssueNeutralPointOrderById(DWORD, DWORD, int, float, float);
+#define JASS_WRAPPER_IssueNeutralTargetOrderById JASS_NATIVE_IssueNeutralTargetOrderById
+bool JASS_WRAPPER_IssueImmediateOrder(DWORD, const char*);
+bool JASS_WRAPPER_IssuePointOrder(DWORD, const char*, float, float);
+bool JASS_WRAPPER_IssuePointOrderLoc(DWORD, const char*, DWORD);
+bool JASS_WRAPPER_IssueTargetOrder(DWORD, const char*, DWORD);
+bool JASS_WRAPPER_IssueInstantPointOrder(DWORD, const char*, float, float, DWORD);
+bool JASS_WRAPPER_IssueInstantTargetOrder(DWORD, const char*, DWORD, DWORD);
+bool JASS_WRAPPER_IssueBuildOrder(DWORD, const char*, float, float);
+bool JASS_WRAPPER_IssueNeutralImmediateOrder(DWORD, DWORD, const char*);
+bool JASS_WRAPPER_IssueNeutralPointOrder(DWORD, DWORD, const char*, float, float);
+bool JASS_WRAPPER_IssueNeutralTargetOrder(DWORD, DWORD, const char*, DWORD);
+float JASS_WRAPPER_WaygateGetDestinationX(DWORD);
+float JASS_WRAPPER_WaygateGetDestinationY(DWORD);
+void JASS_WRAPPER_WaygateSetDestination(DWORD, float, float);
+#define JASS_WRAPPER_WaygateActivate JASS_NATIVE_WaygateActivate
+#define JASS_WRAPPER_WaygateIsActive JASS_NATIVE_WaygateIsActive
+#define JASS_WRAPPER_AddItemToAllStock JASS_NATIVE_AddItemToAllStock
+#define JASS_WRAPPER_AddItemToStock JASS_NATIVE_AddItemToStock
+#define JASS_WRAPPER_AddUnitToAllStock JASS_NATIVE_AddUnitToAllStock
+#define JASS_WRAPPER_AddUnitToStock JASS_NATIVE_AddUnitToStock
+#define JASS_WRAPPER_RemoveItemFromAllStock JASS_NATIVE_RemoveItemFromAllStock
+#define JASS_WRAPPER_RemoveItemFromStock JASS_NATIVE_RemoveItemFromStock
+#define JASS_WRAPPER_RemoveUnitFromAllStock JASS_NATIVE_RemoveUnitFromAllStock
+#define JASS_WRAPPER_RemoveUnitFromStock JASS_NATIVE_RemoveUnitFromStock
+#define JASS_WRAPPER_SetAllItemTypeSlots JASS_NATIVE_SetAllItemTypeSlots
+#define JASS_WRAPPER_SetAllUnitTypeSlots JASS_NATIVE_SetAllUnitTypeSlots
+#define JASS_WRAPPER_SetItemTypeSlots JASS_NATIVE_SetItemTypeSlots
+#define JASS_WRAPPER_SetUnitTypeSlots JASS_NATIVE_SetUnitTypeSlots
+#define JASS_WRAPPER_GetUnitUserData JASS_NATIVE_GetUnitUserData
+#define JASS_WRAPPER_SetUnitUserData JASS_NATIVE_SetUnitUserData
+DWORD JASS_WRAPPER_CreateItem(int, float, float);
+#define JASS_WRAPPER_RemoveItem JASS_NATIVE_RemoveItem
+#define JASS_WRAPPER_GetItemPlayer JASS_NATIVE_GetItemPlayer
+#define JASS_WRAPPER_GetItemTypeId JASS_NATIVE_GetItemTypeId
+float JASS_WRAPPER_GetItemX(DWORD);
+float JASS_WRAPPER_GetItemY(DWORD);
+void JASS_WRAPPER_SetItemPosition(DWORD, float, float);
+#define JASS_WRAPPER_SetItemDropOnDeath JASS_NATIVE_SetItemDropOnDeath
+#define JASS_WRAPPER_SetItemDroppable JASS_NATIVE_SetItemDroppable
+#define JASS_WRAPPER_SetItemPawnable JASS_NATIVE_SetItemPawnable
+#define JASS_WRAPPER_SetItemPlayer JASS_NATIVE_SetItemPlayer
+#define JASS_WRAPPER_SetItemInvulnerable JASS_NATIVE_SetItemInvulnerable
+#define JASS_WRAPPER_IsItemInvulnerable JASS_NATIVE_IsItemInvulnerable
+#define JASS_WRAPPER_GetItemLevel JASS_NATIVE_GetItemLevel
+#define JASS_WRAPPER_GetItemType JASS_NATIVE_GetItemType
+#define JASS_WRAPPER_SetItemVisible JASS_NATIVE_SetItemVisible
+#define JASS_WRAPPER_IsItemVisible JASS_NATIVE_IsItemVisible
+#define JASS_WRAPPER_EnumItemsInRect JASS_NATIVE_EnumItemsInRect
+#define JASS_WRAPPER_IsItemOwned JASS_NATIVE_IsItemOwned
+#define JASS_WRAPPER_IsItemPowerup JASS_NATIVE_IsItemPowerup
+#define JASS_WRAPPER_IsItemSellable JASS_NATIVE_IsItemSellable
+#define JASS_WRAPPER_IsItemPawnable JASS_NATIVE_IsItemPawnable
+#define JASS_WRAPPER_IsItemIdPowerup JASS_NATIVE_IsItemIdPowerup
+#define JASS_WRAPPER_IsItemIdSellable JASS_NATIVE_IsItemIdSellable
+#define JASS_WRAPPER_IsItemIdPawnable JASS_NATIVE_IsItemIdPawnable
+#define JASS_WRAPPER_SetItemDropID JASS_NATIVE_SetItemDropID
+const char* JASS_WRAPPER_GetItemName(DWORD);
+#define JASS_WRAPPER_GetItemCharges JASS_NATIVE_GetItemCharges
+#define JASS_WRAPPER_SetItemCharges JASS_NATIVE_SetItemCharges
+#define JASS_WRAPPER_GetItemUserData JASS_NATIVE_GetItemUserData
+#define JASS_WRAPPER_SetItemUserData JASS_NATIVE_SetItemUserData
+#define JASS_WRAPPER_Player JASS_NATIVE_Player
+#define JASS_WRAPPER_GetLocalPlayer JASS_NATIVE_GetLocalPlayer
+#define JASS_WRAPPER_IsPlayerAlly JASS_NATIVE_IsPlayerAlly
+#define JASS_WRAPPER_IsPlayerEnemy JASS_NATIVE_IsPlayerEnemy
+#define JASS_WRAPPER_IsPlayerInForce JASS_NATIVE_IsPlayerInForce
+#define JASS_WRAPPER_IsPlayerObserver JASS_NATIVE_IsPlayerObserver
+#define JASS_WRAPPER_GetPlayerRace JASS_NATIVE_GetPlayerRace
+#define JASS_WRAPPER_GetPlayerId JASS_NATIVE_GetPlayerId
+#define JASS_WRAPPER_SetPlayerTechMaxAllowed JASS_NATIVE_SetPlayerTechMaxAllowed
+#define JASS_WRAPPER_GetPlayerTechMaxAllowed JASS_NATIVE_GetPlayerTechMaxAllowed
+#define JASS_WRAPPER_AddPlayerTechResearched JASS_NATIVE_AddPlayerTechResearched
+#define JASS_WRAPPER_SetPlayerTechResearched JASS_NATIVE_SetPlayerTechResearched
+#define JASS_WRAPPER_GetPlayerTechResearched JASS_NATIVE_GetPlayerTechResearched
+#define JASS_WRAPPER_GetPlayerTechCount JASS_NATIVE_GetPlayerTechCount
+#define JASS_WRAPPER_SetPlayerAbilityAvailable JASS_NATIVE_SetPlayerAbilityAvailable
+#define JASS_WRAPPER_GetPlayerUnitCount JASS_NATIVE_GetPlayerUnitCount
+int JASS_WRAPPER_GetPlayerTypedUnitCount(DWORD, const char*, bool, bool);
+#define JASS_WRAPPER_GetPlayerStructureCount JASS_NATIVE_GetPlayerStructureCount
+bool JASS_WRAPPER_IsVisibleToPlayer(float, float, DWORD);
+#define JASS_WRAPPER_IsLocationVisibleToPlayer JASS_NATIVE_IsLocationVisibleToPlayer
+bool JASS_WRAPPER_IsFoggedToPlayer(float, float, DWORD);
+#define JASS_WRAPPER_IsLocationFoggedToPlayer JASS_NATIVE_IsLocationFoggedToPlayer
+bool JASS_WRAPPER_IsMaskedToPlayer(float, float, DWORD);
+#define JASS_WRAPPER_IsLocationMaskedToPlayer JASS_NATIVE_IsLocationMaskedToPlayer
+#define JASS_WRAPPER_SetPlayerState JASS_NATIVE_SetPlayerState
+#define JASS_WRAPPER_GetPlayerState JASS_NATIVE_GetPlayerState
+#define JASS_WRAPPER_GetPlayerScore JASS_NATIVE_GetPlayerScore
+#define JASS_WRAPPER_GetPlayerAlliance JASS_NATIVE_GetPlayerAlliance
+#define JASS_WRAPPER_RemovePlayer JASS_NATIVE_RemovePlayer
+#define JASS_WRAPPER_CachePlayerHeroData JASS_NATIVE_CachePlayerHeroData
+float JASS_WRAPPER_GetPlayerHandicap(DWORD);
+void JASS_WRAPPER_SetPlayerHandicap(DWORD, float);
+float JASS_WRAPPER_GetPlayerHandicapXP(DWORD);
+void JASS_WRAPPER_SetPlayerHandicapXP(DWORD, float);
+#define JASS_WRAPPER_SetPlayerUnitsOwner JASS_NATIVE_SetPlayerUnitsOwner
+#define JASS_WRAPPER_CripplePlayer JASS_NATIVE_CripplePlayer
+#define JASS_WRAPPER_VersionGet JASS_NATIVE_VersionGet
+#define JASS_WRAPPER_VersionCompatible JASS_NATIVE_VersionCompatible
+#define JASS_WRAPPER_VersionSupported JASS_NATIVE_VersionSupported
+#define JASS_WRAPPER_EndGame JASS_NATIVE_EndGame
+void JASS_WRAPPER_ChangeLevel(const char*, bool);
+#define JASS_WRAPPER_RestartGame JASS_NATIVE_RestartGame
+#define JASS_WRAPPER_ReloadGame JASS_NATIVE_ReloadGame
+void JASS_WRAPPER_LoadGame(const char*, bool);
+void JASS_WRAPPER_SaveGame(const char*);
+bool JASS_WRAPPER_RenameSaveDirectory(const char*, const char*);
+bool JASS_WRAPPER_RemoveSaveDirectory(const char*);
+bool JASS_WRAPPER_CopySaveGame(const char*, const char*);
+bool JASS_WRAPPER_SaveGameExists(const char*);
+void JASS_WRAPPER_SetFloatGameState(DWORD, float);
+float JASS_WRAPPER_GetFloatGameState(DWORD);
+#define JASS_WRAPPER_SetIntegerGameState JASS_NATIVE_SetIntegerGameState
+#define JASS_WRAPPER_GetIntegerGameState JASS_NATIVE_GetIntegerGameState
+#define JASS_WRAPPER_SyncSelections JASS_NATIVE_SyncSelections
+#define JASS_WRAPPER_DialogCreate JASS_NATIVE_DialogCreate
+#define JASS_WRAPPER_DialogDestroy JASS_NATIVE_DialogDestroy
+#define JASS_WRAPPER_DialogSetAsync JASS_NATIVE_DialogSetAsync
+#define JASS_WRAPPER_DialogClear JASS_NATIVE_DialogClear
+void JASS_WRAPPER_DialogSetMessage(DWORD, const char*);
+DWORD JASS_WRAPPER_DialogAddButton(DWORD, const char*, int);
+DWORD JASS_WRAPPER_DialogAddQuitButton(DWORD, bool, const char*, int);
+#define JASS_WRAPPER_DialogDisplay JASS_NATIVE_DialogDisplay
+#define JASS_WRAPPER_SetMissionAvailable JASS_NATIVE_SetMissionAvailable
+#define JASS_WRAPPER_SetCampaignAvailable JASS_NATIVE_SetCampaignAvailable
+#define JASS_WRAPPER_SetCampaignMenuRace JASS_NATIVE_SetCampaignMenuRace
+#define JASS_WRAPPER_SetCampaignMenuRaceEx JASS_NATIVE_SetCampaignMenuRaceEx
+#define JASS_WRAPPER_ForceCampaignSelectScreen JASS_NATIVE_ForceCampaignSelectScreen
+#define JASS_WRAPPER_SetOpCinematicAvailable JASS_NATIVE_SetOpCinematicAvailable
+#define JASS_WRAPPER_SetEdCinematicAvailable JASS_NATIVE_SetEdCinematicAvailable
+#define JASS_WRAPPER_SetTutorialCleared JASS_NATIVE_SetTutorialCleared
+#define JASS_WRAPPER_GetDefaultDifficulty JASS_NATIVE_GetDefaultDifficulty
+#define JASS_WRAPPER_SetDefaultDifficulty JASS_NATIVE_SetDefaultDifficulty
+#define JASS_WRAPPER_ReloadGameCachesFromDisk JASS_NATIVE_ReloadGameCachesFromDisk
+#define JASS_WRAPPER_SetCustomCampaignButtonVisible JASS_NATIVE_SetCustomCampaignButtonVisible
+#define JASS_WRAPPER_GetCustomCampaignButtonVisible JASS_NATIVE_GetCustomCampaignButtonVisible
+#define JASS_WRAPPER_DoNotSaveReplay JASS_NATIVE_DoNotSaveReplay
+DWORD JASS_WRAPPER_InitGameCache(const char*);
+#define JASS_WRAPPER_SaveGameCache JASS_NATIVE_SaveGameCache
+void JASS_WRAPPER_StoreInteger(DWORD, const char*, const char*, int);
+void JASS_WRAPPER_StoreReal(DWORD, const char*, const char*, float);
+void JASS_WRAPPER_StoreBoolean(DWORD, const char*, const char*, bool);
+bool JASS_WRAPPER_StoreUnit(DWORD, const char*, const char*, DWORD);
+bool JASS_WRAPPER_StoreString(DWORD, const char*, const char*, const char*);
+#define JASS_WRAPPER_SaveInteger JASS_NATIVE_SaveInteger
+void JASS_WRAPPER_SaveReal(DWORD, int, int, float);
+#define JASS_WRAPPER_SaveBoolean JASS_NATIVE_SaveBoolean
+bool JASS_WRAPPER_SaveStr(DWORD, int, int, const char*);
+#define JASS_WRAPPER_SavePlayerHandle JASS_NATIVE_SavePlayerHandle
+#define JASS_WRAPPER_SaveWidgetHandle JASS_NATIVE_SaveWidgetHandle
+#define JASS_WRAPPER_SaveDestructableHandle JASS_NATIVE_SaveDestructableHandle
+#define JASS_WRAPPER_SaveItemHandle JASS_NATIVE_SaveItemHandle
+#define JASS_WRAPPER_SaveUnitHandle JASS_NATIVE_SaveUnitHandle
+#define JASS_WRAPPER_SaveAbilityHandle JASS_NATIVE_SaveAbilityHandle
+#define JASS_WRAPPER_SaveTimerHandle JASS_NATIVE_SaveTimerHandle
+#define JASS_WRAPPER_SaveRegionHandle JASS_NATIVE_SaveRegionHandle
+#define JASS_WRAPPER_SaveTriggerHandle JASS_NATIVE_SaveTriggerHandle
+#define JASS_WRAPPER_SaveTriggerConditionHandle JASS_NATIVE_SaveTriggerConditionHandle
+#define JASS_WRAPPER_SaveTriggerActionHandle JASS_NATIVE_SaveTriggerActionHandle
+#define JASS_WRAPPER_SaveTriggerEventHandle JASS_NATIVE_SaveTriggerEventHandle
+#define JASS_WRAPPER_SaveForceHandle JASS_NATIVE_SaveForceHandle
+#define JASS_WRAPPER_SaveGroupHandle JASS_NATIVE_SaveGroupHandle
+#define JASS_WRAPPER_SaveLocationHandle JASS_NATIVE_SaveLocationHandle
+#define JASS_WRAPPER_SaveRectHandle JASS_NATIVE_SaveRectHandle
+#define JASS_WRAPPER_SaveBooleanExprHandle JASS_NATIVE_SaveBooleanExprHandle
+#define JASS_WRAPPER_SaveSoundHandle JASS_NATIVE_SaveSoundHandle
+#define JASS_WRAPPER_SaveEffectHandle JASS_NATIVE_SaveEffectHandle
+#define JASS_WRAPPER_SaveUnitPoolHandle JASS_NATIVE_SaveUnitPoolHandle
+#define JASS_WRAPPER_SaveItemPoolHandle JASS_NATIVE_SaveItemPoolHandle
+#define JASS_WRAPPER_SaveQuestHandle JASS_NATIVE_SaveQuestHandle
+#define JASS_WRAPPER_SaveQuestItemHandle JASS_NATIVE_SaveQuestItemHandle
+#define JASS_WRAPPER_SaveDefeatConditionHandle JASS_NATIVE_SaveDefeatConditionHandle
+#define JASS_WRAPPER_SaveTimerDialogHandle JASS_NATIVE_SaveTimerDialogHandle
+#define JASS_WRAPPER_SaveLeaderboardHandle JASS_NATIVE_SaveLeaderboardHandle
+#define JASS_WRAPPER_SaveMultiboardHandle JASS_NATIVE_SaveMultiboardHandle
+#define JASS_WRAPPER_SaveMultiboardItemHandle JASS_NATIVE_SaveMultiboardItemHandle
+#define JASS_WRAPPER_SaveTrackableHandle JASS_NATIVE_SaveTrackableHandle
+#define JASS_WRAPPER_SaveDialogHandle JASS_NATIVE_SaveDialogHandle
+#define JASS_WRAPPER_SaveButtonHandle JASS_NATIVE_SaveButtonHandle
+#define JASS_WRAPPER_SaveTextTagHandle JASS_NATIVE_SaveTextTagHandle
+#define JASS_WRAPPER_SaveLightningHandle JASS_NATIVE_SaveLightningHandle
+#define JASS_WRAPPER_SaveImageHandle JASS_NATIVE_SaveImageHandle
+#define JASS_WRAPPER_SaveUbersplatHandle JASS_NATIVE_SaveUbersplatHandle
+#define JASS_WRAPPER_SaveFogStateHandle JASS_NATIVE_SaveFogStateHandle
+#define JASS_WRAPPER_SaveFogModifierHandle JASS_NATIVE_SaveFogModifierHandle
+#define JASS_WRAPPER_SaveAgentHandle JASS_NATIVE_SaveAgentHandle
+#define JASS_WRAPPER_SaveHashtableHandle JASS_NATIVE_SaveHashtableHandle
+void JASS_WRAPPER_SyncStoredInteger(DWORD, const char*, const char*);
+void JASS_WRAPPER_SyncStoredReal(DWORD, const char*, const char*);
+void JASS_WRAPPER_SyncStoredBoolean(DWORD, const char*, const char*);
+void JASS_WRAPPER_SyncStoredUnit(DWORD, const char*, const char*);
+void JASS_WRAPPER_SyncStoredString(DWORD, const char*, const char*);
+int JASS_WRAPPER_GetStoredInteger(DWORD, const char*, const char*);
+float JASS_WRAPPER_GetStoredReal(DWORD, const char*, const char*);
+bool JASS_WRAPPER_GetStoredBoolean(DWORD, const char*, const char*);
+DWORD JASS_WRAPPER_RestoreUnit(DWORD, const char*, const char*, DWORD, float, float, float);
+const char* JASS_WRAPPER_GetStoredString(DWORD, const char*, const char*);
+bool JASS_WRAPPER_HaveStoredInteger(DWORD, const char*, const char*);
+bool JASS_WRAPPER_HaveStoredReal(DWORD, const char*, const char*);
+bool JASS_WRAPPER_HaveStoredBoolean(DWORD, const char*, const char*);
+bool JASS_WRAPPER_HaveStoredUnit(DWORD, const char*, const char*);
+bool JASS_WRAPPER_HaveStoredString(DWORD, const char*, const char*);
+#define JASS_WRAPPER_FlushGameCache JASS_NATIVE_FlushGameCache
+void JASS_WRAPPER_FlushStoredMission(DWORD, const char*);
+void JASS_WRAPPER_FlushStoredInteger(DWORD, const char*, const char*);
+void JASS_WRAPPER_FlushStoredReal(DWORD, const char*, const char*);
+void JASS_WRAPPER_FlushStoredBoolean(DWORD, const char*, const char*);
+void JASS_WRAPPER_FlushStoredUnit(DWORD, const char*, const char*);
+void JASS_WRAPPER_FlushStoredString(DWORD, const char*, const char*);
+#define JASS_WRAPPER_InitHashtable JASS_NATIVE_InitHashtable
+#define JASS_WRAPPER_LoadInteger JASS_NATIVE_LoadInteger
+float JASS_WRAPPER_LoadReal(DWORD, int, int);
+#define JASS_WRAPPER_LoadBoolean JASS_NATIVE_LoadBoolean
+const char* JASS_WRAPPER_LoadStr(DWORD, int, int);
+#define JASS_WRAPPER_LoadPlayerHandle JASS_NATIVE_LoadPlayerHandle
+#define JASS_WRAPPER_GetLearnedSkill JASS_NATIVE_GetLearnedSkill
+#define JASS_WRAPPER_GetLearnedSkillLevel JASS_NATIVE_GetLearnedSkillLevel
+#define JASS_WRAPPER_GetRevivableUnit JASS_NATIVE_GetRevivableUnit
+#define JASS_WRAPPER_GetRevivingUnit JASS_NATIVE_GetRevivingUnit
+#define JASS_WRAPPER_GetSummoningUnit JASS_NATIVE_GetSummoningUnit
+#define JASS_WRAPPER_GetSummonedUnit JASS_NATIVE_GetSummonedUnit
+#define JASS_WRAPPER_GetTransportUnit JASS_NATIVE_GetTransportUnit
+#define JASS_WRAPPER_GetLoadedUnit JASS_NATIVE_GetLoadedUnit
+#define JASS_WRAPPER_GetManipulatingUnit JASS_NATIVE_GetManipulatingUnit
+#define JASS_WRAPPER_GetManipulatedItem JASS_NATIVE_GetManipulatedItem
+#define JASS_WRAPPER_TriggerRegisterPlayerAllianceChange JASS_NATIVE_TriggerRegisterPlayerAllianceChange
+DWORD JASS_WRAPPER_TriggerRegisterPlayerChatEvent(DWORD, DWORD, const char*, bool);
+const char* JASS_WRAPPER_GetEventPlayerChatString(void);
+const char* JASS_WRAPPER_GetEventPlayerChatStringMatched(void);
+DWORD JASS_WRAPPER_TriggerRegisterUnitStateEvent(DWORD, DWORD, DWORD, DWORD, float);
+#define JASS_WRAPPER_GetEventUnitState JASS_NATIVE_GetEventUnitState
+#define JASS_WRAPPER_TriggerRegisterDeathEvent JASS_NATIVE_TriggerRegisterDeathEvent
+#define JASS_WRAPPER_TriggerRegisterUnitEvent JASS_NATIVE_TriggerRegisterUnitEvent
+float JASS_WRAPPER_GetEventDamage(void);
+#define JASS_WRAPPER_GetEventDamageSource JASS_NATIVE_GetEventDamageSource
+#define JASS_WRAPPER_GetEventDetectingPlayer JASS_NATIVE_GetEventDetectingPlayer
+#define JASS_WRAPPER_GetEventTargetUnit JASS_NATIVE_GetEventTargetUnit
+#define JASS_WRAPPER_TriggerRegisterFilterUnitEvent JASS_NATIVE_TriggerRegisterFilterUnitEvent
+DWORD JASS_WRAPPER_TriggerRegisterUnitInRange(DWORD, DWORD, float, DWORD);
+#define JASS_WRAPPER_TriggerRegisterEnterRegion JASS_NATIVE_TriggerRegisterEnterRegion
+#define JASS_WRAPPER_TriggerRegisterLeaveRegion JASS_NATIVE_TriggerRegisterLeaveRegion
+#define JASS_WRAPPER_GetTriggeringRegion JASS_NATIVE_GetTriggeringRegion
+#define JASS_WRAPPER_GetEnteringUnit JASS_NATIVE_GetEnteringUnit
+#define JASS_WRAPPER_GetLeavingUnit JASS_NATIVE_GetLeavingUnit
+#define JASS_WRAPPER_TriggerAddCondition JASS_NATIVE_TriggerAddCondition
+#define JASS_WRAPPER_TriggerRemoveCondition JASS_NATIVE_TriggerRemoveCondition
+#define JASS_WRAPPER_TriggerClearConditions JASS_NATIVE_TriggerClearConditions
+#define JASS_WRAPPER_TriggerAddAction JASS_NATIVE_TriggerAddAction
+#define JASS_WRAPPER_TriggerRemoveAction JASS_NATIVE_TriggerRemoveAction
+#define JASS_WRAPPER_TriggerClearActions JASS_NATIVE_TriggerClearActions
+void JASS_WRAPPER_TriggerSleepAction(float);
+void JASS_WRAPPER_TriggerWaitForSound(DWORD, float);
+#define JASS_WRAPPER_TriggerExecute JASS_NATIVE_TriggerExecute
+#define JASS_WRAPPER_TriggerExecuteWait JASS_NATIVE_TriggerExecuteWait
+#define JASS_WRAPPER_TriggerEvaluate JASS_NATIVE_TriggerEvaluate
+#define JASS_WRAPPER_TriggerSyncStart JASS_NATIVE_TriggerSyncStart
+#define JASS_WRAPPER_TriggerSyncReady JASS_NATIVE_TriggerSyncReady
+#define JASS_WRAPPER_GetTriggerWidget JASS_NATIVE_GetTriggerWidget
+#define JASS_WRAPPER_GetTriggerDestructable JASS_NATIVE_GetTriggerDestructable
+#define JASS_WRAPPER_GetTriggerUnit JASS_NATIVE_GetTriggerUnit
+#define JASS_WRAPPER_GetTriggerPlayer JASS_NATIVE_GetTriggerPlayer
+#define JASS_WRAPPER_GetTriggeringTrigger JASS_NATIVE_GetTriggeringTrigger
+#define JASS_WRAPPER_GetTriggerEventId JASS_NATIVE_GetTriggerEventId
+#define JASS_WRAPPER_GetTriggerEvalCount JASS_NATIVE_GetTriggerEvalCount
+#define JASS_WRAPPER_GetTriggerExecCount JASS_NATIVE_GetTriggerExecCount
+#define JASS_WRAPPER_GetFilterUnit JASS_NATIVE_GetFilterUnit
+#define JASS_WRAPPER_GetEnumUnit JASS_NATIVE_GetEnumUnit
+#define JASS_WRAPPER_GetEnumPlayer JASS_NATIVE_GetEnumPlayer
+#define JASS_WRAPPER_GetFilterPlayer JASS_NATIVE_GetFilterPlayer
+#define JASS_WRAPPER_GetFilterDestructable JASS_NATIVE_GetFilterDestructable
+#define JASS_WRAPPER_GetEnumDestructable JASS_NATIVE_GetEnumDestructable
+#define JASS_WRAPPER_GetFilterItem JASS_NATIVE_GetFilterItem
+#define JASS_WRAPPER_GetEnumItem JASS_NATIVE_GetEnumItem
+#define JASS_WRAPPER_CreateGroup JASS_NATIVE_CreateGroup
+#define JASS_WRAPPER_DestroyGroup JASS_NATIVE_DestroyGroup
+#define JASS_WRAPPER_GroupAddUnit JASS_NATIVE_GroupAddUnit
+#define JASS_WRAPPER_GroupRemoveUnit JASS_NATIVE_GroupRemoveUnit
+#define JASS_WRAPPER_GroupClear JASS_NATIVE_GroupClear
+void JASS_WRAPPER_GroupEnumUnitsOfType(DWORD, const char*, DWORD);
+void JASS_WRAPPER_GroupEnumUnitsOfTypeCounted(DWORD, const char*, DWORD, int);
+#define JASS_WRAPPER_GroupEnumUnitsInRect JASS_NATIVE_GroupEnumUnitsInRect
+#define JASS_WRAPPER_GroupEnumUnitsInRectCounted JASS_NATIVE_GroupEnumUnitsInRectCounted
+#define JASS_WRAPPER_GroupEnumUnitsOfPlayer JASS_NATIVE_GroupEnumUnitsOfPlayer
+void JASS_WRAPPER_GroupEnumUnitsInRange(DWORD, float, float, float, DWORD);
+void JASS_WRAPPER_GroupEnumUnitsInRangeOfLoc(DWORD, DWORD, float, DWORD);
+void JASS_WRAPPER_GroupEnumUnitsInRangeCounted(DWORD, float, float, float, DWORD, int);
+void JASS_WRAPPER_GroupEnumUnitsInRangeOfLocCounted(DWORD, DWORD, float, DWORD, int);
+#define JASS_WRAPPER_GroupEnumUnitsSelected JASS_NATIVE_GroupEnumUnitsSelected
+bool JASS_WRAPPER_GroupImmediateOrder(DWORD, const char*);
+#define JASS_WRAPPER_GroupImmediateOrderById JASS_NATIVE_GroupImmediateOrderById
+bool JASS_WRAPPER_GroupPointOrder(DWORD, const char*, float, float);
+bool JASS_WRAPPER_GroupPointOrderLoc(DWORD, const char*, DWORD);
+bool JASS_WRAPPER_GroupPointOrderById(DWORD, int, float, float);
+#define JASS_WRAPPER_GroupPointOrderByIdLoc JASS_NATIVE_GroupPointOrderByIdLoc
+bool JASS_WRAPPER_GroupTargetOrder(DWORD, const char*, DWORD);
+#define JASS_WRAPPER_GroupTargetOrderById JASS_NATIVE_GroupTargetOrderById
+#define JASS_WRAPPER_ForGroup JASS_NATIVE_ForGroup
+#define JASS_WRAPPER_FirstOfGroup JASS_NATIVE_FirstOfGroup
+#define JASS_WRAPPER_CreateForce JASS_NATIVE_CreateForce
+#define JASS_WRAPPER_DestroyForce JASS_NATIVE_DestroyForce
+#define JASS_WRAPPER_ForceAddPlayer JASS_NATIVE_ForceAddPlayer
+#define JASS_WRAPPER_ForceRemovePlayer JASS_NATIVE_ForceRemovePlayer
+#define JASS_WRAPPER_ForceClear JASS_NATIVE_ForceClear
+#define JASS_WRAPPER_ForceEnumPlayers JASS_NATIVE_ForceEnumPlayers
+#define JASS_WRAPPER_ForceEnumPlayersCounted JASS_NATIVE_ForceEnumPlayersCounted
+#define JASS_WRAPPER_ForceEnumAllies JASS_NATIVE_ForceEnumAllies
+#define JASS_WRAPPER_ForceEnumEnemies JASS_NATIVE_ForceEnumEnemies
+#define JASS_WRAPPER_ForForce JASS_NATIVE_ForForce
+float JASS_WRAPPER_GetWidgetLife(DWORD);
+void JASS_WRAPPER_SetWidgetLife(DWORD, float);
+float JASS_WRAPPER_GetWidgetX(DWORD);
+float JASS_WRAPPER_GetWidgetY(DWORD);
+DWORD JASS_WRAPPER_CreateDestructable(int, float, float, float, float, int);
+DWORD JASS_WRAPPER_CreateDestructableZ(int, float, float, float, float, float, int);
+DWORD JASS_WRAPPER_CreateDeadDestructable(int, float, float, float, float, int);
+DWORD JASS_WRAPPER_CreateDeadDestructableZ(int, float, float, float, float, float, int);
+#define JASS_WRAPPER_RemoveDestructable JASS_NATIVE_RemoveDestructable
+#define JASS_WRAPPER_KillDestructable JASS_NATIVE_KillDestructable
+#define JASS_WRAPPER_SetDestructableInvulnerable JASS_NATIVE_SetDestructableInvulnerable
+#define JASS_WRAPPER_IsDestructableInvulnerable JASS_NATIVE_IsDestructableInvulnerable
+#define JASS_WRAPPER_EnumDestructablesInRect JASS_NATIVE_EnumDestructablesInRect
+#define JASS_WRAPPER_GetDestructableTypeId JASS_NATIVE_GetDestructableTypeId
+float JASS_WRAPPER_GetDestructableX(DWORD);
+float JASS_WRAPPER_GetDestructableY(DWORD);
+void JASS_WRAPPER_SetDestructableLife(DWORD, float);
+float JASS_WRAPPER_GetDestructableLife(DWORD);
+void JASS_WRAPPER_SetDestructableMaxLife(DWORD, float);
+float JASS_WRAPPER_GetDestructableMaxLife(DWORD);
+void JASS_WRAPPER_DestructableRestoreLife(DWORD, float, bool);
+void JASS_WRAPPER_QueueDestructableAnimation(DWORD, const char*);
+void JASS_WRAPPER_SetDestructableAnimation(DWORD, const char*);
+void JASS_WRAPPER_SetDestructableAnimationSpeed(DWORD, float);
+#define JASS_WRAPPER_ShowDestructable JASS_NATIVE_ShowDestructable
+float JASS_WRAPPER_GetDestructableOccluderHeight(DWORD);
+void JASS_WRAPPER_SetDestructableOccluderHeight(DWORD, float);
+const char* JASS_WRAPPER_GetDestructableName(DWORD);
+DWORD JASS_WRAPPER_CreateUnit(DWORD, int, float, float, float);
+DWORD JASS_WRAPPER_CreateUnitByName(DWORD, const char*, float, float, float);
+DWORD JASS_WRAPPER_CreateUnitAtLoc(DWORD, int, DWORD, float);
+DWORD JASS_WRAPPER_CreateUnitAtLocByName(DWORD, const char*, DWORD, float);
+DWORD JASS_WRAPPER_CreateCorpse(DWORD, int, float, float, float);
+float JASS_WRAPPER_GetUnitState(DWORD, DWORD);
+#define JASS_WRAPPER_GetUnitFoodUsed JASS_NATIVE_GetUnitFoodUsed
+#define JASS_WRAPPER_GetUnitFoodMade JASS_NATIVE_GetUnitFoodMade
+#define JASS_WRAPPER_GetFoodMade JASS_NATIVE_GetFoodMade
+#define JASS_WRAPPER_GetFoodUsed JASS_NATIVE_GetFoodUsed
+#define JASS_WRAPPER_SetUnitUseFood JASS_NATIVE_SetUnitUseFood
+float JASS_WRAPPER_GetUnitX(DWORD);
+float JASS_WRAPPER_GetUnitY(DWORD);
+#define JASS_WRAPPER_GetUnitLoc JASS_NATIVE_GetUnitLoc
+#define JASS_WRAPPER_GetUnitRallyPoint JASS_NATIVE_GetUnitRallyPoint
+#define JASS_WRAPPER_GetUnitRallyUnit JASS_NATIVE_GetUnitRallyUnit
+#define JASS_WRAPPER_GetUnitRallyDestructable JASS_NATIVE_GetUnitRallyDestructable
+float JASS_WRAPPER_GetUnitFacing(DWORD);
+float JASS_WRAPPER_GetUnitMoveSpeed(DWORD);
+float JASS_WRAPPER_GetUnitDefaultMoveSpeed(DWORD);
+#define JASS_WRAPPER_GetUnitTypeId JASS_NATIVE_GetUnitTypeId
+#define JASS_WRAPPER_GetUnitRace JASS_NATIVE_GetUnitRace
+const char* JASS_WRAPPER_GetUnitName(DWORD);
+#define JASS_WRAPPER_GetUnitPointValue JASS_NATIVE_GetUnitPointValue
+#define JASS_WRAPPER_GetUnitPointValueByType JASS_NATIVE_GetUnitPointValueByType
+void JASS_WRAPPER_SetUnitX(DWORD, float);
+void JASS_WRAPPER_SetUnitY(DWORD, float);
+void JASS_WRAPPER_SetUnitPosition(DWORD, float, float);
+#define JASS_WRAPPER_SetUnitPositionLoc JASS_NATIVE_SetUnitPositionLoc
+void JASS_WRAPPER_SetUnitFacing(DWORD, float);
+void JASS_WRAPPER_SetUnitFacingTimed(DWORD, float, float);
+void JASS_WRAPPER_SetUnitFlyHeight(DWORD, float, float);
+void JASS_WRAPPER_SetUnitMoveSpeed(DWORD, float);
+void JASS_WRAPPER_SetUnitTurnSpeed(DWORD, float);
+void JASS_WRAPPER_SetUnitPropWindow(DWORD, float);
+#define JASS_WRAPPER_SetUnitCreepGuard JASS_NATIVE_SetUnitCreepGuard
+float JASS_WRAPPER_GetUnitAcquireRange(DWORD);
+float JASS_WRAPPER_GetUnitTurnSpeed(DWORD);
+float JASS_WRAPPER_GetUnitPropWindow(DWORD);
+float JASS_WRAPPER_GetUnitFlyHeight(DWORD);
+float JASS_WRAPPER_GetUnitDefaultAcquireRange(DWORD);
+float JASS_WRAPPER_GetUnitDefaultTurnSpeed(DWORD);
+float JASS_WRAPPER_GetUnitDefaultPropWindow(DWORD);
+float JASS_WRAPPER_GetUnitDefaultFlyHeight(DWORD);
+void JASS_WRAPPER_SetUnitAcquireRange(DWORD, float);
+void JASS_WRAPPER_SetUnitState(DWORD, DWORD, float);
+#define JASS_WRAPPER_SetUnitOwner JASS_NATIVE_SetUnitOwner
+#define JASS_WRAPPER_SetUnitRescuable JASS_NATIVE_SetUnitRescuable
+void JASS_WRAPPER_SetUnitRescueRange(DWORD, float);
+#define JASS_WRAPPER_SetUnitColor JASS_NATIVE_SetUnitColor
+void JASS_WRAPPER_QueueUnitAnimation(DWORD, const char*);
+void JASS_WRAPPER_SetUnitAnimation(DWORD, const char*);
+void JASS_WRAPPER_SetUnitAnimationWithRarity(DWORD, const char*, DWORD);
+#define JASS_WRAPPER_SetUnitAnimationByIndex JASS_NATIVE_SetUnitAnimationByIndex
+void JASS_WRAPPER_AddUnitAnimationProperties(DWORD, const char*, bool);
+void JASS_WRAPPER_SetUnitScale(DWORD, float, float, float);
+void JASS_WRAPPER_SetUnitTimeScale(DWORD, float);
+void JASS_WRAPPER_SetUnitBlendTime(DWORD, float);
+#define JASS_WRAPPER_SetUnitVertexColor JASS_NATIVE_SetUnitVertexColor
+void JASS_WRAPPER_SetUnitLookAt(DWORD, const char*, DWORD, float, float, float);
+#define JASS_WRAPPER_SetUnitPathing JASS_NATIVE_SetUnitPathing
+#define JASS_WRAPPER_ResetUnitLookAt JASS_NATIVE_ResetUnitLookAt
+#define JASS_WRAPPER_SetHeroStr JASS_NATIVE_SetHeroStr
+#define JASS_WRAPPER_SetHeroAgi JASS_NATIVE_SetHeroAgi
+#define JASS_WRAPPER_SetHeroInt JASS_NATIVE_SetHeroInt
+#define JASS_WRAPPER_GetHeroStr JASS_NATIVE_GetHeroStr
+#define JASS_WRAPPER_GetHeroAgi JASS_NATIVE_GetHeroAgi
+#define JASS_WRAPPER_GetHeroInt JASS_NATIVE_GetHeroInt
+#define JASS_WRAPPER_GetHeroSkillPoints JASS_NATIVE_GetHeroSkillPoints
+#define JASS_WRAPPER_UnitStripHeroLevel JASS_NATIVE_UnitStripHeroLevel
+#define JASS_WRAPPER_UnitModifySkillPoints JASS_NATIVE_UnitModifySkillPoints
+#define JASS_WRAPPER_GetHeroXP JASS_NATIVE_GetHeroXP
+#define JASS_WRAPPER_SetHeroXP JASS_NATIVE_SetHeroXP
+#define JASS_WRAPPER_AddHeroXP JASS_NATIVE_AddHeroXP
+#define JASS_WRAPPER_SetHeroLevel JASS_NATIVE_SetHeroLevel
+#define JASS_WRAPPER_GetHeroLevel JASS_NATIVE_GetHeroLevel
+#define JASS_WRAPPER_GetUnitLevel JASS_NATIVE_GetUnitLevel
+const char* JASS_WRAPPER_GetHeroProperName(DWORD);
+#define JASS_WRAPPER_SuspendHeroXP JASS_NATIVE_SuspendHeroXP
+#define JASS_WRAPPER_IsSuspendedXP JASS_NATIVE_IsSuspendedXP
+#define JASS_WRAPPER_SelectHeroSkill JASS_NATIVE_SelectHeroSkill
+#define JASS_WRAPPER_GetUnitAbilityLevel JASS_NATIVE_GetUnitAbilityLevel
+bool JASS_WRAPPER_ReviveHero(DWORD, float, float, bool);
+#define JASS_WRAPPER_ReviveHeroLoc JASS_NATIVE_ReviveHeroLoc
+#define JASS_WRAPPER_SetUnitExploded JASS_NATIVE_SetUnitExploded
+#define JASS_WRAPPER_SetUnitInvulnerable JASS_NATIVE_SetUnitInvulnerable
+#define JASS_WRAPPER_PauseUnit JASS_NATIVE_PauseUnit
+#define JASS_WRAPPER_IsUnitPaused JASS_NATIVE_IsUnitPaused
+#define JASS_WRAPPER_UnitAddItem JASS_NATIVE_UnitAddItem
+#define JASS_WRAPPER_UnitAddItemById JASS_NATIVE_UnitAddItemById
+#define JASS_WRAPPER_UnitAddItemToSlotById JASS_NATIVE_UnitAddItemToSlotById
+#define JASS_WRAPPER_UnitRemoveItem JASS_NATIVE_UnitRemoveItem
+#define JASS_WRAPPER_UnitRemoveItemFromSlot JASS_NATIVE_UnitRemoveItemFromSlot
+#define JASS_WRAPPER_UnitHasItem JASS_NATIVE_UnitHasItem
+#define JASS_WRAPPER_UnitItemInSlot JASS_NATIVE_UnitItemInSlot
+#define JASS_WRAPPER_UnitInventorySize JASS_NATIVE_UnitInventorySize
+bool JASS_WRAPPER_UnitDropItemPoint(DWORD, DWORD, float, float);
+#define JASS_WRAPPER_UnitDropItemSlot JASS_NATIVE_UnitDropItemSlot
+#define JASS_WRAPPER_UnitDropItemTarget JASS_NATIVE_UnitDropItemTarget
+#define JASS_WRAPPER_UnitUseItem JASS_NATIVE_UnitUseItem
+bool JASS_WRAPPER_UnitUseItemPoint(DWORD, DWORD, float, float);
+#define JASS_WRAPPER_UnitUseItemTarget JASS_NATIVE_UnitUseItemTarget
+#define JASS_WRAPPER_GetUnitCurrentOrder JASS_NATIVE_GetUnitCurrentOrder
+#define JASS_WRAPPER_SetResourceAmount JASS_NATIVE_SetResourceAmount
+#define JASS_WRAPPER_AddResourceAmount JASS_NATIVE_AddResourceAmount
+#define JASS_WRAPPER_GetResourceAmount JASS_NATIVE_GetResourceAmount
+#define JASS_WRAPPER_SelectUnit JASS_NATIVE_SelectUnit
+#define JASS_WRAPPER_ClearSelection JASS_NATIVE_ClearSelection
+#define JASS_WRAPPER_UnitAddIndicator JASS_NATIVE_UnitAddIndicator
+#define JASS_WRAPPER_AddIndicator JASS_NATIVE_AddIndicator
+#define JASS_WRAPPER_KillUnit JASS_NATIVE_KillUnit
+#define JASS_WRAPPER_RemoveUnit JASS_NATIVE_RemoveUnit
+#define JASS_WRAPPER_ShowUnit JASS_NATIVE_ShowUnit
+#define JASS_WRAPPER_IsUnitInForce JASS_NATIVE_IsUnitInForce
+#define JASS_WRAPPER_IsUnitInGroup JASS_NATIVE_IsUnitInGroup
+#define JASS_WRAPPER_IsUnitOwnedByPlayer JASS_NATIVE_IsUnitOwnedByPlayer
+#define JASS_WRAPPER_IsUnitAlly JASS_NATIVE_IsUnitAlly
+#define JASS_WRAPPER_IsUnitEnemy JASS_NATIVE_IsUnitEnemy
+#define JASS_WRAPPER_IsUnitVisible JASS_NATIVE_IsUnitVisible
+#define JASS_WRAPPER_IsUnitDetected JASS_NATIVE_IsUnitDetected
+#define JASS_WRAPPER_IsUnitInvisible JASS_NATIVE_IsUnitInvisible
+#define JASS_WRAPPER_IsUnitFogged JASS_NATIVE_IsUnitFogged
+#define JASS_WRAPPER_IsUnitMasked JASS_NATIVE_IsUnitMasked
+#define JASS_WRAPPER_IsUnitSelected JASS_NATIVE_IsUnitSelected
+#define JASS_WRAPPER_IsUnitRace JASS_NATIVE_IsUnitRace
+#define JASS_WRAPPER_IsUnitType JASS_NATIVE_IsUnitType
+#define JASS_WRAPPER_IsUnit JASS_NATIVE_IsUnit
+bool JASS_WRAPPER_IsUnitInRange(DWORD, DWORD, float);
+bool JASS_WRAPPER_IsUnitInRangeXY(DWORD, float, float, float);
+bool JASS_WRAPPER_IsUnitInRangeLoc(DWORD, DWORD, float);
+#define JASS_WRAPPER_IsUnitHidden JASS_NATIVE_IsUnitHidden
+#define JASS_WRAPPER_IsUnitIllusion JASS_NATIVE_IsUnitIllusion
+#define JASS_WRAPPER_IsUnitInTransport JASS_NATIVE_IsUnitInTransport
+#define JASS_WRAPPER_IsUnitLoaded JASS_NATIVE_IsUnitLoaded
+#define JASS_WRAPPER_IsHeroUnitId JASS_NATIVE_IsHeroUnitId
+float JASS_WRAPPER_Deg2Rad(float);
+float JASS_WRAPPER_Rad2Deg(float);
+float JASS_WRAPPER_Sin(float);
+float JASS_WRAPPER_Cos(float);
+float JASS_WRAPPER_Tan(float);
+float JASS_WRAPPER_Asin(float);
+float JASS_WRAPPER_Acos(float);
+float JASS_WRAPPER_Atan(float);
+float JASS_WRAPPER_Atan2(float, float);
+float JASS_WRAPPER_SquareRoot(float);
+float JASS_WRAPPER_Pow(float, float);
+float JASS_WRAPPER_I2R(int);
+int JASS_WRAPPER_R2I(float);
+const char* JASS_WRAPPER_I2S(int);
+const char* JASS_WRAPPER_R2S(float);
+const char* JASS_WRAPPER_R2SW(float, int, int);
+int JASS_WRAPPER_S2I(const char*);
+float JASS_WRAPPER_S2R(const char*);
+#define JASS_WRAPPER_GetHandleId JASS_NATIVE_GetHandleId
+const char* JASS_WRAPPER_SubString(const char*, int, int);
+int JASS_WRAPPER_StringLength(const char*);
+const char* JASS_WRAPPER_StringCase(const char*, bool);
+int JASS_WRAPPER_StringHash(const char*);
+const char* JASS_WRAPPER_GetLocalizedString(const char*);
+int JASS_WRAPPER_GetLocalizedHotkey(const char*);
+#define JASS_WRAPPER_ConvertRace JASS_NATIVE_ConvertRace
+#define JASS_WRAPPER_ConvertAllianceType JASS_NATIVE_ConvertAllianceType
+#define JASS_WRAPPER_ConvertRacePref JASS_NATIVE_ConvertRacePref
+#define JASS_WRAPPER_ConvertIGameState JASS_NATIVE_ConvertIGameState
+#define JASS_WRAPPER_ConvertFGameState JASS_NATIVE_ConvertFGameState
+#define JASS_WRAPPER_ConvertPlayerState JASS_NATIVE_ConvertPlayerState
+#define JASS_WRAPPER_ConvertPlayerScore JASS_NATIVE_ConvertPlayerScore
+#define JASS_WRAPPER_ConvertStartLocPrio JASS_NATIVE_ConvertStartLocPrio
+#define JASS_WRAPPER_ConvertPlayerGameResult JASS_NATIVE_ConvertPlayerGameResult
+#define JASS_WRAPPER_ConvertUnitState JASS_NATIVE_ConvertUnitState
+#define JASS_WRAPPER_ConvertAIDifficulty JASS_NATIVE_ConvertAIDifficulty
+#define JASS_WRAPPER_ConvertGameEvent JASS_NATIVE_ConvertGameEvent
+#define JASS_WRAPPER_ConvertPlayerEvent JASS_NATIVE_ConvertPlayerEvent
+#define JASS_WRAPPER_ConvertPlayerUnitEvent JASS_NATIVE_ConvertPlayerUnitEvent
+#define JASS_WRAPPER_ConvertUnitEvent JASS_NATIVE_ConvertUnitEvent
+#define JASS_WRAPPER_ConvertWidgetEvent JASS_NATIVE_ConvertWidgetEvent
+#define JASS_WRAPPER_ConvertDialogEvent JASS_NATIVE_ConvertDialogEvent
+#define JASS_WRAPPER_ConvertLimitOp JASS_NATIVE_ConvertLimitOp
+#define JASS_WRAPPER_ConvertUnitType JASS_NATIVE_ConvertUnitType
+#define JASS_WRAPPER_ConvertGameSpeed JASS_NATIVE_ConvertGameSpeed
+#define JASS_WRAPPER_ConvertPlacement JASS_NATIVE_ConvertPlacement
+#define JASS_WRAPPER_ConvertGameDifficulty JASS_NATIVE_ConvertGameDifficulty
+#define JASS_WRAPPER_ConvertGameType JASS_NATIVE_ConvertGameType
+#define JASS_WRAPPER_ConvertMapFlag JASS_NATIVE_ConvertMapFlag
+#define JASS_WRAPPER_ConvertMapVisibility JASS_NATIVE_ConvertMapVisibility
+#define JASS_WRAPPER_ConvertMapSetting JASS_NATIVE_ConvertMapSetting
+#define JASS_WRAPPER_ConvertMapDensity JASS_NATIVE_ConvertMapDensity
+#define JASS_WRAPPER_ConvertMapControl JASS_NATIVE_ConvertMapControl
+#define JASS_WRAPPER_ConvertPlayerColor JASS_NATIVE_ConvertPlayerColor
+#define JASS_WRAPPER_ConvertPlayerSlotState JASS_NATIVE_ConvertPlayerSlotState
+#define JASS_WRAPPER_ConvertVolumeGroup JASS_NATIVE_ConvertVolumeGroup
+#define JASS_WRAPPER_ConvertCameraField JASS_NATIVE_ConvertCameraField
+#define JASS_WRAPPER_ConvertBlendMode JASS_NATIVE_ConvertBlendMode
+#define JASS_WRAPPER_ConvertRarityControl JASS_NATIVE_ConvertRarityControl
+#define JASS_WRAPPER_ConvertTexMapFlags JASS_NATIVE_ConvertTexMapFlags
+#define JASS_WRAPPER_ConvertFogState JASS_NATIVE_ConvertFogState
+#define JASS_WRAPPER_ConvertEffectType JASS_NATIVE_ConvertEffectType
+#define JASS_WRAPPER_ConvertVersion JASS_NATIVE_ConvertVersion
+#define JASS_WRAPPER_ConvertItemType JASS_NATIVE_ConvertItemType
+#define JASS_WRAPPER_ConvertAttackType JASS_NATIVE_ConvertAttackType
+#define JASS_WRAPPER_ConvertDamageType JASS_NATIVE_ConvertDamageType
+#define JASS_WRAPPER_ConvertWeaponType JASS_NATIVE_ConvertWeaponType
+#define JASS_WRAPPER_ConvertSoundType JASS_NATIVE_ConvertSoundType
+#define JASS_WRAPPER_ConvertPathingType JASS_NATIVE_ConvertPathingType
+void JASS_WRAPPER_SetMapName(const char*);
+void JASS_WRAPPER_SetMapDescription(const char*);
+#define JASS_WRAPPER_SetTeams JASS_NATIVE_SetTeams
+#define JASS_WRAPPER_SetPlayers JASS_NATIVE_SetPlayers
+#define JASS_WRAPPER_SetGameTypeSupported JASS_NATIVE_SetGameTypeSupported
+#define JASS_WRAPPER_SetMapFlag JASS_NATIVE_SetMapFlag
+#define JASS_WRAPPER_SetGameSpeed JASS_NATIVE_SetGameSpeed
+#define JASS_WRAPPER_SetGamePlacement JASS_NATIVE_SetGamePlacement
+#define JASS_WRAPPER_SetGameDifficulty JASS_NATIVE_SetGameDifficulty
+#define JASS_WRAPPER_SetResourceDensity JASS_NATIVE_SetResourceDensity
+#define JASS_WRAPPER_SetCreatureDensity JASS_NATIVE_SetCreatureDensity
+void JASS_WRAPPER_DefineStartLocation(int, float, float);
+#define JASS_WRAPPER_DefineStartLocationLoc JASS_NATIVE_DefineStartLocationLoc
+#define JASS_WRAPPER_SetStartLocPrioCount JASS_NATIVE_SetStartLocPrioCount
+#define JASS_WRAPPER_SetStartLocPrio JASS_NATIVE_SetStartLocPrio
+#define JASS_WRAPPER_GetStartLocPrioSlot JASS_NATIVE_GetStartLocPrioSlot
+#define JASS_WRAPPER_GetStartLocPrio JASS_NATIVE_GetStartLocPrio
+#define JASS_WRAPPER_GetTeams JASS_NATIVE_GetTeams
+#define JASS_WRAPPER_GetPlayers JASS_NATIVE_GetPlayers
+#define JASS_WRAPPER_IsGameTypeSupported JASS_NATIVE_IsGameTypeSupported
+#define JASS_WRAPPER_IsMapFlagSet JASS_NATIVE_IsMapFlagSet
+#define JASS_WRAPPER_GetGameTypeSelected JASS_NATIVE_GetGameTypeSelected
+#define JASS_WRAPPER_GetGamePlacement JASS_NATIVE_GetGamePlacement
+#define JASS_WRAPPER_GetGameSpeed JASS_NATIVE_GetGameSpeed
+#define JASS_WRAPPER_GetGameDifficulty JASS_NATIVE_GetGameDifficulty
+#define JASS_WRAPPER_GetResourceDensity JASS_NATIVE_GetResourceDensity
+#define JASS_WRAPPER_GetCreatureDensity JASS_NATIVE_GetCreatureDensity
+float JASS_WRAPPER_GetStartLocationX(int);
+float JASS_WRAPPER_GetStartLocationY(int);
+#define JASS_WRAPPER_GetStartLocationLoc JASS_NATIVE_GetStartLocationLoc
+#define JASS_WRAPPER_SetPlayerTeam JASS_NATIVE_SetPlayerTeam
+#define JASS_WRAPPER_SetPlayerStartLocation JASS_NATIVE_SetPlayerStartLocation
+#define JASS_WRAPPER_ForcePlayerStartLocation JASS_NATIVE_ForcePlayerStartLocation
+#define JASS_WRAPPER_SetPlayerAlliance JASS_NATIVE_SetPlayerAlliance
+#define JASS_WRAPPER_SetPlayerTaxRate JASS_NATIVE_SetPlayerTaxRate
+#define JASS_WRAPPER_SetPlayerRacePreference JASS_NATIVE_SetPlayerRacePreference
+#define JASS_WRAPPER_SetPlayerRaceSelectable JASS_NATIVE_SetPlayerRaceSelectable
+#define JASS_WRAPPER_SetPlayerController JASS_NATIVE_SetPlayerController
+#define JASS_WRAPPER_SetPlayerColor JASS_NATIVE_SetPlayerColor
+#define JASS_WRAPPER_SetPlayerOnScoreScreen JASS_NATIVE_SetPlayerOnScoreScreen
+void JASS_WRAPPER_SetPlayerName(DWORD, const char*);
+#define JASS_WRAPPER_GetPlayerTeam JASS_NATIVE_GetPlayerTeam
+const char* JASS_WRAPPER_GetPlayerName(DWORD);
+#define JASS_WRAPPER_GetPlayerStartLocation JASS_NATIVE_GetPlayerStartLocation
+float JASS_WRAPPER_GetPlayerStartLocationX(DWORD);
+float JASS_WRAPPER_GetPlayerStartLocationY(DWORD);
+#define JASS_WRAPPER_GetPlayerColor JASS_NATIVE_GetPlayerColor
+#define JASS_WRAPPER_GetPlayerSelectable JASS_NATIVE_GetPlayerSelectable
+#define JASS_WRAPPER_GetPlayerController JASS_NATIVE_GetPlayerController
+#define JASS_WRAPPER_GetPlayerSlotState JASS_NATIVE_GetPlayerSlotState
+#define JASS_WRAPPER_GetPlayerTaxRate JASS_NATIVE_GetPlayerTaxRate
+#define JASS_WRAPPER_IsPlayerRacePrefSet JASS_NATIVE_IsPlayerRacePrefSet
+DWORD JASS_WRAPPER_Location(float, float);
+#define JASS_WRAPPER_RemoveLocation JASS_NATIVE_RemoveLocation
+void JASS_WRAPPER_MoveLocation(DWORD, float, float);
+float JASS_WRAPPER_GetLocationX(DWORD);
+float JASS_WRAPPER_GetLocationY(DWORD);
+float JASS_WRAPPER_GetLocationZ(DWORD);
+#define JASS_WRAPPER_CreateTimer JASS_NATIVE_CreateTimer
+#define JASS_WRAPPER_DestroyTimer JASS_NATIVE_DestroyTimer
+void JASS_WRAPPER_TimerStart(DWORD, float, bool, DWORD);
+float JASS_WRAPPER_TimerGetTimeout(DWORD);
+float JASS_WRAPPER_TimerGetElapsed(DWORD);
+float JASS_WRAPPER_TimerGetRemaining(DWORD);
+#define JASS_WRAPPER_PauseTimer JASS_NATIVE_PauseTimer
+#define JASS_WRAPPER_ResumeTimer JASS_NATIVE_ResumeTimer
+#define JASS_WRAPPER_GetExpiredTimer JASS_NATIVE_GetExpiredTimer
+#define JASS_WRAPPER_Condition JASS_NATIVE_Condition
+#define JASS_WRAPPER_DestroyCondition JASS_NATIVE_DestroyCondition
+#define JASS_WRAPPER_Filter JASS_NATIVE_Filter
+#define JASS_WRAPPER_DestroyFilter JASS_NATIVE_DestroyFilter
+#define JASS_WRAPPER_DestroyBoolExpr JASS_NATIVE_DestroyBoolExpr
+#define JASS_WRAPPER_And JASS_NATIVE_And
+#define JASS_WRAPPER_Or JASS_NATIVE_Or
+#define JASS_WRAPPER_Not JASS_NATIVE_Not
+#define JASS_WRAPPER_CreateRegion JASS_NATIVE_CreateRegion
+#define JASS_WRAPPER_RemoveRegion JASS_NATIVE_RemoveRegion
+#define JASS_WRAPPER_RegionAddRect JASS_NATIVE_RegionAddRect
+#define JASS_WRAPPER_RegionClearRect JASS_NATIVE_RegionClearRect
+void JASS_WRAPPER_RegionAddCell(DWORD, float, float);
+#define JASS_WRAPPER_RegionAddCellAtLoc JASS_NATIVE_RegionAddCellAtLoc
+void JASS_WRAPPER_RegionClearCell(DWORD, float, float);
+#define JASS_WRAPPER_RegionClearCellAtLoc JASS_NATIVE_RegionClearCellAtLoc
+#define JASS_WRAPPER_IsUnitInRegion JASS_NATIVE_IsUnitInRegion
+bool JASS_WRAPPER_IsPointInRegion(DWORD, float, float);
+#define JASS_WRAPPER_IsLocationInRegion JASS_NATIVE_IsLocationInRegion
+DWORD JASS_WRAPPER_Rect(float, float, float, float);
+#define JASS_WRAPPER_RectFromLoc JASS_NATIVE_RectFromLoc
+#define JASS_WRAPPER_RemoveRect JASS_NATIVE_RemoveRect
+void JASS_WRAPPER_SetRect(DWORD, float, float, float, float);
+#define JASS_WRAPPER_SetRectFromLoc JASS_NATIVE_SetRectFromLoc
+float JASS_WRAPPER_GetRectCenterX(DWORD);
+float JASS_WRAPPER_GetRectCenterY(DWORD);
+void JASS_WRAPPER_MoveRectTo(DWORD, float, float);
+#define JASS_WRAPPER_MoveRectToLoc JASS_NATIVE_MoveRectToLoc
+float JASS_WRAPPER_GetRectMinX(DWORD);
+float JASS_WRAPPER_GetRectMinY(DWORD);
+float JASS_WRAPPER_GetRectMaxX(DWORD);
+float JASS_WRAPPER_GetRectMaxY(DWORD);
+#define JASS_WRAPPER_GetWorldBounds JASS_NATIVE_GetWorldBounds
+#define JASS_WRAPPER_SetFogStateRect JASS_NATIVE_SetFogStateRect
+void JASS_WRAPPER_SetFogStateRadius(DWORD, DWORD, float, float, float, bool);
+void JASS_WRAPPER_SetFogStateRadiusLoc(DWORD, DWORD, DWORD, float, bool);
+#define JASS_WRAPPER_FogMaskEnable JASS_NATIVE_FogMaskEnable
+#define JASS_WRAPPER_IsFogMaskEnabled JASS_NATIVE_IsFogMaskEnabled
+#define JASS_WRAPPER_FogEnable JASS_NATIVE_FogEnable
+#define JASS_WRAPPER_IsFogEnabled JASS_NATIVE_IsFogEnabled
+#define JASS_WRAPPER_CreateFogModifierRect JASS_NATIVE_CreateFogModifierRect
+DWORD JASS_WRAPPER_CreateFogModifierRadius(DWORD, DWORD, float, float, float, bool, bool);
+DWORD JASS_WRAPPER_CreateFogModifierRadiusLoc(DWORD, DWORD, DWORD, float, bool, bool);
+#define JASS_WRAPPER_DestroyFogModifier JASS_NATIVE_DestroyFogModifier
+#define JASS_WRAPPER_FogModifierStart JASS_NATIVE_FogModifierStart
+#define JASS_WRAPPER_FogModifierStop JASS_NATIVE_FogModifierStop
+#define JASS_WRAPPER_CreateTrigger JASS_NATIVE_CreateTrigger
+#define JASS_WRAPPER_DestroyTrigger JASS_NATIVE_DestroyTrigger
+#define JASS_WRAPPER_ResetTrigger JASS_NATIVE_ResetTrigger
+#define JASS_WRAPPER_EnableTrigger JASS_NATIVE_EnableTrigger
+#define JASS_WRAPPER_DisableTrigger JASS_NATIVE_DisableTrigger
+#define JASS_WRAPPER_IsTriggerEnabled JASS_NATIVE_IsTriggerEnabled
+#define JASS_WRAPPER_TriggerWaitOnSleeps JASS_NATIVE_TriggerWaitOnSleeps
+#define JASS_WRAPPER_IsTriggerWaitOnSleeps JASS_NATIVE_IsTriggerWaitOnSleeps
+DWORD JASS_WRAPPER_TriggerRegisterVariableEvent(DWORD, const char*, DWORD, float);
+DWORD JASS_WRAPPER_TriggerRegisterTimerEvent(DWORD, float, bool);
+#define JASS_WRAPPER_TriggerRegisterTimerExpireEvent JASS_NATIVE_TriggerRegisterTimerExpireEvent
+DWORD JASS_WRAPPER_TriggerRegisterGameStateEvent(DWORD, DWORD, DWORD, float);
+#define JASS_WRAPPER_GetEventGameState JASS_NATIVE_GetEventGameState
+#define JASS_WRAPPER_TriggerRegisterDialogEvent JASS_NATIVE_TriggerRegisterDialogEvent
+#define JASS_WRAPPER_TriggerRegisterDialogButtonEvent JASS_NATIVE_TriggerRegisterDialogButtonEvent
+#define JASS_WRAPPER_GetClickedButton JASS_NATIVE_GetClickedButton
+#define JASS_WRAPPER_GetClickedDialog JASS_NATIVE_GetClickedDialog
+float JASS_WRAPPER_GetTournamentFinishSoonTimeRemaining(void);
+#define JASS_WRAPPER_GetTournamentFinishNowRule JASS_NATIVE_GetTournamentFinishNowRule
+#define JASS_WRAPPER_GetTournamentFinishNowPlayer JASS_NATIVE_GetTournamentFinishNowPlayer
+#define JASS_WRAPPER_GetTournamentScore JASS_NATIVE_GetTournamentScore
+const char* JASS_WRAPPER_GetSaveBasicFilename(void);
+#define JASS_WRAPPER_TriggerRegisterGameEvent JASS_NATIVE_TriggerRegisterGameEvent
+#define JASS_WRAPPER_GetWinningPlayer JASS_NATIVE_GetWinningPlayer
+DWORD JASS_WRAPPER_TriggerRegisterPlayerStateEvent(DWORD, DWORD, DWORD, DWORD, float);
+#define JASS_WRAPPER_GetEventPlayerState JASS_NATIVE_GetEventPlayerState
+#define JASS_WRAPPER_TriggerRegisterPlayerEvent JASS_NATIVE_TriggerRegisterPlayerEvent
+#define JASS_WRAPPER_TriggerRegisterPlayerUnitEvent JASS_NATIVE_TriggerRegisterPlayerUnitEvent
+#define JASS_WRAPPER_GetAttacker JASS_NATIVE_GetAttacker
+#define JASS_WRAPPER_GetRescuer JASS_NATIVE_GetRescuer
+#define JASS_WRAPPER_GetDyingUnit JASS_NATIVE_GetDyingUnit
+#define JASS_WRAPPER_GetKillingUnit JASS_NATIVE_GetKillingUnit
+#define JASS_WRAPPER_GetDecayingUnit JASS_NATIVE_GetDecayingUnit
+#define JASS_WRAPPER_GetConstructingStructure JASS_NATIVE_GetConstructingStructure
+#define JASS_WRAPPER_GetCancelledStructure JASS_NATIVE_GetCancelledStructure
+#define JASS_WRAPPER_GetConstructedStructure JASS_NATIVE_GetConstructedStructure
+#define JASS_WRAPPER_GetTrainedUnitType JASS_NATIVE_GetTrainedUnitType
+#define JASS_WRAPPER_GetResearchingUnit JASS_NATIVE_GetResearchingUnit
+#define JASS_WRAPPER_GetResearched JASS_NATIVE_GetResearched
+#define JASS_WRAPPER_GetTrainedUnit JASS_NATIVE_GetTrainedUnit
+#define JASS_WRAPPER_GetSellingUnit JASS_NATIVE_GetSellingUnit
+#define JASS_WRAPPER_GetSoldUnit JASS_NATIVE_GetSoldUnit
+#define JASS_WRAPPER_GetBuyingUnit JASS_NATIVE_GetBuyingUnit
+#define JASS_WRAPPER_GetSoldItem JASS_NATIVE_GetSoldItem
+#define JASS_WRAPPER_GetChangingUnit JASS_NATIVE_GetChangingUnit
+#define JASS_WRAPPER_GetChangingUnitPrevOwner JASS_NATIVE_GetChangingUnitPrevOwner
+#define JASS_WRAPPER_GetDetectedUnit JASS_NATIVE_GetDetectedUnit
+#define JASS_WRAPPER_GetOrderedUnit JASS_NATIVE_GetOrderedUnit
+int JASS_WRAPPER_OrderId(const char*);
+const char* JASS_WRAPPER_OrderId2String(int);
+int JASS_WRAPPER_AbilityId(const char*);
+const char* JASS_WRAPPER_AbilityId2String(int);
+int JASS_WRAPPER_UnitId(const char*);
+const char* JASS_WRAPPER_UnitId2String(int);
+const char* JASS_WRAPPER_GetObjectName(int);
+#define JASS_WRAPPER_GetIssuedOrderId JASS_NATIVE_GetIssuedOrderId
+float JASS_WRAPPER_GetOrderPointX(void);
+float JASS_WRAPPER_GetOrderPointY(void);
+#define JASS_WRAPPER_GetOrderPointLoc JASS_NATIVE_GetOrderPointLoc
+#define JASS_WRAPPER_GetOrderTarget JASS_NATIVE_GetOrderTarget
+#define JASS_WRAPPER_GetOrderTargetDestructable JASS_NATIVE_GetOrderTargetDestructable
+#define JASS_WRAPPER_GetOrderTargetItem JASS_NATIVE_GetOrderTargetItem
+#define JASS_WRAPPER_GetOrderTargetUnit JASS_NATIVE_GetOrderTargetUnit
+#define JASS_WRAPPER_GetSpellAbilityUnit JASS_NATIVE_GetSpellAbilityUnit
+#define JASS_WRAPPER_GetSpellAbilityId JASS_NATIVE_GetSpellAbilityId
+#define JASS_WRAPPER_GetSpellAbility JASS_NATIVE_GetSpellAbility
+#define JASS_WRAPPER_GetSpellTargetLoc JASS_NATIVE_GetSpellTargetLoc
+float JASS_WRAPPER_GetSpellTargetX(void);
+float JASS_WRAPPER_GetSpellTargetY(void);
+#define JASS_WRAPPER_GetSpellTargetDestructable JASS_NATIVE_GetSpellTargetDestructable
+#define JASS_WRAPPER_GetSpellTargetItem JASS_NATIVE_GetSpellTargetItem
+#define JASS_WRAPPER_GetSpellTargetUnit JASS_NATIVE_GetSpellTargetUnit
+#define JASS_WRAPPER_GetLevelingUnit JASS_NATIVE_GetLevelingUnit
+#define JASS_WRAPPER_GetLearningUnit JASS_NATIVE_GetLearningUnit

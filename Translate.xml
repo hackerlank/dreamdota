@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings>
+  <!-- DreamAuth -->
+  <string id="AUTO_INJECT">
+    <value lang="en-us">Auto Inject</value>
+    <value lang="pt-pt">Auto Inject</value>
+    <value lang="zh-cn">自动注入</value>
+    <value lang="ru-ru">Auto Inject</value>
+  </string>
+
+  <string id="REQUIRE_ADMIN">
+    <value lang="en-us">Auto inject has been disabled because you don't have administrator privilege. \nIf you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="pt-pt">Auto inject has been disabled because you don't have administrator privilege. \nIf you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="zh-cn">因为无法获取管理员权限，自动注入已经被禁用。\n如果你在使用Windows Vista或者7，请用右键点击DreamAuth.exe然后选择用管理员权限运行。</value>
+    <value lang="ru-ru">Auto inject has been disabled because you don't have administrator privilege. \nIf you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+  </string>
+
+  <string id="SETTINGS">
+    <value lang="en-us">Settings...</value>
+    <value lang="pt-pt">Settings...</value>
+    <value lang="zh-cn">设置...</value>
+    <value lang="ru-ru">Settings...</value>
+  </string>
+
+  <string id="INITIALIZING">
+    <value lang="en-us">Initializing...</value>
+    <value lang="pt-pt">Initializing...</value>
+    <value lang="zh-cn">初始化中...</value>
+    <value lang="ru-ru">Initializing...</value>
+  </string>
+
+  <string id="VERSION">
+    <value lang="en-us">Version</value>
+    <value lang="pt-pt">Version</value>
+    <value lang="zh-cn">版本</value>
+    <value lang="ru-ru">Version</value>
+  </string>
+
+  <string id="INJECT">
+    <value lang="en-us">Inject</value>
+    <value lang="pt-pt">Inject</value>
+    <value lang="zh-cn">注入</value>
+    <value lang="ru-ru">Inject</value>
+  </string>
+
+  <string id="REMOTE_INJECT_AUTO">
+    <value lang="en-us">Remote Inject(Automatic)</value>
+    <value lang="pt-pt">Remote Inject(Automatic)</value>
+    <value lang="zh-cn">远程注入(自动)</value>
+    <value lang="ru-ru">Remote Inject(Automatic)</value>
+  </string>
+
+  <string id="REMOTE_INJECT_MANUAL">
+    <value lang="en-us">Remote Inject(Manual)</value>
+    <value lang="pt-pt">Remote Inject(Manual)</value>
+    <value lang="zh-cn">远程注入(手动)</value>
+    <value lang="ru-ru">Remote Inject(Manual)</value>
+  </string>
+
+  <string id="PASSIVE_INJECT">
+    <value lang="en-us">Passive Inject</value>
+    <value lang="pt-pt">Passive Inject</value>
+    <value lang="zh-cn">被动注入</value>
+    <value lang="ru-ru">Passive Inject</value>
+  </string>
+
+  <string id="LOGOUT">
+    <value lang="en-us">Logout</value>
+    <value lang="pt-pt">Logout</value>
+    <value lang="zh-cn">注销</value>
+    <value lang="ru-ru">Logout</value>
+  </string>
+
+  <string id="LOGGING_OUT">
+    <value lang="en-us">Logging out...</value>
+    <value lang="pt-pt">Logging out...</value>
+    <value lang="zh-cn">注销中...</value>
+    <value lang="ru-ru">Logging out...</value>
+  </string>
+
+  <string id="GAME_DETECTED">
+    <value lang="en-us">Game detected(%u), injecting...</value>
+    <value lang="pt-pt">Game detected(%u), injecting...</value>
+    <value lang="zh-cn">检测到游戏(%u), 注入中...</value>
+    <value lang="ru-ru">Game detected(%u), injecting...</value>
+  </string>
+
+  <string id="GAME_EXITED">
+    <value lang="en-us">Game exited.</value>
+    <value lang="pt-pt">Game exited.</value>
+    <value lang="zh-cn">游戏已经退出。</value>
+    <value lang="ru-ru">Game exited.</value>
+  </string>
+
+  <string id="AUTO_UPDATE">
+    <value lang="en-us">Automatic Update</value>
+    <value lang="pt-pt">Automatic Update</value>
+    <value lang="zh-cn">自动更新</value>
+    <value lang="ru-ru">Automatic Update</value>
+  </string>
+
+  <string id="UPDATE_LOADING">
+    <value lang="en-us">Receiving Update Information...</value>
+    <value lang="pt-pt">Recebendo Informações de Atualização...</value>
+    <value lang="zh-cn">升级信息获取中...</value>
+    <value lang="ru-ru">Получение инфы об обновлении...</value>
+  </string>
+
+  <string id="COPY_LINK">
+    <value lang="en-us">Copy Download Link</value>
+    <value lang="pt-pt">Copiar Link de Download</value>
+    <value lang="zh-cn">复制下载链接</value>
+    <value lang="ru-ru">Скопировать ссылку</value>
+  </string>
+
+  <string id="OPEN_LINK">
+    <value lang="en-us">Open Download Link</value>
+    <value lang="pt-pt">Abrir Link de Download</value>
+    <value lang="zh-cn">打开下载链接</value>
+    <value lang="ru-ru">Открыть ссылку</value>
+  </string>
+
+  <string id="UPDATE_TITLE">
+    <value lang="en-us">There is a new version of DreamDota availiable, please update.</value>
+    <value lang="pt-pt">Há uma nova versão do DreamDota disponível, por favor atualize.</value>
+    <value lang="zh-cn">更新版本的DreamDota已经发布，请先升级后再登录。</value>
+    <value lang="ru-ru">Вышла новая версия Дримдоты, пожалуйста обновитесь.</value>
+  </string>
+
+  <string id="DOWNLOAD_UPDATE_DATA_FAILED">
+    <value lang="en-us">Sorry, failed to download update data.</value>
+    <value lang="pt-pt">Sorry, failed to download update data.</value>
+    <value lang="zh-cn">对不起，下载更新数据失败。</value>
+    <value lang="ru-ru">Sorry, failed to download update data.</value>
+  </string>
+
+  <string id="CONNECTING">
+    <value lang="en-us">Connecting...</value>
+    <value lang="pt-pt">Connecting...</value>
+    <value lang="zh-cn">连接中...</value>
+    <value lang="ru-ru">Connecting...</value>
+  </string>
+
+  <string id="UPDATE_VERSION">
+    <value lang="en-us">Local version %u, newest version %u. (Release: %s).</value>
+    <value lang="pt-pt">Local version %u, newest version %u. (Release: %s).</value>
+    <value lang="zh-cn">本地版本 %04u, 最新版本 %04u。 (发布日期: %s)</value>
+    <value lang="ru-ru">Local version %u, newest version %u. (Release: %s).</value>
+  </string>
+
+  <string id="DOWNLOAD_PROGRESS">
+    <value lang="en-us">Downloading...(%.2f%% completed, average speed is %.2f KB/s)</value>
+    <value lang="pt-pt">Downloading...(%.2f%% completed, average speed is %.2f KB/s)</value>
+    <value lang="zh-cn">下载中...(%.2f%% 已完成, 平均速度 %.2f KB/s)</value>
+    <value lang="ru-ru">Downloading...(%.2f%% completed, average speed is %.2f KB/s)</value>
+  </string>
+
+  <string id="DREAMDOTA_UPDATE">
+    <value lang="en-us">DreamDota Update</value>
+    <value lang="pt-pt">DreamDota Update</value>
+    <value lang="zh-cn">DreamDota 升级</value>
+    <value lang="ru-ru">DreamDota Update</value>
+  </string>
+
+  <string id="EXTRACTING">
+    <value lang="en-us">Extracting...</value>
+    <value lang="pt-pt">Extracting...</value>
+    <value lang="zh-cn">解压缩中...</value>
+    <value lang="ru-ru">Extracting...</value>
+  </string>
+
+  <string id="DOWNLOAD_FAILED">
+    <value lang="en-us">Sorry, download update package failed.</value>
+    <value lang="pt-pt">Sorry, download update package failed.</value>
+    <value lang="zh-cn">对不起，下载更新包失败。</value>
+    <value lang="ru-ru">Sorry, download update package failed.</value>
+  </string>
+
+  <string id="EXTRACT_PACKAGE_FAILED">
+    <value lang="en-us">Sorry, extract update package failed.</value>
+    <value lang="pt-pt">Sorry, extract update package failed.</value>
+    <value lang="zh-cn">对不起，解压缩更新包失败。</value>
+    <value lang="ru-ru">Sorry, extract update package failed.</value>
+  </string>
+
+  <string id="CANCEL_UPDATE_WARNING">
+    <value lang="en-us">Are you sure to stop update process?</value>
+    <value lang="pt-pt">Are you sure to stop update process?</value>
+    <value lang="zh-cn">确定要取消更新操作吗?。</value>
+    <value lang="ru-ru">Are you sure to stop update process?</value>
+  </string>
+
+  <string id="SERVICES">
+    <value lang="en-us">Services</value>
+    <value lang="pt-pt">Services</value>
+    <value lang="zh-cn">服务</value>
+    <value lang="ru-ru">Services</value>
+  </string>
+
+  <string id="ROAMING_PROFILE">
+    <value lang="en-us">Roaming Profile</value>
+    <value lang="pt-pt">Roaming Profile</value>
+    <value lang="zh-cn">配置文件漫游</value>
+    <value lang="ru-ru">Roaming Profile</value>
+  </string>
+
+  <string id="LOADING">
+    <value lang="en-us">Loading...</value>
+    <value lang="pt-pt">Loading...</value>
+    <value lang="zh-cn">装载中...</value>
+    <value lang="ru-ru">Loading...</value>
+  </string>
+
+  <string id="N_RP_FOUND">
+    <value lang="en-us">%d roaming profiles found。(%d KB used, %d KB space available)</value>
+    <value lang="pt-pt">%d roaming profiles found。(%d KB used, %d KB space available)</value>
+    <value lang="zh-cn">找到%d个漫游的配置文件。(已用空间 %d KB，可用空间 %d KB)</value>
+    <value lang="ru-ru">%d roaming profiles found。(%d KB used, %d KB space available)</value>
+  </string>
+
+  <string id="NO_RP_FOUND">
+    <value lang="en-us">No roaming profiles found.(%d KB space available)</value>
+    <value lang="pt-pt">No roaming profiles found.(%d KB space available)</value>
+    <value lang="zh-cn">没找到漫游的配置文件。(可用空间 %d KB)</value>
+    <value lang="ru-ru">No roaming profiles found.(%d KB space available)</value>
+  </string>
+
+  <string id="SERVICE_UNAVAILABLE">
+    <value lang="en-us">Sorry, sevice is unavailable now.</value>
+    <value lang="pt-pt">Sorry, sevice is unavailable now.</value>
+    <value lang="zh-cn">对不起，服务不可用。</value>
+    <value lang="ru-ru">Sorry, sevice is unavailable now.</value>
+  </string>
+
+  <string id="UPLOAD_LOCAL_PROFILE">
+    <value lang="en-us">Upload Local Profile</value>
+    <value lang="pt-pt">Upload Local Profile</value>
+    <value lang="zh-cn">上传本地配置文件</value>
+    <value lang="ru-ru">Upload Local Profile</value>
+  </string>
+
+  <string id="APPLY_SELECTED_PROFILE">
+    <value lang="en-us">Apply Selected Profile</value>
+    <value lang="pt-pt">Apply Selected Profile</value>
+    <value lang="zh-cn">使用选中的配置文件</value>
+    <value lang="ru-ru">Apply Selected Profile</value>
+  </string>
+
+  <string id="DELETE_SELECTED_PROFILE">
+    <value lang="en-us">Delete Selected Profile</value>
+    <value lang="pt-pt">Delete Selected Profile</value>
+    <value lang="zh-cn">删除选中的配置文件</value>
+    <value lang="ru-ru">Delete Selected Profile</value>
+  </string>
+
+  <string id="ARE_YOU_SURE">
+    <value lang="en-us">Are you sure?</value>
+    <value lang="pt-pt">Are you sure?</value>
+    <value lang="zh-cn">你确定要执行该操作吗？</value>
+    <value lang="ru-ru">Are you sure?</value>
+  </string>
+
+  <string id="OVERWRITE_PROFILE">
+    <value lang="en-us">Overwrite the profile with same name?</value>
+    <value lang="pt-pt">Overwrite the profile with same name?</value>
+    <value lang="zh-cn">覆盖同名配置文件吗？</value>
+    <value lang="ru-ru">Overwrite the profile with same name?</value>
+  </string>
+
+  <string id="UPLOADING_PROFILE">
+    <value lang="en-us">Uploading profile...</value>
+    <value lang="pt-pt">Uploading profile...</value>
+    <value lang="zh-cn">上传配置文件中...</value>
+    <value lang="ru-ru">Uploading profile...</value>
+  </string>
+
+  <string id="PROFILE_NAME">
+    <value lang="en-us">Profile Name:</value>
+    <value lang="pt-pt">Profile Name:</value>
+    <value lang="zh-cn">配置名:</value>
+    <value lang="ru-ru">Profile Name:</value>
+  </string>
+
+  <string id="UPLOAD">
+    <value lang="en-us">Upload</value>
+    <value lang="pt-pt">Upload</value>
+    <value lang="zh-cn">上传</value>
+    <value lang="ru-ru">Upload</value>
+  </string>
+
+  <string id="RESULT_NO_QUOTA">
+    <value lang="en-us">Sorry, not enough quota available to process your request.</value>
+    <value lang="pt-pt">Sorry, not enough quota available to process your request.</value>
+    <value lang="zh-cn">对不起，没有足够的剩余空间来完成您的请求。</value>
+    <value lang="ru-ru">Sorry, not enough quota available to process your request.</value>
+  </string>
+
+  <string id="RESULT_UPLOAD_FAILED">
+    <value lang="en-us">Sorry, failed to upload file.</value>
+    <value lang="pt-pt">Sorry, failed to upload file.</value>
+    <value lang="zh-cn">对不起，上传文件失败。</value>
+    <value lang="ru-ru">Sorry, failed to upload file.</value>
+  </string>
+
+  <string id="RESULT_FILE_NOT_FOUND">
+    <value lang="en-us">Sorry, the file you want to delete does not exist.</value>
+    <value lang="pt-pt">Sorry, the file you want to delete does not exist.</value>
+    <value lang="zh-cn">对不起，要删除的文件不存在。</value>
+    <value lang="ru-ru">Sorry, the file you want to delete does not exist.</value>
+  </string>
+
+  <string id="WAR3_NOTE">
+    <value lang="en-us">Please note that currently DreamDota 3 supports DirectX mode only. If you have -opengl in your war3 startup argument, please remove it.</value>
+    <value lang="pt-pt">Please note that currently DreamDota 3 supports DirectX mode only. If you have -opengl in your war3 startup argument, please remove it.</value>
+    <value lang="zh-cn">请注意目前DreamDota 3只支持DirectX模式， 如果你的War3启动参数中有-opengl, 请删除。</value>
+    <value lang="ru-ru">Please note that currently DreamDota 3 supports DirectX mode only. If you have -opengl in your war3 startup argument, please remove it.</value>
+  </string>
+
+  <!-- DreamDota -->
+  <string id="AUTO_INJECT">
+    <value lang="en-us">Auto Inject</value>
+    <value lang="pt-pt">Auto Inject</value>
+    <value lang="zh-cn">自动注入</value>
+    <value lang="ru-ru">Auto Inject</value>
+  </string>
+
+  <string id="REQUIRE_ADMIN">
+    <value lang="en-us">Auto inject has been disabled because you don't have administrator privilege. If you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="pt-pt">Auto inject has been disabled because you don't have administrator privilege. If you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+    <value lang="zh-cn">因为无法获取管理员权限，自动注入已经被禁用。如果你在使用Windows Vista或者7，请用右键点击DreamAuth.exe然后选择用管理员权限运行。</value>
+    <value lang="ru-ru">Auto inject has been disabled because you don't have administrator privilege. If you are using Windows Vista or 7, please right click DreamAuth.exe then click Run as administrator.</value>
+  </string>
+
+  <string id="SUCCESS">
+    <value lang="en-us">Success.</value>
+    <value lang="pt-pt">Success.</value>
+    <value lang="zh-cn">成功。</value>
+    <value lang="ru-ru">Success</value>
+  </string>
+
+  <string id="FAILURE">
+    <value lang="en-us">Failure.</value>
+    <value lang="pt-pt">Failure.</value>
+    <value lang="zh-cn">失败。</value>
+    <value lang="ru-ru">Failure.</value>
+  </string>
+
+  <string id="COMPLETED">
+    <value lang="en-us">Completed.</value>
+    <value lang="pt-pt">Completed.</value>
+    <value lang="zh-cn">完成。</value>
+    <value lang="ru-ru">Completed.</value>
+  </string>
+
+  <string id="PREPARING_INJECTION">
+    <value lang="en-us">Preparing injection...</value>
+    <value lang="pt-pt">Preparing injection...</value>
+    <value lang="zh-cn">正在准备注入...</value>
+    <value lang="ru-ru">Preparing injection...</value>
+  </string>
+
+  <string id="TRANSMITTING_DATA">
+    <value lang="en-us">Transmitting data...</value>
+    <value lang="pt-pt">Transmitting data...</value>
+    <value lang="zh-cn">正在传输数据...</value>
+    <value lang="ru-ru">Transmitting data...</value>
+  </string>
+
+  <string id="MULTI_INSTANCE">
+    <value lang="en-us">There is already a DreamAuth instance running.</value>
+    <value lang="pt-pt">There is already a DreamAuth instance running.</value>
+    <value lang="zh-cn">已经有一个DreamAuth的实例在运行了。</value>
+    <value lang="ru-ru">There is already a DreamAuth instance running.</value>
+  </string>
+</strings>
